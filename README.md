@@ -1,6 +1,6 @@
 # UNSW Battlecode 2026
 
-This is my solo UNSW Battlecode 2026 bot (team **zitian**), built up to the Sprint, plus the full automation stack I used to improve, test, evaluate and publish it continuously. After the Sprint I merged with three other strong solo teams, Stockfish, PPP and larpmaxxing, to form **larp stock zi balls**, which went on to finish 3rd overall and win the Jump Trading Grand Award for the fastest algorithm. That team's later bot isn't in this repository.
+This is my solo UNSW Battlecode 2026 bot (team **zitian**), built up to the Sprint, plus the full automation stack I used to improve, test, evaluate and publish it continuously. After the Sprint I merged with three other strong solo teams, Stockfish, PPP and larpmaxxing, to form **larp stock zi balls**, which was seeded 1st for the Grand Final, finished 3rd overall and won the Jump Trading Grand Award for the fastest algorithm. That team's later bot isn't in this repository.
 
 ## Background and results
 
