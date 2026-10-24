@@ -19,6 +19,10 @@ In the 8 days from 23 September to the Sprint on 1 October, the loop in this rep
 
 - **Sprint (1 October, 591 teams).** I entered solo, peaked at #6 on the ladder beforehand, and was seeded 13th. I got through five rounds without dropping more than one game, then beat 4th seed SSS 4–3 before losing 2–5 in the quarter-finals to chad gdp, the eventual Grand Final champions.
 
+![Sprint round of 16, game 7 against SSS on weakhold](docs/images/sprint-game.gif)
+
+*The deciding game 7 of my 4–3 Sprint win over 4th seed SSS, on the official replay viewer (orange is my bot; the site shows my team under its later name).*
+
 ## How the pipeline works
 
 My philosophy was that my ideas should be built and tested 24/7, not only when I had time to code them. So the bot was improved by an automated loop that runs around the clock, with me steering it. Some ideas still needed me to step in now and then and push the implementing agent in the right direction, but I spent a lot of time designing the orchestration loop so that this happened less and less.
@@ -45,7 +49,7 @@ flowchart LR
 ## Problems worth solving
 
 - **Not fooling yourself with statistics.** With hundreds of experiments, some will look like wins by luck. Every candidate is tested with a sequential probability ratio test (normalized Elo bounds 0 and +15, 5% error rates, up to 2,400 game pairs) on maps it has never seen, with sides swapped in every pair. Bounds are frozen before a test starts, and an independent judge reviews every result instead of trusting a threshold alone.
-- **Speed as a feature.** Every champion has to stay inside CPU limits (99th percentile and maximum per turn), so speed is checked on every change, not tuned at the end. That discipline carried into the merged team's bot, which won the fastest-algorithm award.
+- **Speed as a feature.** Every champion has to stay inside CPU limits (99th percentile and maximum per turn), so speed is checked on every change, not tuned at the end. A faster bot also makes every game quicker to play, so experiments finish sooner and more ideas get tested. That discipline carried into the merged team's bot, which won the fastest-algorithm award.
 - **A faster judge.** I rebuilt the game judge natively (`referee/native_judge/`), checked game for game that it produces identical results to the official engine, and cut its CPU use by about a third, so the same machines play more games.
 - **Keeping AI agents in their lane.** Coding agents can only change the bot and its tests; anything else fails evaluation. The trusted side of the loop never runs or trusts files from an agent's workspace, and every agent launch is checked by a test.
 - **Running a cheap fleet.** Games are spread across spot VMs and spare machines, with retries for games a machine drops, health checks for every file the loop writes, and alerts when machines go idle.
