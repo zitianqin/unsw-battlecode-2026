@@ -8,6 +8,16 @@ This is my solo UNSW Battlecode 2026 bot (team **zitian**), built up to the Spri
 
 - **Sprint (1 October, 591 teams).** I entered solo, peaked at #6 on the ladder beforehand, and was seeded 13th. I got through five rounds without dropping more than one game, then beat 4th seed SSS 4–3 before losing 2–5 in the quarter-finals to chad gdp, the eventual Grand Final champions.
 
+## How the pipeline works
+
+The bot was improved by an automated loop that runs around the clock, with me steering it.
+
+- **Ideas.** Every change starts as an idea in a ranked backlog. I came up with most of them, and about 80-90% of the ideas that actually made the bot better were mine: from watching replays, studying how the top teams played, and spotting where we lost. The loop adds its own too: replay audits, studies of the leaders' games, post-mortems on failed experiments and follow-ups on successful ones all queue new ideas, so the backlog never runs dry.
+- **Building.** Several coding agents work in parallel, each taking the next idea in priority order. Each one implements a single idea with focused tests, gets an independent review of the diff, and hands the candidate back.
+- **Evaluating.** Each candidate plays the current champion in a paired, side-swapped sequential test (SPRT) on freshly generated maps, against a rotating set of opponents, spread across a fleet of remote machines. It also has to pass CPU limits, the tests, and a screen against a frozen set of opponent bots. An independent judge reviews every verdict before it counts.
+- **Promoting and re-queuing.** A candidate that wins becomes the new champion and is uploaded automatically. One that doesn't gets a post-mortem from the agent that built it, which turns what went wrong into a corrected idea and puts it back in the queue. Promising but unproven results are retested on the newest champion rather than dropped.
+- **Keeping busy.** When nothing is waiting, the loop fills idle machines with parameter tuning, variant sweeps and searches for maps the bot loses on, so the hardware is never idle.
+
 At a high level, the project combines:
 - a C++ game bot (`/bot`),
 - a Python orchestration loop that proposes and evaluates changes (`/loop`),
