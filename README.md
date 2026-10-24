@@ -84,7 +84,7 @@ How a dragon decides its turn (`bot/main.cpp`):
 
 ## What I'd do differently
 
-I weighed these at the time and chose not to do them for the Sprint. I started later than most teams, my AI credits were limited, and I'd rather spend both on testing ideas than on code quality. Coding agents are also getting better at working in messy codebases, which made the trade easier. With more time, these are what I'd change:
+I weighed these at the time and chose not to do them for the Sprint. Other teams had a few days' head start, so time was already short, and cleanup would have taken more of it. My AI credits were limited too, and I'd rather spend both on testing ideas than on code quality. Coding agents are also getting better at working in messy codebases, which made the trade easier. With more time, these are what I'd change:
 
 - **Refactor on a schedule.** A refactor stops the coding lanes, so I avoided them, and the code grew by accretion. A refactor every two or three days at a quiet point would have cost a few hours of testing and kept the code readable.
 - **Own the architecture from the start.** I let the agents shape the design so the bot kept improving while I slept. Setting the module boundaries myself early on, and letting agents work within them, would have given the same speed with a cleaner structure.
