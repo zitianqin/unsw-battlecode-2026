@@ -2,6 +2,17 @@
 
 This is my solo UNSW Battlecode 2026 bot (team **zitian**), built up to the Sprint, plus the full automation stack I used to improve, test, evaluate and publish it continuously. After the Sprint I merged with three other strong solo teams, PPP ([Eric](https://github.com/Meetbels)), Stockfish ([Ethan](https://github.com/xCirno1)) and larpmaxxing ([Austen](https://github.com/AustenWayne)), to form **larp stock zi balls**, which was seeded 1st for the Grand Final, finished 3rd overall and won the Jump Trading Grand Award for the fastest algorithm. That team's later bot isn't in this repository.
 
+## In numbers
+
+In the 8 days from 23 September to the Sprint on 1 October, the loop in this repository:
+
+- tested **523 experiments** and promoted **97 new champions**, each one having beaten the previous champion in a statistical test;
+- played **over 740,000 games** in head-to-head statistical tests on freshly generated maps;
+- ran those games across **15 remote machines** (9 cloud spot VMs plus Mac minis and Windows PCs) as well as my laptop;
+- worked through a backlog of **1,275 ideas**.
+
+![Experiments finished and champions promoted over the 8 days to the Sprint](docs/images/progress.svg)
+
 ## Background and results
 
 [UNSW Battlecode 2026](https://game.battlecode.au/) ran for four weeks with 973 teams from 41 countries.
@@ -12,18 +23,32 @@ This is my solo UNSW Battlecode 2026 bot (team **zitian**), built up to the Spri
 
 My philosophy was that my ideas should be built and tested 24/7, not only when I had time to code them. So the bot was improved by an automated loop that runs around the clock, with me steering it. Some ideas still needed me to step in now and then and push the implementing agent in the right direction, but I spent a lot of time designing the orchestration loop so that this happened less and less.
 
+```mermaid
+flowchart LR
+    I[Ranked idea backlog] --> C[Coding agents<br/>one idea each, with tests]
+    C --> R[Independent review<br/>of the diff]
+    R --> E[SPRT vs champion<br/>fresh maps, remote machines]
+    E --> J{Judge and gates<br/>CPU, tests, opponent screen}
+    J -- kept --> P[New champion<br/>uploaded automatically]
+    J -- not kept --> M[Post-mortem]
+    M -- corrected idea --> I
+    P -- follow-ups --> I
+    A[Replay audits and<br/>studies of top teams] --> I
+```
+
 - **Ideas.** Every change starts as an idea in a ranked backlog. I came up with most of them, and about 80-90% of the ideas that actually made the bot better were mine: from watching replays, studying how the top teams played, and spotting where we lost. The loop adds its own too: replay audits, studies of the leaders' games, post-mortems on failed experiments and follow-ups on successful ones all queue new ideas, so the backlog never runs dry.
 - **Building.** Several coding agents work in parallel, each taking the next idea in priority order. Each one implements a single idea with focused tests, gets an independent review of the diff, and hands the candidate back.
 - **Evaluating.** Each candidate plays the current champion in a paired, side-swapped sequential test (SPRT) on freshly generated maps, against a rotating set of opponents, spread across a fleet of remote machines. It also has to pass CPU limits, the tests, and a screen against a frozen set of opponent bots. An independent judge reviews every verdict before it counts.
 - **Promoting and re-queuing.** A candidate that wins becomes the new champion and is uploaded automatically. One that doesn't gets a post-mortem from the agent that built it, which turns what went wrong into a corrected idea and puts it back in the queue. Promising but unproven results are retested on the newest champion rather than dropped.
 - **Keeping busy.** When nothing is waiting, the loop fills idle machines with parameter tuning, variant sweeps and searches for maps the bot loses on, so the hardware is never idle.
 
-At a high level, the project combines:
-- a C++ game bot (`/bot`),
-- a Python orchestration loop that proposes and evaluates changes (`/loop`),
-- a referee/evaluation subsystem (`/referee`),
-- map generation and curated map sets (`/mapgen`, `/maps`),
-- research, analysis, and operational tooling (`/research`, `/tools`, `/scripts`).
+## Problems worth solving
+
+- **Not fooling yourself with statistics.** With hundreds of experiments, some will look like wins by luck. Every candidate is tested with a sequential probability ratio test (normalized Elo bounds 0 and +15, 5% error rates, up to 2,400 game pairs) on maps it has never seen, with sides swapped in every pair. Bounds are frozen before a test starts, and an independent judge reviews every result instead of trusting a threshold alone.
+- **Speed as a feature.** Every champion has to stay inside CPU limits (99th percentile and maximum per turn), so speed is checked on every change, not tuned at the end. That discipline carried into the merged team's bot, which won the fastest-algorithm award.
+- **A faster judge.** I rebuilt the game judge natively (`referee/native_judge/`), checked game for game that it produces identical results to the official engine, and cut its CPU use by about a third, so the same machines play more games.
+- **Keeping AI agents in their lane.** Coding agents can only change the bot and its tests; anything else fails evaluation. The trusted side of the loop never runs or trusts files from an agent's workspace, and every agent launch is checked by a test.
+- **Running a cheap fleet.** Games are spread across spot VMs and spare machines, with retries for games a machine drops, health checks for every file the loop writes, and alerts when machines go idle.
 
 ## The pipeline's dashboard
 
@@ -33,143 +58,30 @@ At a high level, the project combines:
 
 ![Queue page: the ideas in claim order](docs/images/queue-ideas.png)
 
-## What this project does
+## Tech stack
 
-- Builds and runs a competitive Battlecode bot in C++.
-- Continuously tests candidate changes against a champion bot with statistical evaluation.
-- Uses generated and curated maps to reduce overfitting.
-- Tracks outcomes, follow-ups, and operational decisions for long-running autonomous improvement.
-- Supports both Claude-driven and native session workflows for coding/evaluation lanes.
+C++ (the bot), Python with `uv` (the loop, referee and tools), C and WebAssembly (the native judge), Claude Code agents (coding, reviews, judging), and cloud spot VMs plus spare machines for games.
 
-## Repository structure
+## Repository layout
 
-### Core bot and tests
+| Folder | What's in it |
+|---|---|
+| `bot/`, `tests/bot/` | The C++ bot and its focused behaviour tests |
+| `loop/` | The orchestration loop: backlog, coding lanes, evaluation, judging, publishing, health checks |
+| `referee/` | Running games, the SPRT, CPU gates, remote machines and the native judge |
+| `mapgen/`, `maps/` | Map generators and map sets, including maps found to beat the bot |
+| `tools/`, `scripts/` | Replay analysis, the dashboard, sonar decoding, and repo checks |
+| `research/`, `docs/unsw/` | Game analysis and a mirror of the official docs |
 
-- **`/bot`** — Main C++ bot implementation and parameters.
-  - `main.cpp`: primary bot logic entrypoint.
-  - `params.hpp`: tunable constants used by strategy/runtime logic.
-  - `safety.hpp`, `scoring.hpp`, `split.hpp`, `targets.hpp`, `state.hpp`: strategy components.
-  - `helper.hpp`: protocol/helper integrations.
-  - `bot.toml`: bot build/runtime metadata.
-- **`/tests/bot`** — Focused bot behavior tests.
+`CLAUDE.md` (also `AGENTS.md`) holds the operating rules the agents and I worked under, and `loop/LOOP.md` explains each mechanism in detail. `loop/MISSES.md` records the loop's mistakes and the change that stopped it recurring.
 
-### Autonomous improvement loop
-
-- **`/loop`** — Main orchestration system.
-  - `driver.py`: primary experiment driver.
-  - `native.py`: native-session workflow entrypoint.
-  - `quick.py`: quick candidate checks.
-  - `judge.py`, `sprt.py` (via `/referee`), `screen*` modules: evaluation pipeline pieces.
-  - `online.py`, `publishing.py`, `maintenance.py`: online match analysis, champion publishing, and upkeep automation.
-  - `reflect.py`, `health.py`, `throughput.py`: governance/quality checks and operational monitoring.
-  - `ideas.jsonl`: backlog/idea source for experiments.
-  - `bot_tests.py`: shared test runner for bot-focused tests.
-  - Extensive `test_*.py` coverage for loop logic.
-- Key loop documentation:
-  - `LOOP.md`: mechanism-level reference.
-  - `MISSES.md`: historical incidents and lessons.
-  - `PLAYBOOK.md`, `JUDGE.md`, `POSTMORTEM.md`, `FOLLOWON.md`: operating guides.
-
-### Referee and evaluation engine
-
-- **`/referee`** — Evaluation infrastructure and match execution.
-  - `run.py`: game execution orchestration.
-  - `cpu.py`: CPU gate checks.
-  - `sprt.py`: statistical test machinery.
-  - `gauntlet.toml`: fixed opponent screen config.
-  - `remote.py`, `host_agent.py`: remote host scheduling/execution.
-  - `engine_cache.py`, `fork_server.py`: performance infrastructure.
-  - `native_judge.py`: native judging support.
-  - `native_judge/`: native judge runtime sources, including the `engine_wasmtime.c` and `engine_w2c.c` engine backends plus shared judge headers/runtime.
-  - `native_fidelity.py`: native-vs-standard engine fidelity checks.
-  - `samecode.py`, `identical.py`: helpers for same-moves/identical behavior checks.
-  - `test_*.py`: referee subsystem tests.
-
-### Maps and map generation
-
-- **`/mapgen`** — Map generators and map-generation tests.
-  - `gen.py`: main generator entrypoint/styles.
-  - `worldgen/`: vendored generator integration (documented in `worldgen/README.md`).
-- **`/maps`** — Curated map collections.
-  - `ladder/`, `sprint/`: known competition-related map sets.
-  - `community/`: community-provided maps.
-  - `adversarial/`: discovered failure-case maps used for regression pressure.
-  - `gen-fixed/`, `extra/`, `retired/`: additional fixed pools.
-
-### Docs, research, and policy
-
-- **`/docs/unsw`** — Mirror of official UNSW Battlecode docs and related site rules/schedule pages.
-- **`/research`** — Strategy analysis, replay studies, sonar analysis, and planning reports.
-- **`/PLAN.md`** — Program-level plan and architecture context.
-- **`/CLAUDE.md`** (and symlink `AGENTS.md`) — detailed operating policy/rules for autonomous runs.
-- **`/PROMPT.md`** — prompt/process instructions tied to loop workflows.
-- **`/loop/PROMPT.md`** — loop-specific prompt guidance used by automated coding/evaluation runs.
-
-### Operational tools and scripts
-
-- **`/tools`** — utility tooling for orchestration, replay analysis, sonar/keyed protocol work, hooks, and diagnostics.
-  - `gated_test.sh`: load-aware test gate wrapper.
-  - `merge.sh`: controlled merge helper for orchestrator-managed branches.
-  - `check_refs.py`, `doc_size.py`: documentation/reference integrity checks used by hooks/tests.
-  - `watch.py`, `usage_statusline.py`: alert monitoring and usage/status reporting helpers.
-  - `orch/README.md`: supervising orchestrator runbook.
-  - `sonar/`, `keyed/`: enemy sonar format discovery/verification toolchains.
-- **`/scripts`** — standalone scripts for doc mirroring and replay/research dossier generation.
-  - `mirror_docs.py`: refreshes mirrored official docs under `/docs/unsw`.
-  - `build_full_top*.py`, `deep_decrypt_top*.py`, `fetch_top*.py`: large replay-analysis/dossier pipelines.
-
-### Project config
-
-- **`pyproject.toml`** — Python project metadata/dependencies (`unswbc`, `pycapnp`).
-- **`uv.lock`** — lockfile for reproducible Python environments.
-- **`.gitignore`** and per-folder ignore files for generated/ephemeral artifacts.
-
-## Typical workflows
-
-### 1) Set up environment
+## Running it
 
 ```bash
-uv sync
+uv sync                                   # install dependencies
+.venv/bin/python loop/bot_tests.py        # run the bot's tests
+uv run loop/driver.py --once              # run one experiment
+.venv/bin/python tools/queue_page.py      # open the dashboard
 ```
 
-### 2) Run bot-focused test suite
-
-```bash
-.venv/bin/python loop/bot_tests.py
-```
-
-### 3) Run selected module tests
-
-```bash
-tools/gated_test.sh .venv/bin/python -m unittest loop.test_driver
-```
-
-### 4) Run loop driver (example)
-
-```bash
-uv run loop/driver.py --lanes 1
-```
-
-### 5) Native session flow (example)
-
-```bash
-uv run loop/native.py claim 1
-uv run loop/native.py quick E####
-uv run loop/native.py evaluate E#### "what changed and why"
-```
-
-## Notes on replay artifacts
-
-Finished experiment clones (`../bc-wt/E####`) may have replay folders packed into `replays.tar.zst` by `loop/pack.py`.
-Unpack in that clone with:
-
-```bash
-tar --zstd -xf replays.tar.zst
-```
-
-## Where to read next
-
-- Start with `PLAN.md` for overall architecture and goals.
-- Read `loop/LOOP.md` for mechanism-level behavior and evaluation flow.
-- Read `docs/unsw/README.md` for mirrored official competition documentation.
-- Read `tools/orch/README.md` if supervising long-running orchestrator sessions.
+The full loop expects the game toolkit (`unswbc`), an API key for the competition site and remote machines to play on, so most of it won't run end to end outside my setup.

@@ -6317,6 +6317,8 @@ class TestOnlineSample(unittest.TestCase):
 
     # loop/testdata/study-history-sample.jsonl is the study's last leader list (2026-09-26 15:07) and
     # study-index-sample.jsonl every indexed game of those five teams then, ranked and unranked, captured 2026-09-27.
+    @unittest.skipUnless((Path(__file__).resolve().parent / "testdata/discord-teams").exists(),
+                         "the Discord captures are not published")
     def test_a_clone_gets_the_leaders_ranked_games_by_rank_kept_out_of_its_commits(self) -> None:
         # E0140's sandbox couldn't read ~/.bc-loop/study-replays.
         data = Path(__file__).resolve().parent / "testdata"

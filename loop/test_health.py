@@ -810,6 +810,8 @@ class Health(unittest.TestCase):
         (self.state / "discord.json").write_text(json.dumps({**report, "partial_runs": 0}))
         self.assertEqual(health.discord_partial(self.state, NOW), [])
 
+    @unittest.skipUnless((Path(__file__).resolve().parent / "testdata/discord-teams").exists(),
+                         "the Discord captures are not published")
     def test_a_failed_or_old_discord_teams_refresh_alerts(self) -> None:
         # teams.json as loop/discord_teams.refresh writes it, around a real leaderboard's member lists.
         import discord_teams
@@ -837,6 +839,8 @@ class Health(unittest.TestCase):
         discord_teams.path_in(self.state).write_text('{"teams": [')
         self.assertEqual([a.key for a in health.discord_teams(self.state, NOW)], ["discord:teams-unreadable"])
 
+    @unittest.skipUnless((Path(__file__).resolve().parent / "testdata/discord-teams").exists(),
+                         "the Discord captures are not published")
     def test_a_record_naming_a_team_by_its_old_name_alerts(self) -> None:
         # The real reads either side of team 306's rename (Vibing++ -> Cutlery, 2026-09-28), and main's DISCORD.md
         # lines of then that still said "Vibing++ (rank 2)".
@@ -865,6 +869,8 @@ class Health(unittest.TestCase):
         (repo / "loop/DISCORD.md").write_text("- **Lachy Dauth of team 306**\n")
         self.assertEqual(health.old_team_names(self.state, repo), [])
 
+    @unittest.skipUnless((Path(__file__).resolve().parent / "testdata/discord-teams").exists(),
+                         "the Discord captures are not published")
     def test_team_pages_that_all_failed_alert_after_the_grace_though_later_runs_try_none(self) -> None:
         import discord_teams
         (self.state / "discord.json").write_text(json.dumps({"attempt_at": NOW - 600, "fetched_at": NOW - 600}))
