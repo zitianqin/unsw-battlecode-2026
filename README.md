@@ -1,20 +1,26 @@
 # UNSW Battlecode 2026
 
-This repository contains **zitian**'s solo UNSW Battlecode 2026 bot, built up to the Sprint, plus the full automation stack used to improve, test, evaluate, and publish it continuously. After the Sprint, Zitian joined three other teams to form **larp stock zi balls**; that team's later bot is not in this repository.
+This is my solo UNSW Battlecode 2026 bot, built up to the Sprint, plus the full automation stack I used to improve, test, evaluate and publish it continuously. After the Sprint I merged with three other strong solo teams, Stockfish, PPP and larpmaxxing, to form **larp stock zi balls**, which went on to finish 3rd overall and win the Jump Trading Grand Award for the fastest algorithm. That team's later bot isn't in this repository.
 
 ## Background and results
 
 [UNSW Battlecode 2026](https://game.battlecode.au/) ran for four weeks with 973 teams from 41 countries.
 
-- **Sprint (1 October, 591 teams).** Zitian entered solo, peaking at #6 on the ladder beforehand, and was seeded 13th. The run went through five rounds without dropping more than one game, then beat 4th seed SSS 4–3 before losing 2–5 in the quarter-finals to chad gdp, the eventual Grand Final champions.
-- **New team.** After the Sprint, Zitian merged with three other strong solo teams, Stockfish, PPP and larpmaxxing, to form **larp stock zi balls**, which went on to finish 3rd overall and win the Jump Trading Grand Award for the fastest algorithm.
-
+- **Sprint (1 October, 591 teams).** I entered solo, peaked at #6 on the ladder beforehand, and was seeded 13th. I got through five rounds without dropping more than one game, then beat 4th seed SSS 4–3 before losing 2–5 in the quarter-finals to chad gdp, the eventual Grand Final champions.
 At a high level, the project combines:
 - a C++ game bot (`/bot`),
 - a Python orchestration loop that proposes and evaluates changes (`/loop`),
 - a referee/evaluation subsystem (`/referee`),
 - map generation and curated map sets (`/mapgen`, `/maps`),
 - research, analysis, and operational tooling (`/research`, `/tools`, `/scripts`).
+
+## The pipeline's dashboard
+
+`tools/queue_page.py` serves a local page showing the loop live: the last 24 hours of the idea backlog, evaluation queue and coding lanes, the current status line, and the order the next ideas will be claimed in.
+
+![Queue page: 24-hour activity chart and status line](docs/images/queue-page.png)
+
+![Queue page: the ideas in claim order](docs/images/queue-ideas.png)
 
 ## What this project does
 
