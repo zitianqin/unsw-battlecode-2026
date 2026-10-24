@@ -1,6 +1,16 @@
 # UNSW Battlecode 2026
 
-This repository contains Team **zitian**'s UNSW Battlecode 2026 bot plus the full automation stack used to improve, test, evaluate, and publish it continuously.
+This repository contains the UNSW Battlecode 2026 bot of team **larp stock zi balls** plus the full automation stack used to improve, test, evaluate, and publish it continuously.
+
+## Background and results
+
+[UNSW Battlecode 2026](https://game.battlecode.au/) ran for four weeks with 973 teams from 41 countries.
+
+- **Sprint (1 October, 591 teams).** Zitian entered solo, peaking at #6 on the ladder beforehand, and was seeded 13th. The run went through five rounds without dropping more than one game, then beat 4th seed SSS 4–3 before losing 2–5 in the quarter-finals to chad gdp, the eventual Grand Final champions.
+- **New team.** After the Sprint, Zitian merged with three other strong solo teams: stockfish, PPP and larpmaxxing.
+- **Qualifiers (9 October, 280 teams).** Seeded 2nd. We reached the final, beating Cutlery 5–1 in the semi-final, and lost the final 3–4 to aAah, finishing 2nd.
+- **Grand Final (17 October, UNSW Sydney, top 10).** Seeded 1st. We beat test4 in the quarter-final, lost the semi-final to aAah, then beat Cutlery 9–4 in the third-place match to finish **3rd**. We ended the season #1 on the ladder (Elo 2671).
+- **Jump Trading Grand Award: Fastest Algorithm.** The fewest instructions per turn across a finalist's Grand Final games: ours averaged **5.38 million**.
 
 At a high level, the project combines:
 - a C++ game bot (`/bot`),
