@@ -1,4 +1,4 @@
-# UNSW Battlecode 2026: a game bot and the experimentation pipeline I built to improve it
+# UNSW Battlecode 2026
 
 My solo UNSW Battlecode 2026 bot (team **zitian**), built up to the Sprint, and the experimentation pipeline I built to improve it. After the Sprint I merged with three other strong solo teams, PPP ([Eric](https://github.com/Meetbels)), Stockfish ([Ethan](https://github.com/xCirno1)) and larpmaxxing ([Austen](https://github.com/AustenWayne)), to form **larp stock zi balls**, which went into the Grand Final as the top seed, finished 3rd and won the Jump Trading Grand Award for the fastest algorithm. That team's later bot isn't in this repository.
 
