@@ -86,7 +86,7 @@ How a dragon decides its turn (`bot/main.cpp`):
 
 - **Refactor on a schedule.** A refactor stops the coding lanes, so I avoided them, and the code grew by accretion. A refactor every two or three days at a quiet point would have cost a few hours of testing and kept the code readable.
 - **Own the architecture from the start.** I let the agents shape the design so the bot kept improving while I slept. Setting the module boundaries myself early on, and letting agents work within them, would have given the same speed with a cleaner structure.
-- **Push simplicity in reviews.** Each change got a review for correctness only. Asking reviewers to also flag code that could be simpler would have slowed each change slightly, but kept the bot smaller.
+- **Be stricter about simplifying.** Each change's review covered correctness and architecture, but I wasn't strict about running a simplify pass on every change. Making it routine would have slowed each change slightly, but kept the bot smaller.
 
 ## Repository layout
 
