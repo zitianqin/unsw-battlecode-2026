@@ -1,6 +1,6 @@
 # UNSW Battlecode 2026
 
-This repository contains the UNSW Battlecode 2026 bot of team **larp stock zi balls** plus the full automation stack used to improve, test, evaluate, and publish it continuously.
+This repository contains **zitian**'s solo UNSW Battlecode 2026 bot, built up to the Sprint, plus the full automation stack used to improve, test, evaluate, and publish it continuously. After the Sprint, Zitian joined three other teams to form **larp stock zi balls**; that team's later bot is not in this repository.
 
 ## Background and results
 
