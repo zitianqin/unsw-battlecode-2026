@@ -10,7 +10,7 @@ This is my solo UNSW Battlecode 2026 bot (team **zitian**), built up to the Spri
 
 ## How the pipeline works
 
-The bot was improved by an automated loop that runs around the clock, with me steering it.
+My philosophy was that my ideas should be built and tested 24/7, not only when I had time to code them. So the bot was improved by an automated loop that runs around the clock, with me steering it. Some ideas still needed me to step in now and then and push the implementing agent in the right direction, but I spent a lot of time designing the orchestration loop so that this happened less and less.
 
 - **Ideas.** Every change starts as an idea in a ranked backlog. I came up with most of them, and about 80-90% of the ideas that actually made the bot better were mine: from watching replays, studying how the top teams played, and spotting where we lost. The loop adds its own too: replay audits, studies of the leaders' games, post-mortems on failed experiments and follow-ups on successful ones all queue new ideas, so the backlog never runs dry.
 - **Building.** Several coding agents work in parallel, each taking the next idea in priority order. Each one implements a single idea with focused tests, gets an independent review of the diff, and hands the candidate back.
