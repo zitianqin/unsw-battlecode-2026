@@ -82,12 +82,6 @@ How a dragon decides its turn (`bot/main.cpp`):
 4. **Otherwise score the moves.** Rate each move for survival room and progress to the target (`safety.hpp`, `scoring.hpp`), with a short search for moves an enemy could punish (`search.hpp`), then move or split.
 5. **Talk.** Send fresh information over sonar (`gossip.hpp`), and read the enemy's sonar too (`listen.hpp`, `spoof.hpp`).
 
-Worth reading:
-
-- `bot/safety.hpp`: the survival check, which counts the space a move leaves, allowing for tails that will have moved by the time the dragon gets there.
-- `bot/symmetry.hpp`: works out the map's symmetry from what has been seen and fills in the unseen half.
-- `bot/listen.hpp` with `tools/sonar/`: decodes other teams' sonar formats, which were reverse-engineered from their replays, so the bot can hear and spoof the enemy.
-
 ## Repository layout
 
 | Folder | Contents |
