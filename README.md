@@ -7,6 +7,7 @@ This is my solo UNSW Battlecode 2026 bot, built up to the Sprint, plus the full 
 [UNSW Battlecode 2026](https://game.battlecode.au/) ran for four weeks with 973 teams from 41 countries.
 
 - **Sprint (1 October, 591 teams).** I entered solo, peaked at #6 on the ladder beforehand, and was seeded 13th. I got through five rounds without dropping more than one game, then beat 4th seed SSS 4–3 before losing 2–5 in the quarter-finals to chad gdp, the eventual Grand Final champions.
+
 At a high level, the project combines:
 - a C++ game bot (`/bot`),
 - a Python orchestration loop that proposes and evaluates changes (`/loop`),
