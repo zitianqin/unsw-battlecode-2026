@@ -1,0 +1,461 @@
+{
+ "captured": "2026-09-27 12:23 AEST",
+ "battles": [
+  {
+   "id": 339696,
+   "ranked": false,
+   "opponentId": 303,
+   "opponent": "Oswald",
+   "opponentElo": 1609,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "pending"
+   ],
+   "wins": 9,
+   "losses": 0,
+   "outcome": "live",
+   "replayId": 339696,
+   "at": "2026-09-27T02:23:28.483Z",
+   "wait": {
+    "ahead": 0,
+    "ms": 12395
+   }
+  },
+  {
+   "id": 337873,
+   "ranked": true,
+   "opponentId": 213,
+   "opponent": "Sponge(Albert and Bob)",
+   "opponentElo": 2012,
+   "eloChange": null,
+   "results": [
+    "win",
+    "loss",
+    "pending",
+    "pending",
+    "win"
+   ],
+   "wins": 2,
+   "losses": 1,
+   "outcome": "live",
+   "replayId": 337873,
+   "at": "2026-09-27T02:21:59.944Z",
+   "wait": {
+    "ahead": 724,
+    "ms": 224945
+   }
+  },
+  {
+   "id": 336688,
+   "ranked": true,
+   "opponentId": 314,
+   "opponent": "3.14159265",
+   "opponentElo": 1905,
+   "eloChange": null,
+   "results": [
+    "pending",
+    "pending",
+    "pending",
+    "win",
+    "win"
+   ],
+   "wins": 2,
+   "losses": 0,
+   "outcome": "live",
+   "replayId": 336691,
+   "at": "2026-09-27T02:20:34.082Z",
+   "wait": {
+    "ahead": 17,
+    "ms": 41073
+   }
+  },
+  {
+   "id": 336346,
+   "ranked": false,
+   "opponentId": 183,
+   "opponent": "Blue Dragon",
+   "opponentElo": 1551,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win"
+   ],
+   "wins": 10,
+   "losses": 0,
+   "outcome": "win",
+   "replayId": 336346,
+   "at": "2026-09-27T01:53:44.148Z"
+  },
+  {
+   "id": 336327,
+   "ranked": false,
+   "opponentId": 507,
+   "opponent": "bread first search",
+   "opponentElo": 1958,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "win",
+    "loss",
+    "loss"
+   ],
+   "wins": 2,
+   "losses": 2,
+   "outcome": "draw",
+   "replayId": 336327,
+   "at": "2026-09-27T01:53:36.458Z"
+  },
+  {
+   "id": 335855,
+   "ranked": false,
+   "opponentId": 939,
+   "opponent": "Z-A",
+   "opponentElo": 1553,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "loss",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win"
+   ],
+   "wins": 9,
+   "losses": 1,
+   "outcome": "win",
+   "replayId": 335855,
+   "at": "2026-09-27T01:43:04.539Z"
+  },
+  {
+   "id": 335845,
+   "ranked": false,
+   "opponentId": 545,
+   "opponent": "dev test 1 :P",
+   "opponentElo": 1939,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "win",
+    "loss",
+    "loss",
+    "loss",
+    "win",
+    "win",
+    "win",
+    "loss",
+    "win"
+   ],
+   "wins": 6,
+   "losses": 4,
+   "outcome": "win",
+   "replayId": 335845,
+   "at": "2026-09-27T01:42:52.951Z"
+  },
+  {
+   "id": 335744,
+   "ranked": false,
+   "opponentId": 545,
+   "opponent": "dev test 1 :P",
+   "opponentElo": 1939,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "loss",
+    "loss",
+    "loss",
+    "loss",
+    "loss",
+    "win",
+    "win",
+    "win",
+    "win"
+   ],
+   "wins": 5,
+   "losses": 5,
+   "outcome": "draw",
+   "replayId": 335744,
+   "at": "2026-09-27T01:40:30.373Z"
+  },
+  {
+   "id": 335610,
+   "ranked": false,
+   "opponentId": 545,
+   "opponent": "dev test 1 :P",
+   "opponentElo": 1939,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "loss",
+    "loss",
+    "loss",
+    "loss",
+    "loss",
+    "win",
+    "win",
+    "loss",
+    "win"
+   ],
+   "wins": 4,
+   "losses": 6,
+   "outcome": "loss",
+   "replayId": 335610,
+   "at": "2026-09-27T01:38:24.007Z"
+  },
+  {
+   "id": 335311,
+   "ranked": false,
+   "opponentId": 123,
+   "opponent": "shark++",
+   "opponentElo": 1561,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win"
+   ],
+   "wins": 10,
+   "losses": 0,
+   "outcome": "win",
+   "replayId": 335311,
+   "at": "2026-09-27T01:34:49.352Z"
+  }
+ ],
+ "detail_335845": {
+  "match": {
+   "id": 335845,
+   "teamAId": 157,
+   "teamBId": 545,
+   "submissionAId": 7676,
+   "submissionBId": 4525,
+   "mapId": 4,
+   "mapHash": null,
+   "ranked": false,
+   "skinA": "Jiaolong",
+   "skinB": "Loch Ness",
+   "status": "completed",
+   "winner": "a",
+   "scoresA": 72,
+   "scoresB": 85,
+   "replayKey": "replays/335845-99fe69b5.replay",
+   "views": 0,
+   "seriesId": "9a923d2c-e8f9-49ac-ba4c-b5ef37bf8368",
+   "eloChangeA": null,
+   "eloChangeB": null,
+   "requestedAt": "2026-09-27T01:41:13.741Z",
+   "startedAt": "2026-09-27T01:41:14.169Z",
+   "completedAt": "2026-09-27T01:41:40.376Z",
+   "attempts": 1,
+   "hostFailures": 0,
+   "seed": "b1d2942814effd45"
+  },
+  "mapName": "Default",
+  "teamAName": "zitian",
+  "teamBName": "dev test 1 :P",
+  "teamAElo": 1942,
+  "teamBElo": 1936,
+  "games": [
+   {
+    "id": 335845,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Default"
+   },
+   {
+    "id": 335846,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Queen Of Spades"
+   },
+   {
+    "id": 335847,
+    "status": "completed",
+    "winner": "b",
+    "hasReplay": true,
+    "mapName": "Schooltime"
+   },
+   {
+    "id": 335848,
+    "status": "completed",
+    "winner": "b",
+    "hasReplay": true,
+    "mapName": "Trophy"
+   },
+   {
+    "id": 335849,
+    "status": "completed",
+    "winner": "b",
+    "hasReplay": true,
+    "mapName": "Devil"
+   },
+   {
+    "id": 335850,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Trauma"
+   },
+   {
+    "id": 335851,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Prisoners Dilemma"
+   },
+   {
+    "id": 335852,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Autarky"
+   },
+   {
+    "id": 335853,
+    "status": "completed",
+    "winner": "b",
+    "hasReplay": true,
+    "mapName": "Portals"
+   },
+   {
+    "id": 335854,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Slithery Fight"
+   }
+  ],
+  "wait": null
+ },
+ "maps": [
+  {
+   "id": 9,
+   "name": "Schooltime",
+   "active": true
+  },
+  {
+   "id": 20,
+   "name": "Portals",
+   "active": true
+  },
+  {
+   "id": 21,
+   "name": "Slithery Fight",
+   "active": true
+  },
+  {
+   "id": 11,
+   "name": "Trophy",
+   "active": true
+  },
+  {
+   "id": 17,
+   "name": "Prisoners Dilemma",
+   "active": true
+  },
+  {
+   "id": 7,
+   "name": "Queen Of Spades",
+   "active": true
+  },
+  {
+   "id": 4,
+   "name": "Default",
+   "active": true
+  },
+  {
+   "id": 19,
+   "name": "Autarky",
+   "active": true
+  },
+  {
+   "id": 13,
+   "name": "Devil",
+   "active": true
+  },
+  {
+   "id": 15,
+   "name": "Trauma",
+   "active": true
+  }
+ ],
+ "records_335845": {
+  "335845": {
+   "teamAId": 157,
+   "teamBId": 545,
+   "submissionAId": 7676,
+   "submissionBId": 4525,
+   "mapId": 4,
+   "winner": "a"
+  },
+  "335846": {
+   "teamAId": 157,
+   "teamBId": 545,
+   "submissionAId": 7676,
+   "submissionBId": 4525,
+   "mapId": 7,
+   "winner": "a"
+  },
+  "335847": {
+   "teamAId": 157,
+   "teamBId": 545,
+   "submissionAId": 7676,
+   "submissionBId": 4525,
+   "mapId": 9,
+   "winner": "b"
+  },
+  "335848": {
+   "teamAId": 157,
+   "teamBId": 545,
+   "submissionAId": 7676,
+   "submissionBId": 4525,
+   "mapId": 11,
+   "winner": "b"
+  },
+  "335849": {
+   "teamAId": 157,
+   "teamBId": 545,
+   "submissionAId": 7676,
+   "submissionBId": 4525,
+   "mapId": 13,
+   "winner": "b"
+  },
+  "335850": {
+   "teamAId": 157,
+   "teamBId": 545,
+   "submissionAId": 7676,
+   "submissionBId": 4525,
+   "mapId": 15,
+   "winner": "a"
+  }
+ },
+ "note": "Read-only GETs on 2026-09-27 by the loop's API client: `battles` is GET /battles?limit=10 (three live rows carrying wait, the rest without it), `detail_335845` GET /battles/335845 (a 10-map battle against dev test 1, requestedBy/claimedBy/heartbeatAt/log dropped), `maps` GET /maps without mapText, and `records_335845` the own records (GET /battles/:id) of its first six games."
+}

@@ -1,0 +1,154 @@
+{
+ "team": {
+  "id": 545,
+  "name": "dev test 1 :P",
+  "elo": 1939,
+  "why": "highest-rated dev team, none named frontier"
+ },
+ "records": [
+  {
+   "submission_id": 5409,
+   "dev_submission_id": 4525,
+   "games": 5,
+   "wins": 0,
+   "draws": 0,
+   "losses": 5,
+   "score": 0.0
+  },
+  {
+   "submission_id": 6460,
+   "dev_submission_id": 4525,
+   "games": 9,
+   "wins": 3,
+   "draws": 0,
+   "losses": 6,
+   "score": 0.333
+  },
+  {
+   "submission_id": 6472,
+   "dev_submission_id": 4525,
+   "games": 11,
+   "wins": 4,
+   "draws": 0,
+   "losses": 7,
+   "score": 0.364
+  },
+  {
+   "submission_id": 6518,
+   "dev_submission_id": 4525,
+   "games": 11,
+   "wins": 3,
+   "draws": 0,
+   "losses": 8,
+   "score": 0.273
+  },
+  {
+   "submission_id": 6609,
+   "dev_submission_id": 4525,
+   "games": 11,
+   "wins": 5,
+   "draws": 0,
+   "losses": 6,
+   "score": 0.455
+  },
+  {
+   "submission_id": 6736,
+   "dev_submission_id": 4525,
+   "games": 10,
+   "wins": 3,
+   "draws": 0,
+   "losses": 7,
+   "score": 0.3
+  },
+  {
+   "submission_id": 6778,
+   "dev_submission_id": 4525,
+   "games": 6,
+   "wins": 2,
+   "draws": 0,
+   "losses": 4,
+   "score": 0.333
+  },
+  {
+   "submission_id": 6824,
+   "dev_submission_id": 4525,
+   "games": 11,
+   "wins": 5,
+   "draws": 0,
+   "losses": 6,
+   "score": 0.455
+  },
+  {
+   "submission_id": 6925,
+   "dev_submission_id": 4525,
+   "games": 11,
+   "wins": 6,
+   "draws": 0,
+   "losses": 5,
+   "score": 0.545
+  },
+  {
+   "submission_id": 7003,
+   "dev_submission_id": 4525,
+   "games": 8,
+   "wins": 2,
+   "draws": 0,
+   "losses": 6,
+   "score": 0.25
+  },
+  {
+   "submission_id": 7359,
+   "dev_submission_id": 4525,
+   "games": 9,
+   "wins": 2,
+   "draws": 0,
+   "losses": 7,
+   "score": 0.222
+  },
+  {
+   "submission_id": 7577,
+   "dev_submission_id": 4525,
+   "games": 10,
+   "wins": 6,
+   "draws": 0,
+   "losses": 4,
+   "score": 0.6
+  },
+  {
+   "submission_id": 7594,
+   "dev_submission_id": 4525,
+   "games": 10,
+   "wins": 4,
+   "draws": 0,
+   "losses": 6,
+   "score": 0.4
+  },
+  {
+   "submission_id": 7625,
+   "dev_submission_id": 4525,
+   "games": 10,
+   "wins": 6,
+   "draws": 0,
+   "losses": 4,
+   "score": 0.6
+  },
+  {
+   "submission_id": 7676,
+   "dev_submission_id": 4525,
+   "games": 19,
+   "wins": 12,
+   "draws": 0,
+   "losses": 7,
+   "score": 0.632
+  }
+ ],
+ "compare": {
+  "previous": 7625,
+  "pairs": 10,
+  "before": 0.6,
+  "after": 0.5,
+  "better": 0,
+  "worse": 1,
+  "same": 9
+ }
+}

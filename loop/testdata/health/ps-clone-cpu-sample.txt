@@ -1,0 +1,10 @@
+13337 13331 zitianqin 0 28:40 0.3 {repo}/.venv/bin/python3 loop/driver.py --once --parent bc-main-fresh
+15444 13337 zitianqin 0 28:31 0.0 /bin/sh -c folder=$(mktemp -d /tmp/bcwXXXXXXXX) || exit 1; trap 'rm -rf "$folder"' EXIT; trap 'exit 143' TERM INT HUP; CLAUDE_CODE_TMPDIR="$folder" /u ... --name bc-E0405-381f9b99
+15448 15444 zitianqin 10 28:31 0.5 claude -p --model opus --effort medium --dangerously-skip-permissions --strict-mcp-config --disable-slash-commands --setting-sources user --settings { ... --name bc-E0405-381f9b99
+27739 1 zitianqin 10 01:44 0.0 /bin/zsh -c source /Users/me/.claude/shell-snapshots/snapshot-zsh-1790727639124-30hi5h.sh 2>/dev/null || true && export TMPDIR=/tmp/bcw09tTGODh
+27741 27739 zitianqin 10 01:44 0.0 /bin/bash data/play.sh
+27746 27741 zitianqin 10 01:44 0.5 {clones}/E0406/.venv/bin/python {repo}/loop/native.py games E0406 --a {clones}/
+27751 27741 zitianqin 10 01:44 0.0 {clones}/E0406/.venv/bin/python {repo}/loop/native.py games E0406 --a {clones}/
+27757 27741 zitianqin 10 01:44 0.0 {clones}/E0406/.venv/bin/python {repo}/loop/native.py games E0406 --a {clones}/
+31420 27757 zitianqin 10 01:17 0.0 ssh -o BatchMode=yes -o ServerAliveInterval=20 -o ControlMaster=no -o ControlPath=none -o ProxyCommand={clones}/E0406/.venv/bin/pyth
+34560 15448 zitianqin 10 00:43 0.0 /bin/zsh -c source /Users/me/.claude/shell-snapshots/snapshot-zsh-1790726363128-5e88od.sh 2>/dev/null || true && export TMPDIR=/tmp/bcw1pgTBPgL

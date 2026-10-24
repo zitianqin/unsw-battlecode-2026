@@ -1,0 +1,209 @@
+{
+ "map": {
+  "name": "Trophy",
+  "width": 25,
+  "height": 25,
+  "symmetry": "y"
+ },
+ "result": {
+  "endReason": "teamEliminated",
+  "endRound": 133,
+  "winner": "A"
+ },
+ "teams": {
+  "A": {
+   "won": true,
+   "end": {
+    "alive": 40,
+    "longest": 3,
+    "total": 95,
+    "second": 3
+   },
+   "startDragons": 2,
+   "peakAlive": 41,
+   "aliveAt100": 27,
+   "aliveAt300": 40,
+   "at400": null,
+   "splits": {
+    "count": 61,
+    "firstRound": 6,
+    "childLenMedian": 2,
+    "parentLenMedian": 2,
+    "childLenCounts": {
+     "2": 61
+    },
+    "parentLenCounts": {
+     "2": 61
+    }
+   },
+   "pearlsEaten": 150,
+   "deaths": {
+    "total": 23,
+    "hitWall": 0,
+    "hitSelf": 3,
+    "hitOtherBody": 1,
+    "hitHeadToHead": 19,
+    "noValidAction": 0
+   },
+   "headOnsStarted": 12,
+   "turns": 2466,
+   "moves": 2405,
+   "sprintMoves": 4,
+   "sprintPct": 0.17,
+   "sprintLenCounts": {
+    "2": 4
+   },
+   "sonarPings": 0,
+   "sonarPerTurn": 0.0,
+   "timeouts": 0,
+   "behaviour": {
+    "sonar": {
+     "pings": 0,
+     "perTurn": 0.0,
+     "direction": {},
+     "hits": {},
+     "distinctValues": 0,
+     "valueBitsMedian": null,
+     "sharedValuePct": 0.0,
+     "byPhase": {}
+    },
+    "headOnsStarted": {
+     "vsShorter": 1,
+     "vsLonger": 6,
+     "vsEqual": 5
+    },
+    "splitsByPhase": {
+     "early": 40,
+     "mid": 21
+    },
+    "pearlsByPhase": {
+     "early": 106,
+     "mid": 44
+    },
+    "idle": {
+     "moves": 22,
+     "pctOfMoves": 0.9,
+     "longestRun": 4
+    },
+    "opening": {
+     "moves": 1224,
+     "pearlInViewPct": 40.6,
+     "mapSeenPct": 97.8,
+     "blindMoves": 727,
+     "blindStraightPct": 35.9,
+     "blindDirPct": {
+      "north": 28.2,
+      "east": 24.2,
+      "south": 26.0,
+      "west": 21.6
+     }
+    }
+   }
+  },
+  "B": {
+   "won": false,
+   "end": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "second": 0
+   },
+   "startDragons": 2,
+   "peakAlive": 8,
+   "aliveAt100": 5,
+   "aliveAt300": 0,
+   "at400": null,
+   "splits": {
+    "count": 18,
+    "firstRound": 10,
+    "childLenMedian": 2.0,
+    "parentLenMedian": 2.0,
+    "childLenCounts": {
+     "2": 18
+    },
+    "parentLenCounts": {
+     "2": 18
+    }
+   },
+   "pearlsEaten": 49,
+   "deaths": {
+    "total": 20,
+    "hitWall": 0,
+    "hitSelf": 0,
+    "hitOtherBody": 1,
+    "hitHeadToHead": 19,
+    "noValidAction": 0
+   },
+   "headOnsStarted": 7,
+   "turns": 571,
+   "moves": 553,
+   "sprintMoves": 5,
+   "sprintPct": 0.9,
+   "sprintLenCounts": {
+    "2": 5
+   },
+   "sonarPings": 3,
+   "sonarPerTurn": 0.005,
+   "timeouts": 0,
+   "behaviour": {
+    "sonar": {
+     "pings": 3,
+     "perTurn": 0.005,
+     "direction": {
+      "left": 2,
+      "right": 1
+     },
+     "hits": {
+      "kelp": 2,
+      "enemyHead": 1
+     },
+     "distinctValues": 1,
+     "valueBitsMedian": 31,
+     "sharedValuePct": 100.0,
+     "byPhase": {
+      "early": 2,
+      "mid": 1
+     }
+    },
+    "headOnsStarted": {
+     "vsLonger": 1,
+     "vsEqual": 6
+    },
+    "splitsByPhase": {
+     "early": 17,
+     "mid": 1
+    },
+    "pearlsByPhase": {
+     "early": 48,
+     "mid": 1
+    },
+    "idle": {
+     "moves": 2,
+     "pctOfMoves": 0.4,
+     "longestRun": 2
+    },
+    "opening": {
+     "moves": 492,
+     "pearlInViewPct": 44.1,
+     "mapSeenPct": 100.0,
+     "blindMoves": 275,
+     "blindStraightPct": 64.7,
+     "blindDirPct": {
+      "north": 29.1,
+      "east": 17.1,
+      "south": 28.7,
+      "west": 25.1
+     }
+    }
+   }
+  }
+ },
+ "checks": {
+  "ok": true,
+  "tailMatches": 2947,
+  "splitMatches": 79,
+  "deathPearlMatches": 43,
+  "finalStandingMatches": true,
+  "problems": []
+ }
+}

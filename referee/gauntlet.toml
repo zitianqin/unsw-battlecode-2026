@@ -1,0 +1,402 @@
+# Frozen opponents that play unlike the champion, for the opponent screen a candidate takes when its SPRT keeps it
+# or leaves it promising, or a kept identical idea (loop/driver.py check_pool), the late screen (loop/rescreen.py) and
+# the SPRT's rotation (driver.ROTATION names which); the prewarm (loop/baselines.py), a review's rule counts
+# (loop/rulecounts.py) and evidence.md (loop/evidence.py) play them too. Beating our own last version can reward a
+# change that other styles punish: v0011's merge cascade won +30 against v0010, which also folds late, then lost
+# online to swarms.
+# Each opponent is the bot/ folder of a commit in the main repo, with some bot/params.hpp values replaced.
+# Don't edit an entry once used: add a new name instead, so screens stay comparable.
+
+[[opponent]]
+name = "v0004"  # sprint rams, no late-game folding or sonar
+commit = "e7a5cc9336955b28ddd05fcda3a6e23a6b3844f6"
+
+[[opponent]]
+name = "v0008"  # team belief map over sonar, before the consolidation phase
+commit = "46487e7251b6587617280ac1b2bd15a96ce00223"
+
+[[opponent]]
+name = "swarm"  # v0011 that never folds: it keeps splitting and fighting to round 500
+commit = "602e54ebdd38371b286c515a13ba242dcc6ae494"
+params = { mergeRound = 100000 }
+
+[[opponent]]
+name = "rammer"  # the swarm, taking every ram it can reach even when outnumbered or trading evenly. Its attackBonus
+# never reaches play (main() plays findRam, which includes every one-step ram, before any scored move), so it rams
+# no more eagerly than the swarm once in reach, and nothing walks it towards a head (review M12).
+commit = "602e54ebdd38371b286c515a13ba242dcc6ae494"
+params = { mergeRound = 100000, minUnitsToTrade = 1, evenTradeMinEdge = -100, attackBonus = 20000 }
+
+[[opponent]]
+name = "folder"  # v0014 folding hard from round 380 into one king, as the leaders do (review M4, 2026-09-25)
+commit = "aacf7ab2b4bb90a72c9d2e9cdc73755d8665fb62"
+params = { mergeRound = 380, mergeRadius = 3 }
+
+[[opponent]]
+name = "grower"  # v0015 splitting only at length 8: fewer, longer dragons, how most online losses on longest come (review M8)
+commit = "b155ba83ea52be32089b1874eb5cc099aae47aeb"
+params = { splitAtLength = 8 }
+
+[[opponent]]
+name = "hunter"  # v0018 whose dragons up to length 8 walk up to 10 steps towards a longer enemy head to ram it, even
+# one head outnumbered in view, and no merge cascade (it still makes its r415 final fold). At this commit
+# mergeRound = 100000 also turns off the late stop on ordinary splits, the protected king (protectedDragon, which
+# refuses trades) and kingSeeksFeeders. No other entry seeks out heads, so a change that leaves long dragons exposed
+# to hunters goes unseen (review M12, 2026-09-26).
+commit = "65bb2295e3700d632b66825b9302c49bcb671e18"
+params = { hunterMaxLength = 8, huntMaxDist = 10, huntMinEdge = -1, mergeRound = 100000 }
+
+[[opponent]]
+name = "replayer"  # v0019 sending our sonar values back to us, soon and 50-200 rounds on, and random ones, as rivals say they will; attackTakesGossip lets it spend up to 2 of 4 rays a turn on it (1.9 attack pings a turn, not 0.13)
+commit = "8653119c117a0e2b290b22a9d4007ca0839b0d47"
+params = { replayEnemyMsgs = true, sprayRandomMsgs = true, attackTakesGossip = true }
+
+[[opponent]]
+name = "breeder"  # v0024 splitting whenever long enough (no parent or child space and no territory gates), with no
+# merge cascade (mergeRound 499; its final fold from r415 is still on, corrected 2026-09-26 by audit 1790429282522188000):
+# the out-breeding style of leader 55 (22 dragons / 54 length at r50 on Devil against our 10.5 / 28), which our
+# split changes met only online (review 1790355075914626000's method note). Checked before use: on Default it reaches
+# the 64-dragon cap against the champion's 12 and wins from both sides.
+commit = "4e3da734e842fa0dbedc9323b2e46ba8bd2ae63e"
+params = { splitParentTerritory = 0, splitParentSpace = 0, splitChildSpace = 0, mergeRound = 499 }
+
+[[opponent]]
+name = "earlyking"  # v0027 folding into its king from round 280, not 415: the king beacon from r275 and the final
+# fold from r280, so the king stops ordinary splits and every dragon holding its report walks to it and merges until
+# the team is down to mergeMinUnits. No other entry grows a king mid-game (`folder` folds from r380, `grower` splits
+# at 8 all game, `breeder` has no merge cascade), while online team 46's king on Stronghold (game 258214) stopped splitting
+# ~r280 and grew 18 -> 57 -> 90 at r300/r400/r499 as its team fell 38 -> 16 -> 5 (review M21). Checked before use
+# against v0027 on 20 fresh eval maps and 10 near_stronghold, both sides: v0027 won 36-24 (25-14 by elimination,
+# 11-10 at the round limit). Its longest at r400 was mean 28.3 to v0027's 14.9, longer in 21 of 29 (near_stronghold
+# 19.9 to 7.3), with 16 -> 35 -> 46 long and 30 -> 8 -> 6 alive at r300/r400/r499 in round-limit games (v0027: 10 ->
+# 17 -> 49, 57 -> 61 -> 13); v0027's fold still caught up by r499 (48.9 to 46.1).
+commit = "36773e611e674e59a615b6bc54190b5b0ba9a604"
+params = { beaconRound = 275, foldRound = 280 }
+
+[[opponent]]
+name = "tradedown"  # v0028 ramming enemy heads one shorter than itself when it has a local majority (visible friendly
+# heads - enemy heads >= 1, which equal trades now need too, not >= 0). No other entry trades down (`rammer` keeps
+# attackMinGain 0), while the dev benchmark (team 545) started 6.1 head-ons a game against shorter heads to our 2.6
+# (review M22). Checked before use against v0028 on 20 fresh eval maps (7 near-ladder incl. default_small, devil and
+# trophy; 4 community), both sides: it started 16.1 head-ons a game against shorter heads (median 8) to v0028's 3.8
+# (median 2), more in 33 of 40 games (small near maps 12.0 to 2.3; eliminations 7.4 to 1.7), and 12.2 against equal
+# heads to v0028's 16.3. It won 22-18 (12-9 by elimination, 10-9 at the round limit).
+commit = "1c225be954742d086a32502a5a30a0a159d95c69"
+params = { attackMinGain = -1, evenTradeMinEdge = 1 }
+
+[[opponent]]
+name = "earlyfold"  # v0028 starting its pairwise merge cascade at round 400, not 450 (so ordinary splits stop and
+# its longest becomes a protected king there too), and merging, in the cascade and the r415 final fold, down to 4
+# dragons, not 8. It models the dev benchmark (team 545) folding in place from ~r400: 58/37/23 dragons at r400 down
+# to 9-14 by r410-450, and longest 50/41/21 at r500 to our 29/28/18 (review M19). Checked before use against v0028 on
+# 20 fresh eval maps and 10 near_stronghold/near_trauma, both sides: it won 34-26 (24-14 at the round limit, 10-12
+# by elimination). In the 38 round-limit games its dragons went 40.9 -> 17.4 -> 7.8 -> 5.5 at r400/r420/r450/r499
+# (v0028: 45.8 -> 40.4 -> 19.8 -> 9.9) and its longest 8.8 -> 15.2 -> 25.2 -> 37.6 (v0028: 8.6 -> 11.6 -> 21.4 ->
+# 33.7), longer at r499 in 24 of 38 (near_stronghold/near_trauma 14 of 23, 27.9 to 24.0). mergeRound 400 alone
+# cascaded as fast (17.4 alive at r420) but its fold stopped at 8 dragons and ended level: longer in 18 of 39, 34.5
+# to 33.9, 29-30-1; adding mergeRadius 4 instead ended shorter (16 of 39, 32.8 to 34.3, 27-33).
+commit = "1c225be954742d086a32502a5a30a0a159d95c69"
+params = { mergeRound = 400, mergeMinUnits = 4 }
+
+[[opponent]]
+name = "starter"  # the toolkit's C++ starter (`unswbc init cpp`, 1.1.0, unmodified; tag gauntlet-starter), plus a
+# comment-only bot/params.hpp that nothing includes, since every loader rewrites params.hpp. Each turn it steps onto
+# the first open neighbouring tile in a shuffled order; it never splits or sends sonar. Every other entry is a strong
+# variant of our own bot, while both regressions a Battlecode blogger (over-yonder.tech) hid showed only against weak
+# bots, and online we lost 17 games to teams ranked below 20. A loss or draw to it is a bug (driver.weak_losses alerts
+# it; not a gate). Checked before use against v0032 (7e4b60b) on 30 fresh eval maps, both sides: v0032 won 60-0, every
+# game by elimination, rounds 5-268 (median 68).
+commit = "f99ce6bf6c8240aa2d3fb382bcd72bb4c8b3fa50"
+
+[[opponent]]
+name = "midking"  # v0033 growing a king from round 200 while the rest keeps breeding: the king beacon from r195 and
+# the final fold from r200, so its longest stops ordinary splits and teammates holding its report walk to it and
+# merge, but only while the team has more than 30 dragons (mergeMinUnits, which also ends the r471 cascade at 30);
+# below that they split again. It models online rivals whose 15-30-long dragon moves among our short ones before
+# r397 while their team keeps breeding (E0129: 48 such dragon-turns a game online, on Big Empty, Schooltime and
+# Stronghold). The champion already grows 15+ dragons at the 64-dragon cap on maps of 2400+ tiles, but not on
+# smaller ones, and earlyking's fold from r280 leaves 8 alive by r400. Checked before use against v0033 on 20 fresh
+# eval maps and 6 `big` ones (8 of the 26 have 2400+ tiles), both sides: it won 27-25, 16-11 at the round limit
+# (longest there mean 47 to 41.3) and 11-14 by elimination (9-8 before r200, the same games as v0033's own; 2-6
+# after). Its longest at r250/r300/r397 was median 17/24/28.5 to v0033's 7/10/10 (2400+ tiles: 21/28/33.5 to
+# 17.5/21.5/27.5; smaller: 13/17/18.5 to 5/6/6), with 30 alive to v0033's 62-64. Dragon-turns a game before r397 on
+# which a v0033 dragon saw one of its heads 15+ long and at least twice its own length within 3 tiles (the 7x7 view,
+# true lengths): 31 on smaller maps (v0033's heads seen by it: 6.6), 105 on 2400+ tiles (v0033's: 114). Folding only
+# dragons 6+ long instead (foldMinLength 6, mergeMinUnits 8) grew less (median 12 at r300; 2400+ tiles 21, smaller
+# 11; 55 alive) and lost 23-29. The early beaconRound also moves king succession to r195.
+commit = "d52bfb4cac1a2706f791636d1bc8970b0718d59e"
+params = { beaconRound = 195, foldRound = 200, mergeMinUnits = 30 }
+
+[[opponent]]
+name = "longram"  # v0033 sprinting up to 6 steps to ram an enemy head, not 3 (a dragon of length L still reaches
+# at most L - 1, so only dragons 7+ long reach 6). Its hunters close in to that reach (at most 4 for its length-5
+# hunters), and its escapes assume enemy heads whose tail it can't see
+# reach 6 too. Online opponents rammed from 4+ steps 162 times in 169 games, 12% of the length our 10+-long dragons
+# lost to rams, while every local bot reaches 3 (review method note M32). Checked before use against v0033 on 20
+# fresh eval maps, both sides: it rammed from 1/2/3/4/5/6 steps 628/1220/993/497/162/33 times (v0033:
+# 631/1249/994), so 692 rams from 4+ steps (17.3 a game; 56 of their victims 10+ long), and those took 936 of the
+# 4682 segments v0033's 10+-long dragons lost to rams (20%). It lost 18-22 (10-12 by elimination, 8-10 at the round
+# limit).
+commit = "d52bfb4cac1a2706f791636d1bc8970b0718d59e"
+params = { maxRamSteps = 6 }
+
+[[opponent]]
+name = "reverser"  # E0112's candidate (1acafd0, on 2c79f81) shedding all but a length-2 front when a shorter enemy
+# head can ram it, so the rear (its old tail) walks away, as ladder rank 3 (team 213) and two teams that beat us do
+# (audit F3, review method note M27). No other entry sheds under threat. 1acafd0 as it was hardly fires: on 4 games
+# on near-Big-Empty maps against v0038 it made 0-3 reversing splits a game (child 8+, parent keeps <= 3, before r397;
+# 0-3 with a strictly shorter enemy head within Manhattan 4 of its head), and a logged copy found it threatened
+# 339-623 times a game at the 64-dragon cap, where it can't split (it predates the rescue reserve), and never with
+# its tail out of sight. So it is gauntlet-reverser (04ca69d): 1acafd0 plus three params, defaulting to 1acafd0's
+# behaviour, set here: the threat's reach one step past its ramReach, a tail out of sight sheds unchecked, and
+# ordinary splits leave 2 unit slots free. Checked before use against v0038 (0e962ec), both sides, counted by the
+# same rules: on the 4 near-Big-Empty games 65-119 reversing splits a game, 52-95 under threat, 129-162 sheds (parent
+# keeps 2) under threat, where team 213's Big Empty game 291888 has 68, 47 and 66 (audit F3: 65 and 44; its 12
+# latest ranked games average 12.2 and 5.8, nearly all on Big Empty and Schooltime); on 10 `big` maps 39.4 reversing
+# (23.6 under threat) a game to v0038's 8.5 (3.0), and it won 17-3; on 20 fresh eval maps 78.5 (22.3) to 31.6 (3.6)
+# (v0038's count is mostly doomed split-outs), and it won 25-15. 42-18 over the 60 games: luck alone gives that
+# 0.13% of the time (sign test), though the two sides of a map share it. Sandbox CPU on Big Empty and Slithery Fight:
+# p99 5.7M, max 7.3M.
+commit = "04ca69d2a500313b2b07574ff39caf8cca125894"
+params = { shedThreatSlack = 1, shedNeedsTail = false, shedReserve = 2 }
+
+[[opponent]]
+name = "greedyram"  # a rammer outside our family: every rotation opponent runs our own findRam and targeting (review
+# note M39), so ram-policy changes were judged only against our own code. gauntlet-greedyram is written from scratch
+# on the toolkit's C++ starter helper, sharing no code with ours (greedy.hpp): it rams any enemy head in its 7x7 view
+# that a sprint of up to 3 steps reaches, longest first, splits 2 off at length 4 unless an enemy head is within 2,
+# walks towards a rammable head up to 6 steps away unless a teammate head is closer, else takes the nearest visible
+# pearl (or spawn tile due before it arrives), with a flood-fill room check, and remembers nothing between turns.
+# Checked before use against v0038 (0e962ec) on 20 fresh eval maps, both sides: it started 92.5 head-ons a game (78.4
+# of them by sprint) to v0038's 20.6, and each side lost 113-114 dragons a game to head-ons. It won 7 of 40 (95%
+# range 0.09-0.32), so it is weak: v0038's 33 of 40 by luck alone is 2e-5 (sign test). It grows slower, is often
+# eliminated on small maps and loses round-limit games on longest, since it never folds. On the same games, ramming
+# only heads no longer than itself won 2 and walking to no head 6; an earlier build (no spawn tiles, splits beside
+# heads) won 3 ramming only heads no longer than itself, 6 ramming any and 4 never splitting after r350.
+# Sandbox CPU on Big Empty and Slithery Fight: p99 4.0M, max 4.2M.
+commit = "7ede8981d39bd56aec51a443a62dabd4e6d1e7b8"
+port = false  # not our bot: its params aren't ours to port (screenport)
+
+[[opponent]]
+name = "boxed"  # v0038 whose trapped dragons die whole: no split-out (doomedScore below every score), no trapped-tail
+# shed (shedKnownTail, shedAtBirth) and no escape sprint, so a dragon boxed in (no step to an empty tile at the start
+# of its turn) dies with its whole body, as the opponents' long dragons do online (I242) while ours split their tail
+# out. It judges ideas that exploit that, sealing enemy heads in (I210, I242), which every other entry escapes (E0113
+# left no code; review method note M44). Checked before use against v0038 on 20 fresh eval maps, both sides: it was
+# boxed in 9,607 times and died on 9,604 of those turns (v0038: 17,610 and 11,672, a third escaped); boxed deaths of
+# dragons 8+ long 56.3 a game to v0038's 29.7 (more in 20 of the 26 games that differ; luck alone 0.5%), 1,512
+# segments a game lost boxed to 1,162; it won 15 of 40. Its deaths are hitOtherBody, hitSelf and hitWall, never
+# noValidAction. M44 read the leaders' noValidAction deaths (11-29 a game) as boxed deaths, but they aren't: counted
+# the same way over their 12 latest ranked games, team 213 had 21.4 noValidAction deaths a game and 0.5 of them
+# boxed (470: 10.3 and 0; 801: 22.5 and 1.7, 6 games), all bots sending no action with open tiles around (213's
+# dragon 473 in game 291888 r306, 3 long beside its 19-long teammate); their boxed deaths of 8+ long dragons are
+# 0.1, 1.3 and 3.5 a game to ours 2.3 online (submission 7676, 20 games).
+commit = "0e962ecb223d8ec55e9cfbda883e3f4a4cfae671"
+params = { doomedScore = -1e15, shedKnownTail = false, shedAtBirth = false, escapeSprint = false }
+port = false  # a deliberately crippled champion: its values are the handicap, never a port (screenport)
+
+[[opponent]]
+name = "loneking"  # a lone king written from scratch on the starter (loneking.hpp; tag gauntlet-loneking), sharing no
+# code with ours: it never splits to breed and never rams, keeps its starting dragons whole, farms visible pearls it
+# reaches before every enemy head (into pockets too small for it while it can reverse out), flees enemy heads, walks
+# walls, and reverses out of dead ends by splitting off all but its front two segments while under 12 dragons. It
+# models dev teams 446 and 758 and rank 4 (280), which beat the champion in 21 of 38 online round-limit games against
+# 102 of 467 for everyone else (audit 1790500655445174000 A1; luck 2e-5), while every other entry runs our split-at-4
+# swarm. Online (medians over their 83 lone-king round-limit replays on disk, loss-kept ones included, so a style
+# sketch and not a rate) 446 keeps 2 dragons on Trauma, growing to 24.5/27 at r400/r499 on 56 pearls (758: 18/24, no splits),
+# and on Autarky and Prisoners Dilemma pumps a walled pearl column (about 255 splits a game, parent 2 and the rest
+# reversing): 31/46 and 26/29. Checked before use against the champion 02cebbd on real-map copies (only MAP_NAME
+# changed, so each has its own pearl seed), both sides: on Trauma, Autarky and Dilemma the champion lost 30 of 63
+# round-limit games to it (18/32, 9/15, 3/16; 48%, 95% range 36-60%) and 16 of 172 to swarm, rammer and breeder on the
+# same copies (9%; luck alone 7e-10); on Portals 0 of 16 (it lives, 7 long on 15 pearls). Medians at
+# r50/100/200/300/400/499: its longest on Trauma 6/7.5/13/17.5/19/21 on 32 pearls, the champion's 3/3/6/5/5/19 (online
+# against 446: 3/3/6/6/6/20); on Autarky 17/17/17/22.5/32/40.5 with 260 splits. On near variants of the same maps
+# (mapgen) it is eliminated in 82 of 120 and wins 4 (95% range 1-8%): our rams caught its 6+-long dragons 88 times
+# there against 4 times in the 80 real-copy games, so the fresh-map screen sees little of A1. Sandbox CPU on Big
+# Empty, Slithery Fight and Autarky: p99 4.2M, max 4.3M.
+commit = "3215979586d6d75401513b23d111e60cf232439a"
+port = false  # not our bot: its params aren't ours to port (screenport)
+
+[[opponent]]
+name = "scout"  # E0184's candidate (f95ee19 on v0044; tag gauntlet-scout) whose starters, from a poor home view, walk
+# to a nearby portal whose far end is unknown and cross it before farming (P.openingScouts, until r60 or 2 crossings),
+# as the teams that take Schooltime's garden first do. No other entry scouts portals in the opening, so opening ideas
+# (I374, I375, I499) met no one taking the ground behind portals first (method notes M46, M44). Code, not params: the
+# champion has no scout switch (E0184 left it promising at +1.1; I499 retests it). Checked before use against the
+# champion 8f57a4e (v0050), both sides, a crossing being a head move to a non-neighbouring tile: on 20 fresh eval maps
+# its first crossing was median r11 to the champion's r40 (each crossed in 19 of 40 games), a starter crossed in 17
+# games to 5, one crossed before r100 in 18 games to 14, and it crossed more often before r100 in 15 games, less in 2
+# (sign p 0.002); on 10 fresh portalrooms maps median r5.5 to r39 (a starter crossed in 18 of 20 games to 12). It won
+# 17 of 40 and 10 of 20, with no crashes or timeouts. Sandbox CPU (referee/cpu.py, 13 maps): p99 6.2M, max 8.2M.
+commit = "f95ee195d4e134084e82fc2468b6a579b4b00394"
+port = false  # its switches are code the champion lacks, never a params port (screenport)
+
+# The four entries below (2026-09-28, method notes M44 and M41) are each v0053 (0e7c458) with a style switch in code
+# (crowder's and sprinter's also change the params their comments name), tagged gauntlet-<name>. Each was checked
+# before use against v0053 on 24 fresh eval maps (mapgen seed 928001), both sides, 48 games; starterking also on
+# long-start maps. The share numbers count, per dragon-turn at the round's
+# start, pearls in the 7x7 view and heads by Manhattan distance, so they are this measurement's, not the online
+# audits' (whose numbers each comment quotes as the reason). Sandbox CPU (referee/cpu.py on Big Empty, Slithery Fight,
+# Schooltime, Autarky and Dilemma): p99 6.0-6.3M, max 8.1-8.6M; no crashes or timeouts in any game.
+
+[[opponent]]
+name = "harvester"  # v0053 that eats drops hard (P.harvestDrops, tag gauntlet-harvester): a drop pearl in view is
+# contested (never yielded to a nearer head) and worth more the more drop pearls lie round it, an enemy head within
+# dropEdgeRadius of one of ours is a target worth its drop so heads wait at the fight's edge, a drop pearl beside an
+# enemy head no longer than us is stepped onto despite the ram guard, and every ram needs our other heads to reach
+# more of its drop first. Online we eat 54% of head-on drops, ranks 1-2 64-79% (method M44); no entry harvested (the
+# params-only try, yieldToEnemyCloser off with two guards the priced guard had made dead, ate 49.7-50.6%). Against
+# v0053 it ate 17,482 of the 33,226 head-on drop pearls either side ate (52.6%; per map a mean 54.4%, more than v0053
+# on 19 of 24 maps and less on 4, luck alone 0.13%), and 53% of the drops of head-ons with as many heads of each
+# team within 3 tiles (self-play: 50%), still short of the leaders' share. It won 29 of 48 (95% range 46-73%).
+commit = "2195825d72b3f0bcbad9877a18fd54e5c5518dce"
+port = false  # its switch is code the champion lacks, never a params port (screenport)
+
+[[opponent]]
+name = "crowder"  # v0053 contesting pearls instead of yielding them (tag gauntlet-crowder): P.yieldToTeammates (new)
+# and P.yieldToEnemyCloser off, so a dragon goes for its cheapest pearl whoever is nearer, and friendRepelWeight 0.
+# Ranks 1-2 contest a teammate's pearl on 57% of pearl-in-view turns online to our 42% (p 0.02, method M44); the
+# params-only try (repel and explore spacing off) reached 57.3% to the champion's 55%. Against v0053, on the turns with
+# a teammate's pearl in view (a pearl a visible teammate head is no farther from than ours) it closed on one on 63.8%
+# to v0053's 59.4%, more on 22 of 24 maps (luck alone 2e-5); per pearl-in-view turn 47.6% to 39.7%. It won 15 of 48
+# (95% range 20-45%): crowding costs it pearls against our spacing, as a style online opponents play anyway.
+commit = "c79cef44bf8d3de4aeb757369e180d22d56d81ed"
+port = false  # its switch is code the champion lacks, never a params port (screenport)
+
+[[opponent]]
+name = "sprinter"  # v0053 pouncing by sprint (P.pounce, pounce.hpp, tag gauntlet-sprinter): an enemy head beyond its
+# direct ram reach, worth ramming at our length after the sprint by the ram model, is closed on by one sprint to a
+# tile beside it (clear of other enemy heads, keeping length 2+), and the ram follows next turn; direct rams stop at
+# 3 steps (ownRamSteps 3, not 6), so the far ones become sprints it survives and its victim can see. Rank 3 kills 35%
+# of its 15+ victims by 4-10-step sprints (method M44); every other entry's 4+-step move is a ram that dies with it
+# (`longram`), so I347 (learn the enemy's reach from sprints seen) had nothing to learn from (E0232). Against v0053 it
+# made 4.6 surviving sprints of 4+ steps a game (v0053: 0), 57 enemy deaths came within 2 rounds of one (9 of them
+# 15+ long), and 9 of its 73 victims 15+ long died to a 4+-step sprint (12%, v0053's 8 of 65 by 4+-step rams). It won
+# 21 of 48 (95% range 31-58%).
+commit = "64d8247156c91344b08a18bd733dd5081c7f00f4"
+port = false  # its switch is code the champion lacks, never a params port (screenport)
+
+[[opponent]]
+name = "starterking"  # v0053 keeping a long starter as its king (P.keepStartKing, tag gauntlet-starterking): a round-0
+# dragon at least startKingLength (10, a style choice: the Sprint and macro maps' long starters are 11-25, every other
+# ladder or community starter at most 8) long, and its split-born heir at least 8 long (its split-out, farm exit or
+# shed; the parent tells it on every sonar ray of the split turn, or the child is too long for any other dragon's by
+# its birth round), makes no ordinary splits and refuses every trade, while the rest of the team is v0053's swarm. 8258 lost 7 of 18
+# long-start games to teams that keep theirs whole (their longest 12+ at r100) against 10 of 88 (method M44, I475);
+# `loneking` is a whole lone-king team written from scratch, not a swarm with a kept starter. On long-start maps
+# (renamed copies of Dilemma, Autarky, Slithery Fight and Great Divide, 3 each, and 6 mapgen near_autarky/near_dilemma,
+# both sides, 36 games) it won 14 (95% range 25-55%), and 19 of 48 on the eval maps. Its starter line (the starter,
+# then the child each split-out or shed hands it to) on Slithery Fight: median 24.5/31/56 long at r100/r300/r499,
+# alive at r499 in 5 of 6, won 6 of 6 (v0053's starter: 3 at r100, gone by r300); on Autarky 7.5 at r100 (v0053: 2),
+# dead before r300 in all 6, 5 lost by elimination; on Great Divide dead before r100 (trapped in its own crowd), 4 won;
+# on Dilemma both teams are eliminated by round 27 in every game, as in v0053's self-play there. Those games were its
+# first commit (a982ed5), whose any 8+ split child was an heir: 859 children of ordinary dragons in the 48 eval games.
+# This commit (5cbd9a3) against v0054 (cfaceea), both sides, 12 games each: Slithery Fight and Autarky copies won 7
+# (line on Slithery 24.5/31/48 at r100/r300/r499, alive at r499 in 5 of 6; a982ed5 re-played there: 7, 3 of 6), 6
+# eval maps won 6, with no crashes or timeouts.
+commit = "5cbd9a382970709813be627976d158d5b8f6e734"
+port = false  # its switch is code the champion lacks, never a params port (screenport)
+
+[[opponent]]
+name = "lateking"  # the champion a5e4552 (v0064) folding from r350 into one king that merges its team down to 4
+# dragons, with no local fold (I926, E0334): locally no opponent out-kinged our champion at r500 (loneking loses 49/51,
+# method M75), while online lone-king teams won 21/38 round-limit games against us. Its fold timing is the online kings'
+# (from 10774's result-blind round-limit losses where their king ended longer, n 28: their king line 4/12/18/25/34 at
+# r300/350/400/450/499 v ours 3/3/5/16/22; their splits a 25-round window fell from 22 at r300 to 7 at r400, so they
+# fold from about r325-350, 55-80 rounds before our r405). Against a5e4552 on fresh maps, both sides, 168 games: its
+# longest at r499 beat the champion's in 33 of 77 round-limit games (0.43, 95% 0.32-0.54; <=1024 tiles 13/30, 1152+
+# 20/47; our generator 27/52, worldgen 6/25), and it scored 72 of 168 (0.43), losing 15 of its 20 eliminations after
+# r350. Params only, no code the champion lacks.
+commit = "a5e45523c11620154fde690abc9d97934f34cb94"
+params = { beaconRound = 350, foldRound = 350, mergeMinUnits = 4, localFold = false }
+
+[[opponent]]
+name = "feederking"  # lateking (the champion a5e4552 folding from r350 into one king that merges its team down to 4
+# dragons, with no local fold) whose fold uses short feeders as the online lone kings' teams do (I942, P.shortFeederFold,
+# branch gauntlet/feederking): only a dragon too short to split walks to the king; longer non-kings keep eating and
+# split their 2-long children off, which fold. Against a5e4552 on 100 fresh maps, both sides, 200 games (our generator
+# small/big 50, worldgen 50): it keeps 0.84 of its mass r350-r396 (95% 0.82-0.88, n 121; lateking on the same maps 0.61;
+# online kings r400/r350 0.88, 95% 0.75-1.03, n 28) and its longest at r499 beat the champion's in 53 of 117 round-limit
+# games (0.45, 95% 0.37-0.54; our generator 23/53, worldgen 30/64; lateking on the same maps 17/52 and 21/54, paired
+# flips 26 v 12, sign p 0.017), scoring 94 of 200. Its longest is still rammed in the fold in 66 of 126 games (lateking
+# 87/126, paired 31 v 10, p 0.0007) against 2 of 28 online (rates_p 4e-6), the one part of I942's go line it fails:
+# the champion's own longest is rammed in 41 of 126 of these games, so locally both kings meet more short rammers than
+# online (about 60 dragons a side at r396 locally, about 30 online), a property of the opponents, not of this fold.
+commit = "eca81e8792b3c06f6357b3c314dbab4c4e06569a"
+params = { beaconRound = 350, foldRound = 350, mergeMinUnits = 4, localFold = false, shortFeederFold = true }
+
+[[opponent]]
+name = "rusher"  # E0352's candidate (9e9b8c9e on cfe3b39; tag gauntlet-rusher) whose opening race, on maps of at most
+# 1024 tiles, passes up home pearls every mirrored enemy start is more than raceHomeRatio x farther from than its own
+# (P.raceDefersHome, I665), so its starters hold the contested middle as online opponents do on Devil (I1010, I1045:
+# in our 32 online Devil losses their r10-60 head-turn share on contested ground was 0.255 to our 0.015, sign p 2e-10),
+# where every rotation opponent runs our race (method M46). Code, not params: the champion has no such switch (E0352
+# discarded at -2.4 Elo over 876 pairs, 0.486-0.508 against each rotation opponent). Checked before use against the
+# champion a0f0b7e, both sides, contested ground being tiles whose known-wall path distance from the enemy's round-0
+# heads is within 2 of ours (portals as walls): on 30 fresh near_devil maps (mapgen near seeds 9300008-9300814, none
+# repearled) its r10-60 share of head-turns there was median 0.19 to the champion's 0.03, higher in 44 of 60 games,
+# lower in 16 (sign p 4e-4; by map 22 v 4), its first head there median r16 to r20 (earlier 26, later 14, p 0.08), and
+# it won 43 of 60 (p 0.001). On 8 single-axis worldgen pool maps of <=1024 tiles whose contested food per tile is 1.5+
+# times home's it plays like the champion (share 0.07 v 0.07, higher in 6 of 16; first r11 v r14; won 8 of 16): it
+# rushes Devil-like lanes, not every contested centre. Sandbox CPU (E0352's gate, 13 maps): p99 14.3M, max 33.8M.
+commit = "9e9b8c9eea42d9223f77b40f1ac8b32d16e29086"
+port = false  # its switch is code the champion lacks, never a params port (screenport's switch rule still applies)
+
+[[opponent]]
+name = "consolidator"  # the champion 4e7a7a72 (v0068) consolidating early on every map size, as the online teams that
+# beat us on Trauma and Portals do (weak-maps study 2026-09-30 S4: their longest reaches 15 by r326-352 and their count
+# halves by r339-365; their r396 longest beat ours in 16 of 16 Portals and 12 of 14 Trauma round-limit losses): the
+# king seeds from r250 on any map (kingSeedArea 0), beacon and fold from r300 (modeModel off, which would otherwise
+# start the fold from its window, about r400) with feederking's fold 50 rounds earlier (short feeders only, no local
+# fold, down to 4 dragons). Code: P.shortFeederFold ported onto the champion (branch gauntlet/consolidator). Checked
+# before use against the champion, both sides, on 40 fresh maps (mapgen seeds 9421000-9421009 of portalrooms,
+# sealedstart, fortress and small), 80 games, all on the hosts: 30 reached the round limit, where its r396 longest was
+# 8+ above the champion's in 20 (sign p 0.049 against half), longer in 22, shorter in 7 (p 0.004), medians 34.5 to
+# 10.5 (portalrooms 31.5/9.5, sealedstart 19/11, fortress 38/27, small 35/5); its longest reached 15 at median r272 to
+# the champion's r352, and it won 18 of the 30 (95% 0.42-0.75), 36 of 80 overall. It does not reproduce the online
+# team size: about 58 dragons a side at r300 (online about 30), 23.5 to our 42.5 at r396. Sandbox CPU (13 gate maps,
+# mm and mm1): p99 23.6M, max 52.5M.
+commit = "b7e6f85e4bcb3f0619c20dff0a0da31340a6e738"
+params = { kingSeedArea = 0, kingSeedRound = 250, beaconRound = 300, foldRound = 300, modeModel = false, localFold = false, shortFeederFold = true, mergeMinUnits = 4 }
+
+# Talkers (branch opp/talkers, 924b4b6 on the champion f9f26926; bot/talk.hpp): copies of the champion that speak and
+# act on one real team's sonar format in place of our keyed gossip (P.talkFormat), so passive listening, sender
+# inference and spoofing have a local opponent to be measured against. Formats read off ranked replays of 30 Sep (the
+# commit message and talk.hpp's header have the games and match rates). Each files every heard teammate report of
+# length kingMinLength+ as a king report, so a spoofed long teammate draws its fold and feeders. Code, not params: the
+# champion has no talker, so never a params port.
+
+[[opponent]]
+name = "sss-talker"  # SSS (team 91): magic 0xF5E | type | id | length | x | y | round | check, all four rays from r120,
+# own report 1 turn in 5 else a heard teammate report relayed verbatim; stand-in check (theirs unrecovered), so only
+# replays pass it. From talkPullRound (350) it walks towards the nearest reported teammate out of view (measured:
+# toward 0.42 v 0.37 placebo, n 10,800). Checked before use v the champion, 10 ladder and sprint maps both sides:
+# won 4 of 20, sandbox CPU p99 13.7M, max 26.3M.
+commit = "924b4b657c6561787300dbb39a70af8f08cb0f5b"
+params = { talkFormat = 1 }
+port = false  # its switch is code the champion lacks, never a params port (screenport)
+
+[[opponent]]
+name = "stockfish-talker"  # Stockfish (team 206): 0x3 | head x 7 | head y 7 | target x 7 | target y 7 | low 32 (bit 0
+# clear; ours carry length and id there, theirs undecoded), all four rays every turn, one a verbatim relay. No check:
+# any value with their marker is a report. Before talkPullRound it keeps off reported teammates within talkRepelRadius
+# (measured: away 0.48 v 0.40 placebo, n 20,076). Checked before use as sss-talker was: won 7 of 20, p99 13.6M, max 30.4M.
+commit = "924b4b657c6561787300dbb39a70af8f08cb0f5b"
+params = { talkFormat = 2 }
+port = false  # its switch is code the champion lacks, never a params port (screenport)
+
+[[opponent]]
+name = "cmolike"  # Cache me outside's (team 952) tempo, no sonar (talkFormat 4), for measures of the early unit race
+# (cmo-copy study 2026-10-01 P5): split at 4 with every split gate off (enemy radius 0, seen-exit, closed-room, reserve,
+# the parent's room and fill gates: splitSpaceGates, and a tail out of sight: splitUntrackedTail), split-out farms at
+# length 4, a king seeded from r250 on every map that takes teammate feeds while the rest breed (no final fold; only a
+# king 8+ long holds its splits, since without sonar every dragon that sees no longer teammate would), sprints only to
+# ram, no yield to a nearer enemy, no teammate repel. Code: opp/talkers 6d7b551 (the switches default to the
+# champion's play). Checked before use v the champion, 10 ladder and sprint maps both sides (20 games): splits at 4
+# like CMO (91% v ~90%) and alive at r120 27.3 v 27.2, but about 25% slow by r40 (alive 10.4 v 14.8; CMO's 58 ranked
+# games in data/replays, first split r5.9 v r2.2, pearls by r40 34.5 v 44.2: our opening, not a split gate); r240
+# 19.1 v 29.7, mostly the champion wiping it out on small maps. Won 6 of 20. Sandbox CPU (13 gate maps): p99 18.8M,
+# max 50.4M.
+commit = "6d7b551a12614c6b1ffcba2bbcc30435497bfb5a"
+params = { talkFormat = 4, splitEnemyHeadRadius = 0, splitExitMustBeSeen = false, closedRoomSplits = false, reserveRescueSlots = false, farmHonorsReserve = false, kingSeedArea = 0, kingSeedRound = 250, finalFold = false, escapeSprint = false, splitSpaceGates = false, splitUntrackedTail = true, kingSeedMinLength = 8, yieldToEnemyCloser = false, friendRepelWeight = 0 }
+port = false  # its switches are code the champion lacks, never a params port (screenport)

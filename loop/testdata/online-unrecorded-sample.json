@@ -1,0 +1,177 @@
+{
+ "note": "Read-only GETs on 2026-09-28 at about 22:20 AEST by the loop's API client (log fields dropped): `detail_474882` GET /battles/474882, a 1-map battle against team 952 the loop requested as 9918 (`request_474882`, its match-requests.json row), finished 09:29 UTC and still unrecorded at 22:05 AEST, 41st of our 100 listed battles; `detail_411867` GET /battles/411867, a 10-map battle against team 82 requested as 9038 (`request_411867`), and `record_411875` GET /battles/411875, its ninth game's own record: a draw, whose status is 'draw' and winner null, never recorded; games trimmed to 411875 and 411876.",
+ "detail_474882": {
+  "match": {
+   "id": 474882,
+   "teamAId": 157,
+   "teamBId": 952,
+   "mapId": 4,
+   "ranked": false,
+   "skinA": "Jiaolong",
+   "skinB": "Loch Ness",
+   "status": "completed",
+   "winner": "b",
+   "scoresA": 0,
+   "scoresB": 105,
+   "views": 0,
+   "seriesId": "ca106fa6-4160-42f5-ad79-074de79a007a",
+   "eloChangeA": null,
+   "eloChangeB": null,
+   "requestedAt": "2026-09-28T09:29:22.330Z",
+   "startedAt": "2026-09-28T09:29:22.832Z",
+   "completedAt": "2026-09-28T09:29:28.940Z",
+   "seed": "235dff88355e1e7f"
+  },
+  "mapName": "Default",
+  "teamAName": "zitian",
+  "teamBName": "Cache me outside",
+  "teamAElo": 1929,
+  "teamBElo": 1827,
+  "games": [
+   {
+    "id": 474882,
+    "status": "completed",
+    "winner": "b",
+    "hasReplay": true,
+    "mapName": "Default"
+   }
+  ],
+  "wait": null
+ },
+ "request_474882": {
+  "at": 1790587762.244961,
+  "games": 1,
+  "ranked": false,
+  "opponent": 952,
+  "submission_id": 9918,
+  "status": "requested",
+  "map_ids": [
+   4
+  ],
+  "ids": [
+   474882
+  ]
+ },
+ "detail_411867": {
+  "match": {
+   "id": 411867,
+   "teamAId": 157,
+   "teamBId": 82,
+   "mapId": 4,
+   "ranked": false,
+   "skinA": "Loch Ness",
+   "skinB": "Jiaolong",
+   "status": "completed",
+   "winner": "a",
+   "scoresA": 110,
+   "scoresB": 38,
+   "views": 0,
+   "seriesId": "d9cce783-fb21-4304-b8ce-97741327a213",
+   "eloChangeA": null,
+   "eloChangeB": null,
+   "requestedAt": "2026-09-27T17:58:37.720Z",
+   "startedAt": "2026-09-27T17:58:38.280Z",
+   "completedAt": "2026-09-27T17:59:00.051Z",
+   "seed": "26b757a813ff76f4"
+  },
+  "mapName": "Default",
+  "teamAName": "zitian",
+  "teamBName": "free trip to sydney pls",
+  "teamAElo": 1929,
+  "teamBElo": 1923,
+  "games": [
+   {
+    "id": 411875,
+    "status": "draw",
+    "winner": null,
+    "hasReplay": true,
+    "mapName": "Portals"
+   },
+   {
+    "id": 411876,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Slithery Fight"
+   }
+  ],
+  "wait": null
+ },
+ "record_411875": {
+  "match": {
+   "id": 411875,
+   "teamAId": 157,
+   "teamBId": 82,
+   "mapId": 20,
+   "ranked": false,
+   "skinA": "Loch Ness",
+   "skinB": "Jiaolong",
+   "status": "draw",
+   "winner": null,
+   "scoresA": 62,
+   "scoresB": 62,
+   "views": 0,
+   "seriesId": "d9cce783-fb21-4304-b8ce-97741327a213",
+   "eloChangeA": null,
+   "eloChangeB": null,
+   "requestedAt": "2026-09-27T17:58:37.720Z",
+   "startedAt": "2026-09-27T17:58:38.283Z",
+   "completedAt": "2026-09-27T17:59:06.487Z",
+   "seed": "2cd58baccaaebfe2"
+  },
+  "mapName": "Portals",
+  "teamAName": "zitian",
+  "teamBName": "free trip to sydney pls",
+  "teamAElo": 1929,
+  "teamBElo": 1923,
+  "games": [
+   {
+    "id": 411875,
+    "status": "draw",
+    "winner": null,
+    "hasReplay": true,
+    "mapName": "Portals"
+   },
+   {
+    "id": 411876,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Slithery Fight"
+   }
+  ],
+  "wait": null
+ },
+ "request_411867": {
+  "at": 1790531917.645173,
+  "games": 10,
+  "ranked": false,
+  "opponent": 82,
+  "submission_id": 9038,
+  "status": "requested",
+  "map_ids": [
+   4,
+   7,
+   9,
+   11,
+   13,
+   15,
+   17,
+   19,
+   20,
+   21
+  ],
+  "ids": [
+   411867,
+   411868,
+   411869,
+   411870,
+   411871,
+   411872,
+   411873,
+   411874,
+   411875,
+   411876
+  ]
+ }
+}

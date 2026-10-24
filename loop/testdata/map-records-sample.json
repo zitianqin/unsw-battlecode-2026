@@ -1,0 +1,848 @@
+{
+"captured": "2026-09-28 21:10 AEST from ~/.bc-loop: online.json submission 10115, online-replays/10115 and 10072 index.json non-dev games (fields map_records reads; the replay summaries cut to the winner), ladder-maps.json names",
+"online": {
+"submission_id": 10115,
+"dev": {
+"teams": [
+{
+"id": 446
+},
+{
+"id": 545
+},
+{
+"id": 609
+},
+{
+"id": 704
+},
+{
+"id": 722
+},
+{
+"id": 752
+},
+{
+"id": 753
+},
+{
+"id": 754
+},
+{
+"id": 755
+},
+{
+"id": 756
+},
+{
+"id": 757
+},
+{
+"id": 758
+},
+{
+"id": 759
+},
+{
+"id": 760
+}
+]
+}
+},
+"indexes": {
+"10115": {
+"games": [
+{
+"id": 481442,
+"submission_id": 10115,
+"opponent": 147,
+"side": "A",
+"map_id": 4,
+"ranked": false,
+"requested_at": "2026-09-28T10:50:27.960Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481443,
+"submission_id": 10115,
+"opponent": 147,
+"side": "A",
+"map_id": 7,
+"ranked": false,
+"requested_at": "2026-09-28T10:50:27.960Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481444,
+"submission_id": 10115,
+"opponent": 147,
+"side": "A",
+"map_id": 9,
+"ranked": false,
+"requested_at": "2026-09-28T10:50:27.960Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481445,
+"submission_id": 10115,
+"opponent": 147,
+"side": "A",
+"map_id": 11,
+"ranked": false,
+"requested_at": "2026-09-28T10:50:27.960Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 481446,
+"submission_id": 10115,
+"opponent": 147,
+"side": "A",
+"map_id": 13,
+"ranked": false,
+"requested_at": "2026-09-28T10:50:27.960Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481447,
+"submission_id": 10115,
+"opponent": 147,
+"side": "A",
+"map_id": 15,
+"ranked": false,
+"requested_at": "2026-09-28T10:50:27.960Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 481448,
+"submission_id": 10115,
+"opponent": 147,
+"side": "A",
+"map_id": 17,
+"ranked": false,
+"requested_at": "2026-09-28T10:50:27.960Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481449,
+"submission_id": 10115,
+"opponent": 147,
+"side": "A",
+"map_id": 19,
+"ranked": false,
+"requested_at": "2026-09-28T10:50:27.960Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481450,
+"submission_id": 10115,
+"opponent": 147,
+"side": "A",
+"map_id": 20,
+"ranked": false,
+"requested_at": "2026-09-28T10:50:27.960Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 482349,
+"submission_id": 10115,
+"opponent": 969,
+"side": "B",
+"map_id": 4,
+"ranked": false,
+"requested_at": "2026-09-28T11:07:00.878Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 482350,
+"submission_id": 10115,
+"opponent": 969,
+"side": "B",
+"map_id": 7,
+"ranked": false,
+"requested_at": "2026-09-28T11:07:00.878Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 482353,
+"submission_id": 10115,
+"opponent": 969,
+"side": "B",
+"map_id": 11,
+"ranked": false,
+"requested_at": "2026-09-28T11:07:00.878Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 481875,
+"submission_id": 10115,
+"opponent": 470,
+"side": "A",
+"map_id": 4,
+"ranked": false,
+"requested_at": "2026-09-28T11:01:55.650Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481876,
+"submission_id": 10115,
+"opponent": 470,
+"side": "A",
+"map_id": 7,
+"ranked": false,
+"requested_at": "2026-09-28T11:01:55.650Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481877,
+"submission_id": 10115,
+"opponent": 470,
+"side": "A",
+"map_id": 9,
+"ranked": false,
+"requested_at": "2026-09-28T11:01:55.650Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481878,
+"submission_id": 10115,
+"opponent": 470,
+"side": "A",
+"map_id": 11,
+"ranked": false,
+"requested_at": "2026-09-28T11:01:55.650Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481879,
+"submission_id": 10115,
+"opponent": 470,
+"side": "A",
+"map_id": 13,
+"ranked": false,
+"requested_at": "2026-09-28T11:01:55.650Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481880,
+"submission_id": 10115,
+"opponent": 470,
+"side": "A",
+"map_id": 15,
+"ranked": false,
+"requested_at": "2026-09-28T11:01:55.650Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 481881,
+"submission_id": 10115,
+"opponent": 470,
+"side": "A",
+"map_id": 17,
+"ranked": false,
+"requested_at": "2026-09-28T11:01:55.650Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+}
+],
+"results": []
+},
+"10072": {
+"games": [
+{
+"id": 477714,
+"submission_id": 10072,
+"opponent": 566,
+"side": "B",
+"map_id": 20,
+"ranked": true,
+"requested_at": "2026-09-28T10:00:00.000Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 477715,
+"submission_id": 10072,
+"opponent": 566,
+"side": "B",
+"map_id": 21,
+"ranked": true,
+"requested_at": "2026-09-28T10:00:00.000Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 477717,
+"submission_id": 10072,
+"opponent": 566,
+"side": "B",
+"map_id": 19,
+"ranked": true,
+"requested_at": "2026-09-28T10:00:00.000Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 476390,
+"submission_id": 10072,
+"opponent": 55,
+"side": "A",
+"map_id": 20,
+"ranked": true,
+"requested_at": "2026-09-28T10:00:00.000Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 476392,
+"submission_id": 10072,
+"opponent": 55,
+"side": "A",
+"map_id": 4,
+"ranked": true,
+"requested_at": "2026-09-28T10:00:00.000Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 476393,
+"submission_id": 10072,
+"opponent": 55,
+"side": "A",
+"map_id": 9,
+"ranked": true,
+"requested_at": "2026-09-28T10:00:00.000Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481170,
+"submission_id": 10072,
+"opponent": 218,
+"side": "B",
+"map_id": 9,
+"ranked": true,
+"requested_at": "2026-09-28T10:46:02.866Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 481171,
+"submission_id": 10072,
+"opponent": 218,
+"side": "B",
+"map_id": 7,
+"ranked": true,
+"requested_at": "2026-09-28T10:46:02.866Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 481172,
+"submission_id": 10072,
+"opponent": 218,
+"side": "B",
+"map_id": 4,
+"ranked": true,
+"requested_at": "2026-09-28T10:46:02.866Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 481173,
+"submission_id": 10072,
+"opponent": 218,
+"side": "B",
+"map_id": 15,
+"ranked": true,
+"requested_at": "2026-09-28T10:46:02.866Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 481174,
+"submission_id": 10072,
+"opponent": 218,
+"side": "B",
+"map_id": 17,
+"ranked": true,
+"requested_at": "2026-09-28T10:46:02.866Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 476389,
+"submission_id": 10072,
+"opponent": 55,
+"side": "A",
+"map_id": 17,
+"ranked": true,
+"requested_at": "2026-09-28T10:00:00.000Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 476391,
+"submission_id": 10072,
+"opponent": 55,
+"side": "A",
+"map_id": 15,
+"ranked": true,
+"requested_at": "2026-09-28T10:00:00.000Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 480861,
+"submission_id": 10072,
+"opponent": 130,
+"side": "A",
+"map_id": 4,
+"ranked": false,
+"requested_at": "2026-09-28T10:37:32.345Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 480862,
+"submission_id": 10072,
+"opponent": 130,
+"side": "A",
+"map_id": 7,
+"ranked": false,
+"requested_at": "2026-09-28T10:37:32.345Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 477716,
+"submission_id": 10072,
+"opponent": 566,
+"side": "B",
+"map_id": 11,
+"ranked": true,
+"requested_at": "2026-09-28T10:00:00.000Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 477718,
+"submission_id": 10072,
+"opponent": 566,
+"side": "B",
+"map_id": 15,
+"ranked": true,
+"requested_at": "2026-09-28T10:00:00.000Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480733,
+"submission_id": 10072,
+"opponent": 838,
+"side": "B",
+"map_id": 7,
+"ranked": true,
+"requested_at": "2026-09-28T10:34:08.605Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 480734,
+"submission_id": 10072,
+"opponent": 838,
+"side": "B",
+"map_id": 17,
+"ranked": true,
+"requested_at": "2026-09-28T10:34:08.605Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 480735,
+"submission_id": 10072,
+"opponent": 838,
+"side": "B",
+"map_id": 15,
+"ranked": true,
+"requested_at": "2026-09-28T10:34:08.605Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480736,
+"submission_id": 10072,
+"opponent": 838,
+"side": "B",
+"map_id": 13,
+"ranked": true,
+"requested_at": "2026-09-28T10:34:08.605Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 480737,
+"submission_id": 10072,
+"opponent": 838,
+"side": "B",
+"map_id": 11,
+"ranked": true,
+"requested_at": "2026-09-28T10:34:08.605Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+},
+{
+"id": 480253,
+"submission_id": 10072,
+"opponent": 106,
+"side": "A",
+"map_id": 4,
+"ranked": false,
+"requested_at": "2026-09-28T10:24:49.365Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480254,
+"submission_id": 10072,
+"opponent": 106,
+"side": "A",
+"map_id": 7,
+"ranked": false,
+"requested_at": "2026-09-28T10:24:49.365Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480255,
+"submission_id": 10072,
+"opponent": 106,
+"side": "A",
+"map_id": 9,
+"ranked": false,
+"requested_at": "2026-09-28T10:24:49.365Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480256,
+"submission_id": 10072,
+"opponent": 106,
+"side": "A",
+"map_id": 11,
+"ranked": false,
+"requested_at": "2026-09-28T10:24:49.365Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480257,
+"submission_id": 10072,
+"opponent": 106,
+"side": "A",
+"map_id": 13,
+"ranked": false,
+"requested_at": "2026-09-28T10:24:49.365Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480258,
+"submission_id": 10072,
+"opponent": 106,
+"side": "A",
+"map_id": 15,
+"ranked": false,
+"requested_at": "2026-09-28T10:24:49.365Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480259,
+"submission_id": 10072,
+"opponent": 106,
+"side": "A",
+"map_id": 17,
+"ranked": false,
+"requested_at": "2026-09-28T10:24:49.365Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480260,
+"submission_id": 10072,
+"opponent": 106,
+"side": "A",
+"map_id": 19,
+"ranked": false,
+"requested_at": "2026-09-28T10:24:49.365Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480261,
+"submission_id": 10072,
+"opponent": 106,
+"side": "A",
+"map_id": 20,
+"ranked": false,
+"requested_at": "2026-09-28T10:24:49.365Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480262,
+"submission_id": 10072,
+"opponent": 106,
+"side": "A",
+"map_id": 21,
+"ranked": false,
+"requested_at": "2026-09-28T10:24:49.365Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480043,
+"submission_id": 10072,
+"opponent": 19,
+"side": "B",
+"map_id": 21,
+"ranked": false,
+"requested_at": "2026-09-28T10:18:13.906Z",
+"summary": {
+"result": {
+"winner": "A"
+}
+}
+},
+{
+"id": 480044,
+"submission_id": 10072,
+"opponent": 19,
+"side": "B",
+"map_id": 17,
+"ranked": false,
+"requested_at": "2026-09-28T10:18:13.906Z",
+"summary": {
+"result": {
+"winner": "B"
+}
+}
+}
+],
+"results": []
+}
+},
+"maps": [
+{
+"id": 9,
+"name": "Schooltime"
+},
+{
+"id": 20,
+"name": "Portals"
+},
+{
+"id": 21,
+"name": "Slithery Fight"
+},
+{
+"id": 7,
+"name": "Queen Of Spades"
+},
+{
+"id": 4,
+"name": "Default"
+},
+{
+"id": 11,
+"name": "Trophy"
+},
+{
+"id": 17,
+"name": "Prisoners Dilemma"
+},
+{
+"id": 19,
+"name": "Autarky"
+},
+{
+"id": 13,
+"name": "Devil"
+},
+{
+"id": 15,
+"name": "Trauma"
+}
+]
+}

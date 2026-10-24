@@ -1,0 +1,749 @@
+[
+ {
+  "rank": 1,
+  "ranked": true,
+  "id": 470,
+  "name": "龙虎豹",
+  "hasImage": true,
+  "elo": 2131,
+  "wins": 6081,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": false,
+   "joinsClosed": false,
+   "rankedChangedAt": "2026-09-25T04:15:56.194Z"
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": true,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "上海交通大学 · East China University of Political Science and Law · Fudan university",
+  "description": "Chinese can fly",
+  "countries": [
+   "CN"
+  ]
+ },
+ {
+  "rank": 8,
+  "ranked": true,
+  "id": 545,
+  "name": "dev test 1 :P",
+  "hasImage": false,
+  "elo": 1993,
+  "wins": 6615,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": false,
+   "rankedChangedAt": "2026-09-22T00:43:34.866Z"
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "UNSW",
+  "description": "have fun testing against us :) (your rating will not be affected)",
+  "countries": [
+   "AU"
+  ]
+ },
+ {
+  "rank": 22,
+  "ranked": true,
+  "id": 262,
+  "name": "NUSW Battlecode",
+  "hasImage": false,
+  "elo": 1886,
+  "wins": 1866,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": true
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": true,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "National University of Singapore",
+  "description": "banh mi",
+  "countries": [
+   "SG"
+  ]
+ },
+ {
+  "rank": 23,
+  "ranked": true,
+  "id": 473,
+  "name": "AGI ONE",
+  "hasImage": false,
+  "elo": 1885,
+  "wins": 951,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": false
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": true,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "Seoul National University · KAIST · Seoul Natoinal University",
+  "description": "Ask ChatGPT",
+  "countries": [
+   "KR"
+  ]
+ },
+ {
+  "rank": 24,
+  "ranked": true,
+  "id": 217,
+  "name": ":3",
+  "hasImage": false,
+  "elo": 1882,
+  "wins": 369,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": false,
+   "rankedChangedAt": "2026-09-24T11:07:50.588Z"
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "Queensland University of Technology",
+  "description": "",
+  "countries": [
+   "AU"
+  ]
+ },
+ {
+  "rank": 25,
+  "ranked": true,
+  "id": 280,
+  "name": "SHINK AI 6500",
+  "hasImage": false,
+  "elo": 1881,
+  "wins": 3080,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": false,
+   "rankedChangedAt": "2026-09-25T04:50:11.351Z"
+  },
+  "dev": false,
+  "highSchool": true,
+  "eligible": true,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "—",
+  "description": "",
+  "countries": [
+   "JP"
+  ]
+ },
+ {
+  "rank": 26,
+  "ranked": true,
+  "id": 28,
+  "name": "SilverSamurai",
+  "hasImage": false,
+  "elo": 1881,
+  "wins": 576,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": false,
+   "joinsClosed": false,
+   "rankedChangedAt": "2026-09-25T15:29:57.510Z"
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": true,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "IIT Bombay",
+  "description": "",
+  "countries": [
+   "IN"
+  ]
+ },
+ {
+  "rank": 27,
+  "ranked": true,
+  "id": 63,
+  "name": "Kamikaze",
+  "hasImage": false,
+  "elo": 1872,
+  "wins": 1342,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "unranked": true,
+   "joinsClosed": false
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "IIT Kanpur",
+  "description": "",
+  "countries": [
+   "IN"
+  ]
+ },
+ {
+  "rank": 28,
+  "ranked": true,
+  "id": 752,
+  "name": "dev test 2",
+  "hasImage": false,
+  "elo": 1871,
+  "wins": 713,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": true
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "—",
+  "description": "feel free to test, matches won't affect your ELO",
+  "countries": []
+ },
+ {
+  "rank": 29,
+  "ranked": true,
+  "id": 201,
+  "name": "NeungzAI",
+  "hasImage": true,
+  "elo": 1866,
+  "wins": 1649,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": true,
+   "rankedChangedAt": "2026-09-23T23:59:07.536Z"
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": true,
+  "firstYear": false,
+  "wgm": true,
+  "unsw": false,
+  "university": "Gwangju Institute of Science and Technology · Jeonbuk Science Highschool · Gwangju Institute of Science and Technology (GIST)",
+  "description": "",
+  "countries": [
+   "KR"
+  ]
+ },
+ {
+  "rank": 30,
+  "ranked": true,
+  "id": 157,
+  "name": "zitian",
+  "hasImage": false,
+  "elo": 1865,
+  "wins": 1548,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "unranked": true,
+   "joinsClosed": false
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": true,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": true,
+  "university": "UNSW",
+  "description": "",
+  "countries": [
+   "AU"
+  ]
+ },
+ {
+  "rank": 31,
+  "ranked": true,
+  "id": 27,
+  "name": "PPP",
+  "hasImage": false,
+  "elo": 1864,
+  "wins": 1500,
+  "hasBot": true,
+  "language": "python",
+  "settings": {
+   "ranked": true,
+   "unranked": true,
+   "joinsClosed": false
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": true,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "Monash University",
+  "description": "",
+  "countries": [
+   "AU"
+  ]
+ },
+ {
+  "rank": 32,
+  "ranked": true,
+  "id": 70,
+  "name": "cheji bt",
+  "hasImage": true,
+  "elo": 1846,
+  "wins": 2179,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": false
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": true,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": true,
+  "university": "University of New South Wales",
+  "description": "",
+  "countries": [
+   "AU"
+  ]
+ },
+ {
+  "rank": 33,
+  "ranked": true,
+  "id": 71,
+  "name": "y",
+  "hasImage": false,
+  "elo": 1842,
+  "wins": 808,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": false,
+   "joinsClosed": false,
+   "rankedChangedAt": "2026-09-22T10:57:48.162Z"
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": true,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "IIT Kharagpur · Indian Institute of Technology Kharagpur",
+  "description": "",
+  "countries": [
+   "IN"
+  ]
+ },
+ {
+  "rank": 48,
+  "ranked": true,
+  "id": 722,
+  "name": "abasdasga",
+  "hasImage": false,
+  "elo": 1771,
+  "wins": 114,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": false
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "unsw",
+  "description": "",
+  "countries": [
+   "AU"
+  ]
+ },
+ {
+  "rank": 89,
+  "ranked": true,
+  "id": 609,
+  "name": "ML benchmark",
+  "hasImage": true,
+  "elo": 1683,
+  "wins": 212,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": false
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "UNSW",
+  "description": "feel free to test, matches won't affect your elo :)",
+  "countries": [
+   "AU"
+  ]
+ },
+ {
+  "rank": 109,
+  "ranked": true,
+  "id": 753,
+  "name": "dev test 3",
+  "hasImage": false,
+  "elo": 1646,
+  "wins": 323,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": true
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "—",
+  "description": "feel free to test, matches won't affect your ELO",
+  "countries": []
+ },
+ {
+  "rank": 254,
+  "ranked": true,
+  "id": 446,
+  "name": "Square",
+  "hasImage": false,
+  "elo": 1427,
+  "wins": 138,
+  "hasBot": true,
+  "language": "python",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": false
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "UNSW",
+  "description": "",
+  "countries": [
+   "AU"
+  ]
+ },
+ {
+  "rank": 311,
+  "ranked": true,
+  "id": 755,
+  "name": "dev test 5",
+  "hasImage": false,
+  "elo": 1342,
+  "wins": 21,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": true
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "—",
+  "description": "feel free to test, matches won't affect your ELO",
+  "countries": []
+ },
+ {
+  "rank": 314,
+  "ranked": true,
+  "id": 704,
+  "name": "sl",
+  "hasImage": false,
+  "elo": 1334,
+  "wins": 11,
+  "hasBot": true,
+  "language": "python",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": false
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "UNSW",
+  "description": "",
+  "countries": [
+   "AU"
+  ]
+ },
+ {
+  "rank": 323,
+  "ranked": true,
+  "id": 754,
+  "name": "dev test 4",
+  "hasImage": false,
+  "elo": 1316,
+  "wins": 28,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": true
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "—",
+  "description": "feel free to test, matches won't affect your ELO",
+  "countries": []
+ },
+ {
+  "rank": 392,
+  "ranked": true,
+  "id": 756,
+  "name": "dev test 6",
+  "hasImage": false,
+  "elo": 1166,
+  "wins": 6,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": true
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "—",
+  "description": "feel free to test, matches won't affect your ELO",
+  "countries": []
+ },
+ {
+  "rank": 416,
+  "ranked": true,
+  "id": 757,
+  "name": "dev test 7",
+  "hasImage": false,
+  "elo": 1098,
+  "wins": 8,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": true
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "—",
+  "description": "feel free to test, matches won't affect your ELO",
+  "countries": []
+ },
+ {
+  "rank": 432,
+  "ranked": true,
+  "id": 758,
+  "name": "dev test 8",
+  "hasImage": false,
+  "elo": 1017,
+  "wins": 23,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": true
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "—",
+  "description": "feel free to test, matches won't affect your ELO",
+  "countries": []
+ },
+ {
+  "rank": 444,
+  "ranked": true,
+  "id": 759,
+  "name": "dev test 9",
+  "hasImage": false,
+  "elo": 900,
+  "wins": 4,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": true
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "—",
+  "description": "feel free to test, matches won't affect your ELO",
+  "countries": []
+ },
+ {
+  "rank": 449,
+  "ranked": true,
+  "id": 760,
+  "name": "dev test 10",
+  "hasImage": false,
+  "elo": 600,
+  "wins": 0,
+  "hasBot": true,
+  "language": "cpp",
+  "settings": {
+   "ranked": true,
+   "joinsClosed": true
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "—",
+  "description": "feel free to test, matches won't affect your ELO",
+  "countries": []
+ },
+ {
+  "rank": null,
+  "ranked": false,
+  "id": 391,
+  "name": "DEV",
+  "hasImage": false,
+  "elo": 1500,
+  "wins": 0,
+  "hasBot": false,
+  "language": null,
+  "settings": {
+   "ranked": true,
+   "unranked": true,
+   "joinsClosed": false
+  },
+  "dev": false,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "UNSW",
+  "description": "",
+  "countries": [
+   "AU"
+  ]
+ },
+ {
+  "rank": null,
+  "ranked": false,
+  "id": 484,
+  "name": "mustramallow",
+  "hasImage": false,
+  "elo": 1500,
+  "wins": 0,
+  "hasBot": false,
+  "language": null,
+  "settings": {
+   "ranked": true,
+   "joinsClosed": false
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "UNSW",
+  "description": "",
+  "countries": [
+   "AU"
+  ]
+ },
+ {
+  "rank": null,
+  "ranked": false,
+  "id": 549,
+  "name": "brggr",
+  "hasImage": false,
+  "elo": 1500,
+  "wins": 0,
+  "hasBot": false,
+  "language": null,
+  "settings": {
+   "ranked": true,
+   "joinsClosed": false
+  },
+  "dev": true,
+  "highSchool": false,
+  "eligible": false,
+  "firstYear": false,
+  "wgm": false,
+  "unsw": false,
+  "university": "UNSW",
+  "description": "",
+  "countries": [
+   "AU"
+  ]
+ }
+]

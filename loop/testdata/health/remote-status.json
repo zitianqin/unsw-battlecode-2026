@@ -1,0 +1,99 @@
+{
+ "updated": 1790348779.8090901,
+ "games": 669,
+ "per_minute": 106.1,
+ "here": 112,
+ "hosts": {
+  "mm": {
+   "played": 200,
+   "last_game": "01:05:56",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  },
+  "mm1": {
+   "played": 184,
+   "last_game": "01:06:00",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  },
+  "ll": {
+   "played": 79,
+   "last_game": "01:06:19",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  },
+  "zz": {
+   "played": 0,
+   "last_game": null,
+   "rests": 3,
+   "last_rest": "01:03:45 rested 240s: zz: exit 255: ssh: connect to host 100.64.0.2 port 22: Operation timed out\r\n",
+   "resting": true
+  },
+  "sz": {
+   "played": 30,
+   "last_game": "01:06:09",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  },
+  "az-syd": {
+   "played": 37,
+   "last_game": "01:05:58",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  },
+  "az-mel": {
+   "played": 29,
+   "last_game": "01:05:46",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  },
+  "az-nz": {
+   "played": 29,
+   "last_game": "01:05:59",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  },
+  "az-id": {
+   "played": 23,
+   "last_game": "01:06:02",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  },
+  "az-my": {
+   "played": 36,
+   "last_game": "01:05:45",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  },
+  "az-hk": {
+   "played": 22,
+   "last_game": "01:05:51",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  },
+  "az-jp": {
+   "played": 25,
+   "last_game": "01:05:59",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  },
+  "az-jpw": {
+   "played": 27,
+   "last_game": "01:06:04",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false
+  }
+ }
+}

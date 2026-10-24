@@ -1,0 +1,17 @@
+    1     0 root              0 06-03:06:02   0.6 /sbin/launchd
+43861  2059 zitianqin         0 05-11:55:51  16.6 /Users/me/.local/bin/claude --session-id 8406d943-dd71-49fc-b16b-5c8a82eb997f --settings /var/folders/x.json
+91496 43861 zitianqin         0       00:00   4.3 /bin/zsh -c source /Users/me/.claude/shell-snapshots/snapshot-zsh-1790250447539-51wnyk.sh 2>/dev/null || true
+90457 90033 zitianqin         0       00:34  80.5 {home}/toolchains/1.2.0/bin/python {home}/referee/referee/engine_cache.py {home}/engine-cache
+44814     1 zitianqin         0       14:15  75.2 {repo}/.venv/bin/python3 {repo}/loop/rulecounts.py review
+86516 86513 zitianqin        10       02:31  73.7 ../.venv/bin/python localkings.py rep_ok325 rep_ok325seed rep_ok350
+91135 91132 zitianqin        10       00:14  73.3 .venv/bin/python /tmp/bcwVJpH2pMP/claude-501/aud/early.py
+86070     1 zitianqin         0    02:00:56   0.5 ssh: /tmp/bc-ssh-87deb0881a5bbe519cc701a00f9ca977612aa96b-0 [mux]
+ 2544     1 zitianqin         0 03-11:49:23   1.0 bun run /Users/me/.claude/skills/gstack/browse/src/server.ts
+ 3349  2544 zitianqin         0 03-11:49:15   0.1 /Users/me/Library/Caches/ms-playwright/chromium-1234/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing
+ 1265     1 zitianqin         0 06-00:25:32  80.3 /Applications/Tailscale.app/Contents/PlugIns/IPNExtension.appex/Contents/MacOS/IPNExtension
+  349     1 root              0 06-00:34:43  20.8 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/Support/fseventsd
+  596     1 _mds_stores       0 06-00:25:43   9.4 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds_stores
+ 1296     1 zitianqin        17 06-00:34:31   0.1 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdbulkimport -s mdworker-bundle
+75481     1 zitianqin         0    11:33:33  16.0 /System/Library/PrivateFrameworks/CoreSuggestions.framework/Versions/A/Support/suggestd
+91281     1 root              0 02-20:22:24   6.5 /usr/libexec/PerfPowerServices
+  386     1 root              0 06-00:25:44   6.6 /usr/libexec/opendirectoryd

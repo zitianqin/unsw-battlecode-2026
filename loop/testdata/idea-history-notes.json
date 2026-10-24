@@ -1,0 +1,77 @@
+[
+ {
+  "idea": "I316",
+  "note": "2026-09-26 22:38 orchestrator: evaluation.maps big 0.5 (was {'near': 0.5}): a map-size change (M28; the styles exist since b8d7044)",
+  "source": "orchestrator"
+ },
+ {
+  "idea": "I316",
+  "note": "review 1790433902077162000: raised to 1, after I302 (in flight; the same big-map fold decision): on 2400+ tile maps (games to r499) rank 1 keeps 58 dragons at r400 and 49 at r450 against our 64 and 35 (6 v 31 games), splits 61-72 times per 50 rounds in r400-499 against our 27-31, and its longest goes 34.7 -> 53.8 from r400 to r450 against our 25.2 -> 37.0. If I302 is kept, build this on it.",
+  "source": "review"
+ },
+ {
+  "idea": "I316",
+  "note": "E0162: blocked (provider usage limit)",
+  "source": "experiment"
+ },
+ {
+  "idea": "I316",
+  "note": "E0162 was blocked by a Claude usage limit mid-coding (13:32, 2026-09-27); its uncommitted work is saved as branch wip/E0162 (one commit, not reviewed or tested; not in your single-branch clone: `git fetch origin wip/E0162:wip/E0162` brings it) (on base 1eae05f): read it and reuse what holds instead of starting over.",
+  "source": "other"
+ },
+ {
+  "idea": "I316",
+  "note": "E0166: no code (nothing committed; the coder's reason: I316 stopped at its predeclared measurement gate: final king shorter in 21/36 matched games, longer in 15; sign p=0.203 (suggestive only), mean 48.22 -> 47.94. No supported loss or gain is established. Nothing committed. Design check: retaining far breeders while allowing near feeders carries the pr)",
+  "source": "experiment"
+ },
+ {
+  "idea": "I316",
+  "note": "E0166 (14:43, 2026-09-27, orchestrator): stopped before any game on this idea's stop line 'if the king ends shorter in most games', at 21 of 36 (sign p 0.20), which is luck-level: under CLAUDE.md's 'Counts come with their chance' a stop fires only at p <= chance.TRIGGER_P (0.1). The same 36 games had more of our dragons alive at r499, 48.6 -> 53.5 (21/6/9, p 0.003), and wins 24 against 23. So the stop line now reads: stop only if the king is shorter at sign p <= 0.1 over the measurement games; otherwise build it and let the SPRT judge. E0166's draft (P.localFold, P.foldReach 12 on >= 2400 tiles) is E0162's saved work, branch wip/E0162 (commit f778dce, on base 1eae05f; `git fetch origin wip/E0162:wip/E0162`), and its measurement summary is /Users/me/Dev/bc-wt/E0166/tests/bot/data/e0166/evaluation-summary.txt.",
+  "source": "orchestrator"
+ },
+ {
+  "idea": "I260",
+  "note": "review 1790436765968434000: hint for the orchestrator: a comments-only cherry-pick plays the same moves once both builds use one sonar key (the identical check builds with sonarBuildKey off unless sonarkey.hpp differs), so the identical check (50 maps) could judge it instead of a full non-inferiority SPRT.",
+  "source": "review"
+ },
+ {
+  "idea": "I004",
+  "note": "2026-09-26 16:22 orchestrator: priority 4 -> 1 again; the 15:4x review apply had reverted the 15:21/15:25 change (fixed in meta.apply_review)",
+  "source": "orchestrator"
+ },
+ {
+  "idea": "I037",
+  "note": "orchestrator 2026-09-26: waits on I177 (the retest of E0078's sonar reach) instead of I151, which ended promising (+1.0) and so released this idea although its capability isn't in the champion",
+  "source": "orchestrator"
+ },
+ {
+  "idea": "I061",
+  "note": "orchestrator 2026-09-25 (sig asked whether dragons share intentions): raised to priority 1. The only intent test, E0040 (I049, claims only, -10.4 at 666 pairs, H0), predates the team belief map (E0041), the king beacon (E0059) and the relays (E0067) that this builds on, so its verdict is stale. Measure first how often two of our dragons chase the same pearl.",
+  "source": "orchestrator"
+ },
+ {
+  "idea": "I052",
+  "note": "orchestrator: waits for I141, I151, which give it the information it needs",
+  "source": "orchestrator"
+ },
+ {
+  "idea": "I037",
+  "note": "E0123: waits on retest I319 of I177",
+  "source": "experiment"
+ },
+ {
+  "idea": "I037",
+  "note": "E0081 correction 2026-09-26, over 40 logged games with kings after r450: in the typical round 3 of our dragons think they are king (1 in 7 games, 2 in 11, 3-4 in 18, 5-7.5 in 4)",
+  "source": "other"
+ },
+ {
+  "idea": "I265",
+  "note": "E0132 kept I313, which this idea cites: raised to priority 1; check whether what it was waiting on is now there",
+  "source": "other"
+ },
+ {
+  "idea": "I144",
+  "note": "sig 2026-09-25: dropped; a bundle hides which part helped. Each part is retested alone under the probability rule (I145-I147).",
+  "source": "sig"
+ }
+]

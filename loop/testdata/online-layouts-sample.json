@@ -1,0 +1,75 @@
+[
+ {
+  "id": 447294,
+  "submission_id": 9553,
+  "opponent": 34,
+  "opponent_submission_id": 8926,
+  "side": "A",
+  "map_id": 4,
+  "map_hash": null,
+  "ranked": false,
+  "requested_at": "2026-09-28T03:33:01.701Z",
+  "summary": {
+   "map": {
+    "name": "Default",
+    "width": 32,
+    "height": 32,
+    "symmetry": "xy"
+   },
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 128,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 451387,
+  "submission_id": 9553,
+  "opponent": 82,
+  "opponent_submission_id": 9562,
+  "side": "B",
+  "map_id": 4,
+  "map_hash": null,
+  "ranked": false,
+  "requested_at": "2026-09-28T04:05:53.571Z",
+  "summary": {
+   "map": {
+    "name": "Default",
+    "width": 32,
+    "height": 32,
+    "symmetry": "xy"
+   },
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 136,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 451633,
+  "submission_id": 9553,
+  "opponent": 446,
+  "opponent_submission_id": 301,
+  "side": "A",
+  "map_id": 4,
+  "map_hash": null,
+  "ranked": false,
+  "requested_at": "2026-09-28T04:09:55.617Z",
+  "dev": true,
+  "summary": {
+   "map": {
+    "name": "Default",
+    "width": 32,
+    "height": 32,
+    "symmetry": "xy"
+   },
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 40,
+    "winner": "A"
+   }
+  }
+ }
+]

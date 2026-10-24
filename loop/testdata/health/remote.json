@@ -1,0 +1,56 @@
+{
+ "hosts": [
+  {
+   "name": "mm",
+   "max": 10
+  },
+  {
+   "name": "mm1",
+   "max": 10
+  },
+  {
+   "name": "ll",
+   "max": 8
+  },
+  {
+   "name": "zz",
+   "max": 12
+  },
+  {
+   "name": "sz",
+   "max": 5
+  },
+  {
+   "name": "az-syd",
+   "max": 4
+  },
+  {
+   "name": "az-mel",
+   "max": 4
+  },
+  {
+   "name": "az-nz",
+   "max": 4
+  },
+  {
+   "name": "az-id",
+   "max": 4
+  },
+  {
+   "name": "az-my",
+   "max": 4
+  },
+  {
+   "name": "az-hk",
+   "max": 4
+  },
+  {
+   "name": "az-jp",
+   "max": 4
+  },
+  {
+   "name": "az-jpw",
+   "max": 4
+  }
+ ]
+}

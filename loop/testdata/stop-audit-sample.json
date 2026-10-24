@@ -1,0 +1,320 @@
+[
+ {
+  "id": "I047",
+  "flaw": "b",
+  "current_stop": "stop with the numbers if it barely matters either way.",
+  "corrected_stop": "Count ordinary splits from P.consolidateRound (350) per game and the length their children's lines give the king by r499 against the length they lose (deaths); stop only if those splits are under 1 a game with the 95% interval over games wholly below 1 (the change would remove almost nothing). Otherwise build: 'barely matters' is the SPRT's call."
+ },
+ {
+  "id": "I156",
+  "flaw": "ac",
+  "current_stop": "Only if it's within about 25% of the truth in most games (thanks to echo radar I141, sonar reach I151 or anything else landed since) build the stop-at-target fold behind its switch; otherwise commit nothing and report the estimate error.",
+  "corrected_stop": "Judge the estimate only on fold-window turns where the stop-at-target rule would stop folding (estimated enemy longest below our king): stop only if on those turns the true enemy longest was above our king in a share whose rate_ci lower bound is above chance.TRIGGER_P (0.1) (it would stop folds it needs). Read it on unselected online games (online.sample_games / online.all_games, asked of the parent) as well as local champion/grower games; the online value decides."
+ },
+ {
+  "id": "I157",
+  "flaw": "c",
+  "current_stop": "Gate: measure how many enemies the team can count at r400-450 against the champion, folder and swarm; build only if the count separates them clearly.",
+  "corrected_stop": "Read the r400-450 enemy count on unselected online games (online.sample_games / online.all_games, asked of the parent) against real folders and swarms (local folders keep an 8-dragon floor and are our own code, M44); stop only if the count's distributions for opponents that end with at most 3 dragons and the rest overlap so that no threshold separates them at rates_p <= 0.1 (chance.TRIGGER_P). A vague 'clearly' is not a stop."
+ },
+ {
+  "id": "I242",
+  "flaw": "c",
+  "current_stop": "if it fires under once a game, report that.",
+  "corrected_stop": "Count sealed-long-enemy opportunities on unselected online games (online.sample_games / online.all_games, asked of the parent) (the evidence's 6736/6778 games; the C++ starter screen entry may stand in) since every local rotation opponent splits out when trapped as we do; stop only if those opportunities are under 1 a game with the 95% interval over games wholly below 1 there."
+ },
+ {
+  "id": "I248",
+  "flaw": "c",
+  "current_stop": "If splitting next to a longer or equal enemy starter loses length or the dragon, hold the split only while an enemy head of at least our length is within its sprint reach, and split once out of reach.",
+  "corrected_stop": "This is a go line, not a stop (GENERALISE): build either way. The case it acts on (a longer or equal enemy starter kept whole in sprint reach at our split) needs opponents that keep their starter, which no local copy does; count those first splits and their outcome on unselected online games (online.sample_games / online.all_games, asked of the parent) on Autarky and Dilemma, and stop only if they occur in under 1 game in 20 there (rate_ci upper below 0.05)."
+ },
+ {
+  "id": "I273",
+  "flaw": "g",
+  "current_stop": "if guarded turns don't cut head-on deaths of the longest, stop with the numbers.",
+  "corrected_stop": "Failing to show a cut is the SPRT's job (E0138 already read promising; I365 is the retest). Stop only if the guard fires on under 1 turn a game (95% interval wholly below 1), or if the guarded longest dragons die head-on more often than the champion's on matched map-sides at sign p <= 0.1."
+ },
+ {
+  "id": "I274",
+  "flaw": "a",
+  "current_stop": "if under a fifth do, stop with the numbers.",
+  "corrected_stop": "Measure on the turns where a remembered segment changes the chosen move (N10), not on a share of deaths: stop only if such changed turns are under 0.5 a game (rate_ci upper below 0.5), or if the champion's moves on changed turns lead to trapped death within 3 rounds less often than its moves on unchanged turns at rates_p <= 0.1 (the memory would target safe moves)."
+ },
+ {
+  "id": "I308",
+  "flaw": "a",
+  "current_stop": "Under 1 a game: stop with the numbers.",
+  "corrected_stop": "Count only the firings the change removes, jam-guard firings at 62-64 dragons with a free reserve slot for a split-out, on the current champion rather than b6f9053: stop only if they are under 1 a game with the 95% interval over games wholly below 1."
+ },
+ {
+  "id": "I317",
+  "flaw": "a",
+  "current_stop": "under twice our rate, stop with the numbers.",
+  "corrected_stop": "Compare only the turns the rule acts on: the longest dragon from P.foldRound (or any round on maps of at most 1024 tiles) with no enemy head within 3 tiles; stop only if ranks 1-2's coil rate there is not above ours at rates_p <= 0.1 over games (chance.rates_p, theirs first) and the rule would fire under 1 turn a game (95% upper below 1)."
+ },
+ {
+  "id": "I324",
+  "flaw": "ac",
+  "current_stop": "If the crossings clearly pay, report it and stop.",
+  "corrected_stop": "Drop this stop; the re-check's SPRT decides. 'Pearls in the 30 rounds after a crossing against the 30 before' is biased toward crossing (explore crossings happen only once the home region is exhausted); if a pre-check is kept, compare crossing dragons with the switch-off copy on the same map-sides, over near_* portal variants and official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) of Schooltime, Trauma, Portals, Queen Of Spades and Default."
+ },
+ {
+  "id": "I327",
+  "flaw": "ac",
+  "current_stop": "under 30%, stop with the numbers.",
+  "corrected_stop": "Read the share only on rounds the rule acts in (r300 to P.foldRound) and on unselected online games (online.sample_games / online.all_games, asked of the parent), not on round-500 losses (picked by result, MISSES 55); stop only if the share's 95% interval over games (chance.rate_ci) lies wholly below 30%."
+ },
+ {
+  "id": "I338",
+  "flaw": "c",
+  "current_stop": "STEP 1 (measure; stop if under 2 such rams a game)",
+  "corrected_stop": "Read the trigger rate on unselected online games (online.sample_games / online.all_games, asked of the parent) on maps of at most 1024 tiles, since the idea itself says local rotation opponents may never outnumber us 3:1; stop only if rams started while met enemy ids are at least 3x our unitCount are under 2 a game with the 95% interval over games wholly below 2 there (local counts are reported, never the stop)."
+ },
+ {
+  "id": "I347",
+  "flaw": "g",
+  "current_stop": "hand in only at 0.53 or better there, else stop with the numbers.",
+  "corrected_stop": "50 paired games cannot tell 0.53 from 0.50; stop only if the candidate scores below the champion against longram at paired z <= -1.28 (one-sided p <= 0.1, chance.paired_z), or its 10+ dragons' head-on deaths to 4+-step rams are higher than the champion's at sign p <= 0.1; otherwise hand it in."
+ },
+ {
+  "id": "I348",
+  "flaw": "ag",
+  "current_stop": "stop with the numbers if hunts land no more often than with E0120 alone.",
+  "corrected_stop": "Compare only the hunts the stack changes, those where the prey is beyond E0120's own ram reach when the ram is found (4+ steps); stop only if rams landed per such hunt are lower than E0120 alone's at rates_p <= 0.1 (E0120's rate first). No difference is the SPRT's call."
+ },
+ {
+  "id": "I355",
+  "flaw": "cg",
+  "current_stop": "On Schooltime, both sides, 4 seeds: the scout or its descendants stand on the garden by r70 in at least 3 of 4 games. Our fast pearls in r0-199 go from 0 to over 100. Trauma's first crossing moves below r30. If not, stop and report where the scouts went.",
+  "corrected_stop": "Superseded by E0184 (promising) and its retest I499; if a check is kept, it is a go line: stop only if, over near_schooltime/near_trauma/near_portals fresh maps and official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) (at least 12 map-sides), scouts cross a portal before P.scoutUntil in a share whose 95% interval lies wholly below 50%. 3 of 4 games on one map is not a stop."
+ },
+ {
+  "id": "I363",
+  "flaw": "c",
+  "current_stop": "local opponents fold with an 8-dragon floor, so if fewer than 1 game in 10 reaches it, stop with the numbers, as E0129 and E0130 did (an online-only gain the SPRT can't see).",
+  "corrected_stop": "Read the trigger on unselected online games (online.sample_games / online.all_games, asked of the parent), not local games (local folders keep 8 dragons, so the local stop fires wrongly, as for E0129/E0130); a rare trigger that turns a lost game into an elimination can still pay, so stop only if games reaching the trigger with an enemy head in ram reach have a rate_ci upper bound below 0.03 of games there (the cited 16 of 397 is 2.5-6.4%)."
+ },
+ {
+  "id": "I364",
+  "flaw": "a",
+  "current_stop": "stop with the numbers if fewer than 20% of king turns have one.",
+  "corrected_stop": "Count only king turns from P.beaconRound whose pearl target is beyond P.kingPearlReach (the turns the rule acts on): stop only if the share of those with a known fast-tile cluster within P.kingFieldReach has a 95% interval over games (chance.rate_ci) wholly below 20%."
+ },
+ {
+  "id": "I376",
+  "flaw": "a",
+  "current_stop": "Abandon with the numbers if the median post pair gets under 2 enemy crossings in its 40 rounds.",
+  "corrected_stop": "Crossings concentrate in a few portal-heavy games (232, 161 and 148 against 0-12), so a median pair hides them: stop only if enemy crossings onto post-eligible landings within 40 rounds of one we could see are under 1 a game with the 95% interval over games wholly below 1."
+ },
+ {
+  "id": "I377",
+  "flaw": "a",
+  "current_stop": "drop with the numbers if the median map changes under 0.5% of pearl-in-view turns.",
+  "corrected_stop": "The tie fires very unevenly by map (15%, 3.7% and 0% of pearl-in-view turns on the three maps measured), so a median map hides it: stop only if target changes over all games are under 0.5% of pearl-in-view turns with the 95% interval over games wholly below 0.5%."
+ },
+ {
+  "id": "I393",
+  "flaw": "c",
+  "current_stop": "Stop condition: if split-outs of dragons in our top 3 cost under 3 length a game at r499, drop the idea.",
+  "corrected_stop": "The gap was measured online on 1152+ maps (49 against 14 a game) and on pocket layouts such as Slithery Fight's pumps; read the cost on those unselected online games (online.sample_games / online.all_games, asked of the parent) and on official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) of Slithery Fight, Trauma and Schooltime as well as the big generated mix, and stop only if the cost's 95% interval over games lies wholly below 3 length a game on every one of them."
+ },
+ {
+  "id": "I398",
+  "flaw": "ab",
+  "current_stop": "Rare moves can decide a one-segment tiebreak, but stop if shadow frequency is below the prompt floor.",
+  "corrected_stop": "The 'prompt floor' is undefined and a rate over all final turns ignores the stake. Count r499 choices the rule changes on a dragon that is or could become our longest (within the length saved of it); stop only if those are under 1 game in 20 with rate_ci upper below 0.05 over at least 60 games that reach r499."
+ },
+ {
+  "id": "I403",
+  "flaw": "ac",
+  "current_stop": "stop with the numbers only if its interval lies under 5% of split-turn deaths.",
+  "corrected_stop": "Count the splits the guard acts on, ordinary splits with a visible bad rammer within paid-sprint reach of the parent, and their parent deaths within 1 round, on fresh games both sides (saved losses are picked by result): stop only if those deaths are under 0.1 a game with rate_ci upper below 0.1, not a share of all split-turn deaths."
+ },
+ {
+  "id": "I405",
+  "flaw": "c",
+  "current_stop": "stop only if its interval lies under 0.1 a game.",
+  "corrected_stop": "Read it on unselected online games (online.sample_games / online.all_games, asked of the parent): every local opponent is our own code and sprints only to ram or escape (0.02% of turns, I491), so a local count would read near 0 and stop wrongly; stop only if our targets eaten first by an enemy's paid sprint have rate_ci upper below 0.1 a game there."
+ },
+ {
+  "id": "I410",
+  "flaw": "bc",
+  "current_stop": "stop unless the rule fires on at least 60% of dragon-turns from r275 on near_trauma and at most 10% on the eval mix",
+  "corrected_stop": "Stop only if the rule's share of dragon-turns from r275 on the open eval mix has a 95% interval over games wholly above 10% (it would fold early where it shouldn't), or elimination losses against swarm and breeder on walled maps rise at rates_p <= 0.1; firing on under 60% of near_trauma is not a stop. Read the walled side on near_trauma, near_stronghold, near_schooltime, the fortress and portalrooms styles and official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes), with a fire share per style."
+ },
+ {
+  "id": "I414",
+  "flaw": "g",
+  "current_stop": "commit unless friendly landing head-ons fail to fall (sign p > 0.1).",
+  "corrected_stop": "Failing to show a fall is the SPRT's job: stop only if refused crossings on portal maps are under 1 a game with the 95% interval wholly below 1, or the candidate's friendly landing head-ons exceed the champion's at sign p <= 0.1 over matched map-sides."
+ },
+ {
+  "id": "I417",
+  "flaw": "bc",
+  "current_stop": "Stop line: stop unless the share of our contact deaths saved only by a sprint of 3+ steps, or at lengths below 10, has a chance.rate_ci lower bound above 0.1",
+  "corrected_stop": "Invert it to the stop side: stop only if that share's rate_ci upper bound is below 0.1. Count it on unselected online games (online.sample_games / online.all_games, asked of the parent) as well as the local rotation, since local opponents cap ram sprints at P.maxRamSteps 3 and online rams run to 4-10 steps; the online value decides."
+ },
+ {
+  "id": "I418",
+  "flaw": "b",
+  "current_stop": "Stop line: stop unless blockers appear in at least 10% of our online games against some opponent (chance.rate_ci lower bound above 0.05) and, in those games, our pearls per round from the region behind the blocker are lower than in games on the same map without one with chance.rates_p <= chance.TRIGGER_P.",
+  "corrected_stop": "Stop only if, for every opponent with at least 20 online games, blockers appear in a share whose rate_ci upper bound is below 0.05, or, where blockers appear, our pearls a round behind them are higher than without at rates_p <= 0.1; not showing a cost is not a stop."
+ },
+ {
+  "id": "I419",
+  "flaw": "bc",
+  "current_stop": "Stop line: stop unless enemy entries cost us at least 0.5 deaths or 2 pocket pearls per game on those maps with a chance.rate_ci lower bound above half that; else record the numbers on I383 and stop.",
+  "corrected_stop": "Stop only if enemy entries cost under 0.5 deaths and under 2 pocket pearls a game with each 95% upper bound below its line, read on unselected online games (online.sample_games / online.all_games, asked of the parent) on pocket maps (local opponents farm as we do, M44); local counts are reported, not the stop."
+ },
+ {
+  "id": "I420",
+  "flaw": "b",
+  "current_stop": "Stop line: stop unless some team in our online opponents crosses at under a quarter of the median team's rate with chance.rates_p <= chance.TRIGGER_P, and our threatened dragons against such teams die with a known portal in reach at least 0.5 times a game.",
+  "corrected_stop": "Stop only if every team with at least 20 games crosses at a rate whose lower bound is above a quarter of the median team's, or our threatened dragons against the lowest-crossing teams die with a known portal in reach under 0.5 times a game with the 95% upper bound below 0.5."
+ },
+ {
+  "id": "I421",
+  "flaw": "b",
+  "current_stop": "Stop line: stop unless the probe-visible share of our long-dragon ram deaths has a chance.rate_ci lower bound above 0.15, or team 213's one-ray turns are followed by a turn-away or ram more often than its other turns with chance.rates_p <= chance.TRIGGER_P.",
+  "corrected_stop": "Stop only if the probe-visible share of our 6+ dragons' ram deaths has a rate_ci upper bound below 0.15 on unselected online games (online.sample_games / online.all_games, asked of the parent) (local copies reported apart); team 213's one-ray behaviour is supporting evidence, not a gate."
+ },
+ {
+  "id": "I425",
+  "flaw": "ag",
+  "current_stop": "stop (no code, report) if under a third of the champion's after-crossing deaths had the pair known in World at the crossing; otherwise commit unless changed moves die no more than their alternatives (sign p > 0.1) or pearls a game fall at sign p <= 0.1.",
+  "corrected_stop": "Count what the rule acts on, not a share of all landing deaths: stop only if next-step deaths after crossings with the pair known and a landing region at most length + eats + P.landingPocketMargin are under 0.5 a Portals game with rate_ci upper below 0.5, or pearls a game fall at sign p <= 0.1; changed moves not dying less at p <= 0.1 goes to the SPRT."
+ },
+ {
+  "id": "I426",
+  "flaw": "b",
+  "current_stop": "Stop and write no code unless such deaths are at least 1 per Portals game with chance.rate_ci lower bound above 0.5 a game",
+  "corrected_stop": "Invert it to the stop side: stop only if first-move portal deaths into our own body have a 95% upper bound below 0.5 a Portals game (online, 94 in the Portals share of 490 games, is the evidence to beat)."
+ },
+ {
+  "id": "I428",
+  "flaw": "g",
+  "current_stop": "stop only if they are not lower at sign p <= 0.1 over matched map-sides (chance.sign_p); otherwise build.",
+  "corrected_stop": "Not being lower at p <= 0.1 is not a stop: stop only if the stack's king deaths from r300 are at least E0151's rate, i.e. their 95% interval over games lies wholly at or above about 1.4 a game (34 in 24), so the shedding king dies as often as the unshed one."
+ },
+ {
+  "id": "I440",
+  "flaw": "bc",
+  "current_stop": "Stop only if no cell is below 0 at sign p <= 0.1 over games (chance.sign_p on per-game mean swing, games with at least one such ram): then the table refuses nothing",
+  "corrected_stop": "The table refuses every cell whose mean swing is below P.ramMinSwing whether or not it is significant, so count the refusals: stop only if 3+-step rams falling in cells with a negative fitted mean are under 1 a game with the 95% interval over games wholly below 1, counted on the local games and on unselected online games (online.sample_games / online.all_games, asked of the parent) (the samples disagree by opponent; fit and report both)."
+ },
+ {
+  "id": "I441",
+  "flaw": "a",
+  "current_stop": "Stop only if the formula holds on under 10 king-turns a game on 1152+ maps with the 95% interval over games wholly below 10 (it would change nothing); otherwise build.",
+  "corrected_stop": "Count what the hold changes: king turns on which the champion makes an ordinary split or a split-out farm entry and the formula holds; stop only if those are under 1 a game on 1152+ maps with the 95% interval over games wholly below 1."
+ },
+ {
+  "id": "I449",
+  "flaw": "cg",
+  "current_stop": "Build only if eval firings drop at least twice as much as deadend firings",
+  "corrected_stop": "A go line that doesn't fire still builds (GENERALISE). Stop only if the gate lets through a share of eval firings at least as large as of dead-end firings at rates_p <= 0.1 (it wouldn't separate them), reading the dead-end side on the deadend style plus near_devil, near_trauma, near_stronghold and official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) of Devil, Trauma, Slithery Fight, Dilemma and Autarky."
+ },
+ {
+  "id": "I451",
+  "flaw": "g",
+  "current_stop": "Build only if that share is large (say a third of crashes)",
+  "corrected_stop": "Count, not a share: stop only if folder crashes whose last open-move turn had a move keeping a length-sized 2-3 round reach fill are under 1 a game on the folding map-sides with the 95% interval over games wholly below 1; otherwise build."
+ },
+ {
+  "id": "I452",
+  "flaw": "ac",
+  "current_stop": "build only if its held-out ranking of rams by swing beats the champion's rule (AUC or top-half swing, with n).",
+  "corrected_stop": "AUC over every opportunity is carried by the easy cases both gates agree on; judge only the held-out opportunities where the model and the rule disagree: stop only if rams the model alone takes swing lower than rams the rule alone takes at rates_p or paired z with p <= 0.1. Include unselected online games (online.sample_games / online.all_games, asked of the parent) in the held-out half, since swing depends on who eats the drop."
+ },
+ {
+  "id": "I458",
+  "flaw": "cg",
+  "current_stop": "Build if distance explains the idle or late rounds (a correlation with n and p)",
+  "corrected_stop": "A go line that doesn't fire still builds. Stop only if folders whose formula start differs from r397 by 10+ rounds are under 1 a game with the 95% upper bound below 1, counted on the eval mix plus near_trauma, near_schooltime, the fortress and portalrooms styles and official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) (fold distances there are 30 steps against 17-20)."
+ },
+ {
+  "id": "I461",
+  "flaw": "ac",
+  "current_stop": "check on the other half (AUC or top-half value, with n) against today's rule, and build only if it beats it",
+  "corrected_stop": "Judge only held-out eligible turns where the model and today's rule disagree (from the random-share shadow): stop only if the rule's choice there is worth more 30 rounds later than the model's at paired z or rates_p with p <= 0.1. Put official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) and the near_*/macro styles in the held-out half, not only eval maps."
+ },
+ {
+  "id": "I464",
+  "flaw": "c",
+  "current_stop": "Build only if it separates deaths the rule misses",
+  "corrected_stop": "A go line that doesn't fire still builds. Stop only if the fitted chance and the rule disagree on under 1 played move a game (95% upper below 1), counted on the eval mix plus near_*, deadend, maze and fortress styles and official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes), or if on disagreeing moves the rule's pick dies less than the model's at rates_p <= 0.1."
+ },
+ {
+  "id": "I465",
+  "flaw": "ac",
+  "current_stop": "check on the other half that its ranking of targets by hit rate beats today's penalties (log-loss or top-half hit rate, with n)",
+  "corrected_stop": "Judge only target choices where the fitted cost and today's penalties pick different targets: stop only if today's pick held a pearl on arrival more often there at rates_p <= 0.1, with the held-out half including official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) (loneking on Trauma, Autarky and Dilemma copies, per N0), not only eval maps."
+ },
+ {
+  "id": "I466",
+  "flaw": "bc",
+  "current_stop": "build if steps per pearl while exploring varies across maps by more than a factor of 2 (with n) and visible pearls beyond 14 steps are eaten sooner than exploring finds one.",
+  "corrected_stop": "A go line that doesn't fire still builds. Its evidence is official maps (29-34% of explore turns on Schooltime, Queen Of Spades and Trauma), so shadow the fitted reach on the eval mix and official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) and stop only if it retargets under 1 turn a game with the 95% upper bound below 1 on every style."
+ },
+ {
+  "id": "I467",
+  "flaw": "c",
+  "current_stop": "build if unmerged or late folders took detours their slack could not cover, with n and the chance (loop/chance.py).",
+  "corrected_stop": "A go line that doesn't fire still builds. Stop only if folding turns whose pearl detour exceeds their slack are under 1 a game with the 95% upper bound below 1, counted on the eval mix and on unselected online games (online.sample_games / online.all_games, asked of the parent) on 1152+ maps (the 7676 evidence; rotation opponents hunt kings as online teams rarely do)."
+ },
+ {
+  "id": "I468",
+  "flaw": "c",
+  "current_stop": "build if the ram rate by margin and length says reach + 1 and length 6 cut in the wrong place (with n).",
+  "corrected_stop": "A go line that doesn't fire still builds. The ram rate by margin depends on how opponents ram, so fit it on unselected online games (online.sample_games / online.all_games, asked of the parent) as well as local games (the online value decides, M44), and stop only if the fitted shed and today's rule disagree on under 1 turn a game with the 95% upper bound below 1."
+ },
+ {
+  "id": "I469",
+  "flaw": "c",
+  "current_stop": "build if hunts outside today's box would have netted more swing per round than the pearls the dragon ate instead (with n).",
+  "corrected_stop": "A go line that doesn't fire still builds. Swing and catch rate depend on the opponent, so read them on unselected online games (online.sample_games / online.all_games, asked of the parent) and against loneking on official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) (N0) as well as the rotation; stop only if the value rule and today's box disagree on under 1 turn a game with the 95% upper bound below 1."
+ },
+ {
+  "id": "I470",
+  "flaw": "bc",
+  "current_stop": "Build if such turns are common (with n) and the king's drift is small against the path distance.",
+  "corrected_stop": "'Common' is not a line. Stop only if fold-window turns whose freshest report is 13-40 rounds old and that the drift rule would accept are under 1 a game with the 95% upper bound below 1, counted on the eval mix and on near_trauma, portalrooms and fortress maps and official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes), where the beacon reaches 5-8% of dragons."
+ },
+ {
+  "id": "I471",
+  "flaw": "c",
+  "current_stop": "build if the king's eaten share at 5-8 steps is close to that at 1-4 or falls with rounds left in a way a radius misses (with n).",
+  "corrected_stop": "A go line that doesn't fire still builds. Stop only if the fitted share and the 4-step radius disagree on under 1 folding turn a game with the 95% upper bound below 1, reading shares on the eval mix and official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) (who else is near the king depends on the layout)."
+ },
+ {
+  "id": "I472",
+  "flaw": "c",
+  "current_stop": "build if saturation separates those deaths better than area (with n).",
+  "corrected_stop": "A go line that doesn't fire still builds. Stop only if the count rule and the 1152-tile gate disagree on under 1 split decision a game with the 95% upper bound below 1, over maps of every size including the cases area misreads (small maps with a full swarm, big maps where we trail) on official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) and unselected online games (online.sample_games / online.all_games, asked of the parent)."
+ },
+ {
+  "id": "I473",
+  "flaw": "c",
+  "current_stop": "build if the trap rate per crowd tile rises with length (with n).",
+  "corrected_stop": "A go line that doesn't fire still builds. Stop only if the length-scaled cost and the length-8 switch pick different targets on under 1 turn a game with the 95% upper bound below 1, on the big mix and big official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) (the length gate was tuned on generated maps)."
+ },
+ {
+  "id": "I485",
+  "flaw": "cg",
+  "current_stop": "build only if the fitted choice beats the champion's fixed switch on held-out maps (n and chance stated, loop/GENERALISE.md).",
+  "corrected_stop": "Judge only held-out states where the model's fold start differs from the fixed switch, with the held-out half including official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) and loneking games: stop only if the fixed switch scores higher there at paired z or rates_p with p <= 0.1. Not beating it is the SPRT's call."
+ },
+ {
+  "id": "I497",
+  "flaw": "c",
+  "current_stop": "build if the loss per unit of chance rises with length (with n).",
+  "corrected_stop": "A go line that doesn't fire still builds. Stop only if the length-scaled graze cost and the length-12 switch pick different targets on under 1 turn a game with the 95% upper bound below 1, on the big mix and big official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes)."
+ },
+ {
+  "id": "I501",
+  "flaw": "cg",
+  "current_stop": "Stop line: if the score gap between sides is under |z| 2.5 and our spread tracks the field's (correlation of per-map mean distances >= 0.5), stop, no code.",
+  "corrected_stop": "A gap under |z| 2.5 is not evidence of no gap. Split maps by pearl-field centrality across every generator style and official-map copies (renamed maps/ladder and maps/sprint files, as I459's note describes) (the SPRT's eval maps span a narrow range); stop only if the correlation of our spread with the field's has a 95% interval wholly above 0.5."
+ }
+]

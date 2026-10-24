@@ -1,0 +1,36 @@
+{
+ "id": "E0314",
+ "idea": {
+  "category": "farm",
+  "priority": 1,
+  "title": "Set farmMinEndLength to 16 (from 4): it scored 0.63 against the champion over 60 variant-sweep games",
+  "hypothesis": "The variant sweep of champion 6827a20 (loop/sweep.py, MISSES 16) played the champion with only farmMinEndLength = 16 (its value is 4) against the unchanged champion. Its comment in params.hpp: ... if our length plus those pearls reaches this, so we can split out. The variant scored 0.633 over 60 games on 30 fresh eval maps, both sides (W-L-D 38-22-0; first pass 0.65 over 20 games, second pass 0.62 over 40). Per map: won both sides on 8 of 30 maps, lost both on 0, split the rest (gen_eval_235511463 2, gen_eval_235511464 2, gen_eval_235511465 1, gen_eval_235511466 1, gen_eval_235511467 1, gen_eval_235511468 2, gen_eval_235511469 1, gen_eval_235511470 1, gen_eval_235511471 1, gen_eval_235511472 1, gen_eval_235511473 1, gen_eval_235511474 1, gen_eval_235511475 1, gen_eval_235511476 1, gen_eval_235511477 2, gen_eval_235511478 1, gen_eval_235511479 2, gen_eval_235511480 1, gen_eval_235511481 2, gen_eval_235511482 1, gen_eval_235511483 1, gen_eval_235511484 1, gen_eval_235511485 2, gen_eval_235511486 1, gen_eval_235511487 1, gen_eval_235511488 2, gen_eval_235511489 1, gen_eval_235511490 1, gen_eval_235511491 1, gen_eval_235511492 1). The games are in /Users/me/.bc-loop/sweeps/6827a20e6f0839bb51015161d3afee1bd4b46aee/results.jsonl. This is a hint from a small sample, chosen as one of the best of 120 variants, not a measured gain (about 1 in 10 variants no better than the champion clear both thresholds by chance): test it alone by SPRT (the champion with just this value changed). If the SPRT's per-opponent scores pull apart, make the value depend on something the bot can see rather than a new constant.",
+  "id": "I852",
+  "status": "trying:lane4",
+  "source": "sweep:6827a20",
+  "rank": 2,
+  "history": [
+   "review 1790627420390617000: raised 3 -> 2, rank 1 (farm has never played an idea): a parameter-only SPRT, cheap. This review's audit found the farm gate is not where our dead-end deaths come from (0 of 26 non-deliberate 'deeper' dooms in 2 kept rule-count replays had farm 1 on the dooming move), but short farm entries still die within 30 rounds 14.5% of the time (82 of 567, 26.6% on <=1024 tiles; rule counts, 24 games), which a gate of 16 would stop entering. E0281's tune moved farmMinEndLength only 4 -> 5, so 16 is untested. If the SPRT pulls apart by size, condition the gate on what the pocket's pearls pay (the entry's split-out cost), not a new constant.",
+   "review 1790631591499762000: raised 2 -> 1, rank 2: a one-value test (no coding) with a sweep score of 0.63 over 60; the nearest precedent, E0300 (sweep 0.65), was kept at +16.4 but with its gain on the champion seat (method M82), so read this one's non-self seats. Rule counts of b85dad1 (24 games): farm entries 26.2 a game (81.8 on 1024 or fewer tiles), those under length 8 dying within 30 rounds 28% (34% on small maps), which a gate of 16 stops."
+  ]
+ },
+ "lane": 4,
+ "base": "11bd366feb56ae925c13f2523c0be3edab7be85b",
+ "session": {
+  "name": "bc-E0314-21aa24c8",
+  "session_id": "21aa24c8-39cd-4054-8302-bcb3029c5222",
+  "status": "finished",
+  "seconds": 1553,
+  "exit": 0,
+  "cost_usd_list_price": 3.589540600000002,
+  "is_error": false,
+  "turns": 50,
+  "summary": "I set `farmMinEndLength` to 16 (from 4) and committed it as `57c5f023`. It is now on the referee's SPRT; I haven't predicted the result.\n\n**What was checked:**\n- **Bot tests:** 0 failed (29 scenario binaries plus the protocol suite), rerun after the review fixes.\n- **Quick check:** 10-14-0 against the champion (score 0.42), no crashes or timeouts. The CPU check didn't run because this Mac was over its load gate; the evaluation's CPU gate will cover it.\n- **Cutoffs:** none added; one value changed (`farmMinEndLength` 4 \u2192 16).\n- **Review:** one fresh-context pass found three gaps, all fixed:\n  - Two \"one pearl short\" test checks would still have passed with the pearl-count rule deleted.\n  - One test comment gave a wrong length limit.\n  - The `bot/farm.hpp` comment still described 4 as the gate.\n\n**What changed:**\n- `bot/params.hpp`: the value, plus a comment on what it stands for: the length a farm trip must end on to pay back its split-out.\n- `bot/farm.hpp`: comment only.\n- Tests (`tests/bot/test_refuse.cpp`, `test_decisions.cpp`, `test_king_seed.cpp`): the farm scenes had hard-coded 2\u20135-long dragons, so they now take lengths from `P.farmMinEndLength`. The test dragon's body now bends so a 14-long one fits on the board. I added one boundary check (one segment short of the gate is refused). Net test cases: 0.\n\n**Shadow count** (a logging copy of the champion with the 16 gate comp [...] It is kept as the sweep's value. A formula follow-up should price it by the pocket's pearls against the dragon's intake outside, and by the unit count, which sets what a death costs.\n\n**Follow-up:** if the per-opponent or eval/worldgen scores pull apart, replace the constant with a gate priced by the pocket's pearls against the dragon's intake outside, conditioned on the unit count.\n\nThe start message, the map-mix reply and the coding_done summary to bc-main-fresh were all delivered. The logging copy, maps and replays are in `data/` (gitignored) for the post-mortem.\n\nBlocked by: none",
+  "review": "subagent",
+  "coded_at": 1790636740.836433,
+  "handed_in": "57c5f0235e1a76a198f93b8aa824010b0f617c66",
+  "merge": "clean",
+  "resolve": 1790636741.2157838,
+  "resolve_on": "a5e45523c11620154fde690abc9d97934f34cb94"
+ }
+}

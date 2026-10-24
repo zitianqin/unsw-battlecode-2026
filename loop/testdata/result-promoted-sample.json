@@ -1,0 +1,241 @@
+{
+ "id": "E0102",
+ "idea": {
+  "id": "I208",
+  "category": "exploration",
+  "title": "Blind dragons keep their heading: explore ties go straight ahead, not to the grid's scan order (today a north-then-west bias)"
+ },
+ "lane": 1,
+ "base": "c7f3fb42ab100c7c77d3840cee5dec6caafaa70f",
+ "candidate": "1c225be954742d086a32502a5a30a0a159d95c69",
+ "verdict": "kept",
+ "reason": "SPRT accepted",
+ "evaluation": {
+  "base": "36773e611e674e59a615b6bc54190b5b0ba9a604",
+  "candidate": "1c225be954742d086a32502a5a30a0a159d95c69",
+  "pool_pairs": 50,
+  "shared_maps": "/Users/me/.bc-loop/shared-maps/36773e611e67-unswbc-1.1.0"
+ },
+ "pool": {
+  "ok": true,
+  "pairs_per_opponent": 50,
+  "opponents": [
+   {
+    "name": "v0004",
+    "candidate": 0.88,
+    "base": 0.84,
+    "difference": 0.04,
+    "z": 0.94,
+    "worse": false,
+    "r500": {
+     "candidate": {
+      "games": 48,
+      "ours": 41.7,
+      "theirs": 22.0,
+      "total": 257.2,
+      "few": 19
+     },
+     "base": {
+      "games": 48,
+      "ours": 40.4,
+      "theirs": 24.1,
+      "total": 227.6,
+      "few": 24
+     }
+    }
+   },
+   {
+    "name": "v0008",
+    "candidate": 0.82,
+    "base": 0.82,
+    "difference": 0.0,
+    "z": 0.0,
+    "worse": false,
+    "r500": {
+     "candidate": {
+      "games": 50,
+      "ours": 37.9,
+      "theirs": 22.7,
+      "total": 229.7,
+      "few": 18
+     },
+     "base": {
+      "games": 51,
+      "ours": 36.8,
+      "theirs": 22.8,
+      "total": 211.8,
+      "few": 27
+     }
+    }
+   },
+   {
+    "name": "swarm",
+    "candidate": 0.83,
+    "base": 0.78,
+    "difference": 0.05,
+    "z": 1.3,
+    "worse": false,
+    "r500": {
+     "candidate": {
+      "games": 47,
+      "ours": 37.2,
+      "theirs": 16.3,
+      "total": 192.6,
+      "few": 30
+     },
+     "base": {
+      "games": 47,
+      "ours": 34.6,
+      "theirs": 18.5,
+      "total": 178.8,
+      "few": 30
+     }
+    }
+   },
+   {
+    "name": "rammer",
+    "candidate": 0.84,
+    "base": 0.735,
+    "difference": 0.105,
+    "z": 2.42,
+    "worse": false,
+    "r500": {
+     "candidate": {
+      "games": 45,
+      "ours": 39.1,
+      "theirs": 17.6,
+      "total": 197.4,
+      "few": 25
+     },
+     "base": {
+      "games": 45,
+      "ours": 36.4,
+      "theirs": 18.9,
+      "total": 176.8,
+      "few": 30
+     }
+    }
+   },
+   {
+    "name": "folder",
+    "candidate": 0.77,
+    "base": 0.75,
+    "difference": 0.02,
+    "z": 0.41,
+    "worse": false,
+    "r500": {
+     "candidate": {
+      "games": 49,
+      "ours": 43.9,
+      "theirs": 33.6,
+      "total": 293.6,
+      "few": 18
+     },
+     "base": {
+      "games": 49,
+      "ours": 40.3,
+      "theirs": 34.0,
+      "total": 277.1,
+      "few": 21
+     }
+    }
+   },
+   {
+    "name": "grower",
+    "candidate": 0.95,
+    "base": 0.93,
+    "difference": 0.02,
+    "z": 1.0,
+    "worse": false,
+    "r500": {
+     "candidate": {
+      "games": 32,
+      "ours": 48.8,
+      "theirs": 24.4,
+      "total": 315.9,
+      "few": 7
+     },
+     "base": {
+      "games": 32,
+      "ours": 44.5,
+      "theirs": 26.8,
+      "total": 266.4,
+      "few": 10
+     }
+    }
+   },
+   {
+    "name": "hunter",
+    "candidate": 0.62,
+    "base": 0.57,
+    "difference": 0.05,
+    "z": 0.8,
+    "worse": false,
+    "r500": {
+     "candidate": {
+      "games": 52,
+      "ours": 41.1,
+      "theirs": 34.3,
+      "total": 222.0,
+      "few": 21
+     },
+     "base": {
+      "games": 51,
+      "ours": 37.5,
+      "theirs": 36.7,
+      "total": 199.2,
+      "few": 25
+     }
+    }
+   },
+   {
+    "name": "replayer",
+    "candidate": 0.63,
+    "base": 0.59,
+    "difference": 0.04,
+    "z": 0.66,
+    "worse": false,
+    "r500": {
+     "candidate": {
+      "games": 47,
+      "ours": 40.0,
+      "theirs": 35.1,
+      "total": 254.5,
+      "few": 17
+     },
+     "base": {
+      "games": 48,
+      "ours": 37.4,
+      "theirs": 36.9,
+      "total": 235.5,
+      "few": 21
+     }
+    }
+   },
+   {
+    "name": "breeder",
+    "candidate": 0.6,
+    "base": 0.44,
+    "difference": 0.16,
+    "z": 2.47,
+    "worse": false,
+    "r500": {
+     "candidate": {
+      "games": 50,
+      "ours": 38.6,
+      "theirs": 38.1,
+      "total": 204.8,
+      "few": 26
+     },
+     "base": {
+      "games": 48,
+      "ours": 38.5,
+      "theirs": 39.9,
+      "total": 200.4,
+      "few": 28
+     }
+    }
+   }
+  ]
+ }
+}

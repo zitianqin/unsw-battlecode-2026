@@ -1,0 +1,14 @@
+PM ASL data store: /var/log/powermanagement
+2026-09-30 14:24:27 +1000 Sleep               	Entering Sleep state due to 'Clamshell Sleep':TCPKeepAlive=active Using Batt (Charge:44%) 523 secs
+2026-09-30 14:24:27 +1000 Wake Requests       	[*process=dasd request=SleepService deltaSecs=1034 wakeAt=2026-09-30 14:41:41 info="com.apple.dasd:501:com.apple.XProtect.PluginService.agent.fast.scan"] [process=mDNSResponder request=Maintena
+2026-09-30 14:33:10 +1000 Wake                	Wake from Deep Idle [CDNVA] : due to smc.sysState.Wake(0x70070000) lid SMC.OutboxNotEmpty RTP.multi-touch/HID Activity Using BATT (Charge:44%)
+2026-09-30 14:33:10 +1000 Kernel Client Acks
+2026-09-30 14:33:10 +1000 Kernel Client Acks  	Delays to Wake notifications: [AppleCS42L84Audio driver is slow(msg: DidChangeState to 1)(73 ms)] [Codec Output driver is slow(msg: WillChangeState to 1)(73 ms)] [AppleConvergedIPCOLYBTControl
+2026-09-30 19:24:31 +1000 Assertions          	PID 14153(cloudd) Released SystemIsActive "NSURLSessionTask 4CB1821C-D075-445B-A87D-D23605FAE50D" 00:00:03  id:0x0xc00009fdf [System: PrevIdle DeclUser SysAct kDisp]
+2026-09-30 19:28:24 +1000 Sleep               	Entering Sleep state due to 'Low Power Sleep':TCPKeepAlive=inactive Using Batt (Charge:1%) 920 secs
+2026-09-30 19:28:25 +1000 Wake Requests       	[*process=dasd request=SleepService deltaSecs=1024 wakeAt=2026-09-30 19:45:29 info="com.apple.dasd:501:com.apple.spotlightknowledged.task.priority"] [process=powerd request=CSPNEvaluation delta
+2026-09-30 19:28:25 +1000 PM Client Acks      	Delays to Sleep notifications: [com.apple.audio.ParrotAudioPlugin is slow(667 ms)] [NESessionManager is slow(1140 ms)]
+2026-09-30 19:43:44 +1000 BatteryHealth       	Warning level: 1 time: -1 cap: 1
+2026-09-30 19:43:44 +1000 Wake                	Wake from Hibernate [CDNVA] : due to lid charger/User Using AC (Charge:1%)
+2026-09-30 19:43:44 +1000 Kernel Client Acks  	Delays to Sleep notifications: [AppleSEPManager driver is slow(msg: SetState to 0)(1149 ms)] [AppleANS3CGv2Controller driver is slow(msg: SetState to 0)(1169 ms)]
+2026-09-30 19:43:44 +1000 Kernel Client Acks  	Delays to Wake notifications: [AppleSN012776Amp driver is slow(msg: SetState to 1)(62 ms)] [Port-USB-C driver is slow(msg: SetState to 1)(63 ms)] [Port-USB-C driver is slow(msg: SetState to 1)(

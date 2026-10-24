@@ -1,0 +1,66 @@
+{
+ "id": "E0111",
+ "idea": {
+  "id": "I171",
+  "title": "Re-check E0029's dead-end farms: the champion with closed-pocket farm entry switched off",
+  "status": "trying:lane1",
+  "priority": 1
+ },
+ "lane": 1,
+ "base": "2c79f81d0d90038543c82dff930ce243cc4b16e8",
+ "candidate": "",
+ "changed_files": [],
+ "session": {
+  "parent": "bc-main-fresh",
+  "stack": [],
+  "protected": "b1277d20312168b9d6ab196367b1ef200b786bec",
+  "referee_commit": "e21710001567ef3ce5f3ff9136c1ef32fafb744e",
+  "protected_maps": "51ce9a5ec88dc6f339a1111f4e5c2fcfd72da0a1",
+  "name": "bc-E0111-5c339c6e",
+  "session_id": "5c339c6e-2293-428f-84b4-6c464b8c8b68",
+  "status": "finished",
+  "pid": 10354,
+  "seconds": 551,
+  "exit": 0,
+  "cost_usd_list_price": 2.5142615999999998,
+  "is_error": false,
+  "turns": 31,
+  "summary": "I abandoned E0111 and committed nothing, as the orchestrator (bc-main-fresh) asked. The re-check is answered: dead-end farming still helps the current champion (v0030), so keep it. If the farm code is ever revisited, work on the entry threshold (I097) rather than removing farming.\n\n**What I built (left uncommitted in the clone):**\n- A switch in `bot/params.hpp`, `P.deadEndFarms`, defaulting to false. When it is off, `bot/scoring.hpp:83` stops asking `farmEntryOk`, so a closed pocket takes the same penalty as any other closed move.\n- I put the check at the caller rather than inside `farmEntryOk`, so the tests can still check the pocket judgement directly. The behaviour is the same either way.\n- Comments in `bot/farm.hpp` and `bot/scoring.hpp` now say farming depends on the switch.\n- In `tests/bot/test_decisions.cpp`, the farm tests now check `farmEntryOk` itself. I added the idea's scenario: a length-4 dragon beside a closed 6-tile pocket with 3 pearls takes an open move with the switch off and enters with it on.\n\n**Checks I ran:**\n- Bot tests pass with the switch set each way.\n- Quick check: 9-11-0 against the champion, no failures, CPU p99 5.1M.\n- One review of the diff found no correctness or intent gaps.\n\n**Measurement:** 30 games, switch off against champion 2c79f81, on 15 maps with both sides each. The switch-off lost 11-19.\n\n| Map | Wins (switch off) | Pearls per game, of [...] val_1110117 | 0/2 | 24 vs 248 | 0 vs 4.5 |\n| Stronghold | 1/2 | 626 vs 681 | 34.5 vs 33 |\n| Schooltime | 1/2 | 1450 vs 1549 | 41.5 vs 41 |\n| Big Empty | 2/2 | 2644 vs 2552 | 75.5 vs 54.5 |\n| All 15 maps | 11/30 | 731 vs 853 | 20.0 vs 20.3 |\n\nEliminations were 9 for the switch-off against 4 for the champion. On maps where the food sits in closed pockets, farming is the main source of pearls. I didn't count farm episodes: the switched-off side has none by construction, and I didn't instrument the champion. The measurement files are in the untracked `.measure/` folder.\n\nBlocked by: none"
+ },
+ "cpu": {},
+ "bot_tests": {},
+ "sprt": {},
+ "evaluation": {
+  "elo0": 0,
+  "elo1": 15,
+  "alpha": 0.05,
+  "beta": 0.05,
+  "max_pairs": 2400,
+  "fresh": true,
+  "pool": true,
+  "pool_pairs": 50,
+  "rotation": [
+   "swarm",
+   "rammer",
+   "breeder"
+  ],
+  "limit_probability": 0.9,
+  "screen_reuse": true,
+  "toolchain": {
+   "version": "1.1.0",
+   "python": "/Users/me/.bc-loop/toolchains/1.1.0/bin/python",
+   "validated_at": 1790327457.43179,
+   "epoch": "unswbc-1.1.0",
+   "champion": "65bb2295e3700d632b66825b9302c49bcb671e18",
+   "compatibility": "/Users/me/.bc-loop/toolchains/1.1.0/compatibility.jsonl"
+  }
+ },
+ "pool": {},
+ "identity": {},
+ "official": {},
+ "stacked_on": [],
+ "verdict": "no code",
+ "reason": "nothing committed; the coder's reason: I abandoned E0111 and committed nothing, as the orchestrator (bc-main-fresh) asked. The re-check is answered: dead-end farming still helps the current champion (v0030), so keep it. If the farm code is ever revisited, work on the entry threshold (I097) rather than removing farming. **What I built (le",
+ "started": 1790406200.1520152,
+ "finished": 1790406754.927892
+}

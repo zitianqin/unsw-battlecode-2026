@@ -1,0 +1,70 @@
+[
+ {
+  "id": 454868,
+  "submission_id": 9695,
+  "opponent": 545,
+  "opponent_submission_id": 9571,
+  "side": "A",
+  "map_id": 7,
+  "map_hash": null,
+  "ranked": false,
+  "requested_at": "2026-09-28T05:10:11.783Z",
+  "dev": true,
+  "replay": "/Users/me/.bc-loop/online-replays/9695/454868.replay",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 100,
+    "winner": "A"
+   }
+  },
+  "api_winner": "a",
+  "doom_version": 2
+ },
+ {
+  "id": 454873,
+  "submission_id": 9695,
+  "opponent": 545,
+  "opponent_submission_id": 9571,
+  "side": "A",
+  "map_id": 17,
+  "map_hash": null,
+  "ranked": false,
+  "requested_at": "2026-09-28T05:10:11.783Z",
+  "dev": true,
+  "replay": "/Users/me/.bc-loop/online-replays/9695/454873.replay",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 91,
+    "winner": "B"
+   }
+  },
+  "api_winner": "b",
+  "doom_version": 2,
+  "kept": "loss"
+ },
+ {
+  "id": 454872,
+  "submission_id": 9695,
+  "opponent": 545,
+  "opponent_submission_id": 9571,
+  "side": "A",
+  "map_id": 15,
+  "map_hash": null,
+  "ranked": false,
+  "requested_at": "2026-09-28T05:10:11.783Z",
+  "dev": true,
+  "kept": "loss",
+  "replay": "/Users/me/.bc-loop/online-replays/9695/454872.replay",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "B"
+   }
+  },
+  "api_winner": "b",
+  "doom_version": 2
+ }
+]

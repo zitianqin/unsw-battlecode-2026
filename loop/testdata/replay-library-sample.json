@@ -1,0 +1,481 @@
+{
+ "online_json": {
+  "dev": {
+   "teams": [
+    {
+     "id": 446
+    },
+    {
+     "id": 545
+    },
+    {
+     "id": 609
+    },
+    {
+     "id": 704
+    },
+    {
+     "id": 722
+    },
+    {
+     "id": 752
+    },
+    {
+     "id": 753
+    },
+    {
+     "id": 754
+    },
+    {
+     "id": 755
+    },
+    {
+     "id": 756
+    },
+    {
+     "id": 757
+    },
+    {
+     "id": 758
+    },
+    {
+     "id": 759
+    },
+    {
+     "id": 760
+    }
+   ]
+  }
+ },
+ "online": {
+  "10072": {
+   "games": [
+    {
+     "id": 477714,
+     "submission_id": 10072,
+     "submission_from": "replay",
+     "opponent": 566,
+     "opponent_submission_id": null,
+     "side": "B",
+     "map_id": 20,
+     "map_hash": null,
+     "ranked": true,
+     "requested_at": "2026-09-28T10:00:00.000Z",
+     "replay": "/Users/me/.bc-loop/online-replays/10072/477714.replay",
+     "api_winner": "a",
+     "summary": {
+      "map": {
+       "name": "Portals",
+       "width": 32,
+       "height": 16,
+       "symmetry": "xy"
+      },
+      "result": {
+       "endReason": "roundLimit",
+       "endRound": 499,
+       "winner": "A"
+      }
+     },
+     "case": "ranked"
+    },
+    {
+     "id": 480193,
+     "submission_id": 10072,
+     "submission_from": "request",
+     "opponent": 722,
+     "opponent_submission_id": null,
+     "side": "A",
+     "map_id": 4,
+     "map_hash": null,
+     "ranked": false,
+     "requested_at": "2026-09-28T10:23:56.649Z",
+     "dev": true,
+     "replay": "/Users/me/.bc-loop/online-replays/10072/480193.replay",
+     "api_winner": "b",
+     "dev_wins_pruned": true,
+     "summary": {
+      "map": {
+       "name": "Default",
+       "width": 32,
+       "height": 32,
+       "symmetry": "xy"
+      },
+      "result": {
+       "endReason": "teamEliminated",
+       "endRound": 275,
+       "winner": "B"
+      }
+     },
+     "case": "pruned"
+    },
+    {
+     "id": 479679,
+     "submission_id": 10072,
+     "submission_from": "request",
+     "opponent": 446,
+     "opponent_submission_id": null,
+     "side": "A",
+     "map_id": 15,
+     "map_hash": null,
+     "ranked": false,
+     "requested_at": "2026-09-28T10:11:54.584Z",
+     "dev": true,
+     "kept": "loss",
+     "replay": "/Users/me/.bc-loop/online-replays/10072/479679.replay",
+     "api_winner": "b",
+     "dev_wins_pruned": true,
+     "summary": {
+      "map": {
+       "name": "Trauma",
+       "width": 48,
+       "height": 24,
+       "symmetry": "xy"
+      },
+      "result": {
+       "endReason": "roundLimit",
+       "endRound": 499,
+       "winner": "B"
+      }
+     },
+     "case": "kept"
+    },
+    {
+     "id": 480861,
+     "submission_id": 10072,
+     "submission_from": "replay",
+     "opponent": 130,
+     "opponent_submission_id": null,
+     "side": "A",
+     "map_id": 4,
+     "map_hash": null,
+     "ranked": false,
+     "requested_at": "2026-09-28T10:37:32.345Z",
+     "replay": "/Users/me/.bc-loop/online-replays/10072/480861.replay",
+     "api_winner": "b",
+     "summary": {
+      "map": {
+       "name": "Default",
+       "width": 32,
+       "height": 32,
+       "symmetry": "xy"
+      },
+      "result": {
+       "endReason": "roundLimit",
+       "endRound": 499,
+       "winner": "B"
+      }
+     },
+     "case": "unranked_noid"
+    }
+   ],
+   "results": []
+  },
+  "10751": {
+   "games": [
+    {
+     "id": 529075,
+     "submission_id": 10751,
+     "submission_from": "request",
+     "opponent": 545,
+     "opponent_submission_id": null,
+     "side": "A",
+     "map_id": 4,
+     "map_hash": null,
+     "ranked": false,
+     "requested_at": "2026-09-28T22:35:09.680Z",
+     "dev": true,
+     "replay": "/Users/me/.bc-loop/online-replays/10751/529075.replay",
+     "api_winner": "b",
+     "bceval": {
+      "v": "9c70c719e4d5.2",
+      "turn": {
+       "round": 225,
+       "to": 250,
+       "fall": 1.389,
+       "group": "bodies",
+       "deltas": {
+        "bodies": -1.641,
+        "economy": 0.109,
+        "fights": 0.051,
+        "ground": 0.114,
+        "champion": -0.022
+       }
+      },
+      "rates": "filled from /Users/me/.bc-loop/ladder-map-files/80bc96871623a19295a093ef0ea34516cb7a341abd7398e3d97d1fb13ecabe05.map (404 of 404 spawns on its tiles)"
+     },
+     "summary": {
+      "map": {
+       "name": "Default",
+       "width": 32,
+       "height": 32,
+       "symmetry": "xy",
+       "sizeBand": "<=1024"
+      },
+      "result": {
+       "endReason": "teamEliminated",
+       "endRound": 277,
+       "winner": "B"
+      }
+     },
+     "case": "dev"
+    }
+   ],
+   "results": []
+  },
+  "3182": {
+   "games": [
+    {
+     "id": 95046,
+     "submission_id": 3182,
+     "opponent": 12,
+     "opponent_submission_id": 3453,
+     "side": "A",
+     "map_id": 3,
+     "map_hash": null,
+     "ranked": false,
+     "requested_at": "2026-09-23T15:14:55.781Z",
+     "replay": "/Users/me/.bc-loop/online-replays/3182/95046.replay",
+     "summary": {
+      "map": {
+       "name": "Big Empty",
+       "width": 64,
+       "height": 64,
+       "symmetry": "xy"
+      },
+      "result": {
+       "endReason": "roundLimit",
+       "endRound": 499,
+       "winner": "A"
+      }
+     },
+     "case": "unranked_unseen"
+    },
+    {
+     "id": 95358,
+     "submission_id": 3182,
+     "opponent": 552,
+     "opponent_submission_id": 3398,
+     "side": "A",
+     "map_id": 3,
+     "map_hash": null,
+     "ranked": false,
+     "requested_at": "2026-09-23T15:25:54.549Z",
+     "replay": "/Users/me/.bc-loop/online-replays/3182/95358.replay",
+     "summary": {
+      "map": {
+       "name": "Big Empty",
+       "width": 64,
+       "height": 64,
+       "symmetry": "xy"
+      },
+      "result": {
+       "endReason": "roundLimit",
+       "endRound": 499,
+       "winner": "A"
+      }
+     },
+     "case": "unranked_seen"
+    },
+    {
+     "id": 91322,
+     "submission_id": 3182,
+     "opponent": 552,
+     "opponent_submission_id": 3398,
+     "side": "B",
+     "map_id": 11,
+     "map_hash": null,
+     "ranked": true,
+     "requested_at": "2026-09-23T14:00:00.000Z",
+     "replay": "/Users/me/.bc-loop/online-replays/3182/91322.replay",
+     "summary": {
+      "map": {
+       "name": "Trophy",
+       "width": 25,
+       "height": 25,
+       "symmetry": "y"
+      },
+      "result": {
+       "endReason": "teamEliminated",
+       "endRound": 144,
+       "winner": "A"
+      }
+     },
+     "case": "ranked_evidence"
+    }
+   ],
+   "results": []
+  }
+ },
+ "history": [
+  {
+   "at": "2026-09-29T02:37:30Z",
+   "leaders": [
+    {
+     "rank": 1,
+     "id": 306,
+     "name": "Cutlery"
+    },
+    {
+     "rank": 2,
+     "id": 70,
+     "name": "cheji bt"
+    },
+    {
+     "rank": 3,
+     "id": 91,
+     "name": "SSS"
+    },
+    {
+     "rank": 4,
+     "id": 264,
+     "name": "forgot to mention"
+    },
+    {
+     "rank": 5,
+     "id": 801,
+     "name": "中国必须人能飞😡"
+    }
+   ]
+  }
+ ],
+ "study": [
+  {
+   "match": 122772,
+   "battle": "64b671ed-fcfb-42fe-ada5-17f7e0f6045c",
+   "ranked": true,
+   "teamAId": 91,
+   "teamAName": "SSS",
+   "teamBId": 63,
+   "teamBName": "Kamikaze",
+   "winner": "a",
+   "map": "Big Empty",
+   "fetchedAt": "2026-09-24T04:29:31+00:00"
+  },
+  {
+   "match": 121802,
+   "battle": "ad367288-5c7b-47d0-9821-e8b1b6e250dd",
+   "ranked": false,
+   "teamAId": 206,
+   "teamAName": "Stockfish",
+   "teamBId": 91,
+   "teamBName": "SSS",
+   "winner": "b",
+   "map": "Big Empty",
+   "fetchedAt": "2026-09-24T03:29:18+00:00"
+  },
+  {
+   "match": 121821,
+   "battle": "13894224-0c71-44b2-bd4b-465c63ab5dcf",
+   "ranked": false,
+   "teamAId": 206,
+   "teamAName": "Stockfish",
+   "teamBId": 545,
+   "teamBName": "dev test 1 :P",
+   "winner": "b",
+   "map": "Big Empty",
+   "fetchedAt": "2026-09-24T03:29:07+00:00"
+  }
+ ],
+ "valuenet": {
+  "cutlery-ranked": [
+   {
+    "match": 311575,
+    "battle": "fc1fbe75-5952-4a64-ba43-8923252e2c04",
+    "ranked": true,
+    "requestedAt": "2026-09-26T17:25:15.545Z",
+    "autoscrim": false,
+    "submissionAId": null,
+    "submissionBId": null,
+    "teamAId": 306,
+    "teamAName": "Cutlery",
+    "teamBId": 27,
+    "teamBName": "PPP",
+    "winner": "a",
+    "map": "Autarky",
+    "fetchedAt": "2026-09-28T17:20:11+00:00"
+   },
+   {
+    "match": 311720,
+    "battle": "804697a1-6bcf-4cc8-a5cb-b84f6ae9f82d",
+    "ranked": true,
+    "requestedAt": "2026-09-26T17:28:11.901Z",
+    "autoscrim": false,
+    "submissionAId": null,
+    "submissionBId": null,
+    "teamAId": 306,
+    "teamAName": "Cutlery",
+    "teamBId": 213,
+    "teamBName": "Sponge(Albert and Bob)",
+    "winner": "a",
+    "map": "Portals",
+    "fetchedAt": "2026-09-28T17:20:18+00:00"
+   },
+   {
+    "match": 311852,
+    "battle": "1a1e2566-4287-4a7e-87cf-e507126f9be8",
+    "ranked": true,
+    "requestedAt": "2026-09-26T17:31:31.331Z",
+    "autoscrim": false,
+    "submissionAId": null,
+    "submissionBId": null,
+    "teamAId": 306,
+    "teamAName": "Cutlery",
+    "teamBId": 46,
+    "teamBName": "Sabotage-d",
+    "winner": "a",
+    "map": "Portals",
+    "fetchedAt": "2026-09-28T17:20:24+00:00"
+   }
+  ],
+  "calc-all": [
+   {
+    "match": 508463,
+    "battle": "cfb21aa5-0459-4fcd-928b-2ed0183879db",
+    "ranked": false,
+    "requestedAt": "2026-09-28T17:04:34.986Z",
+    "autoscrim": false,
+    "submissionAId": null,
+    "submissionBId": null,
+    "teamAId": 948,
+    "teamAName": "DESTINY 3",
+    "teamBId": 20,
+    "teamBName": "calc",
+    "winner": "b",
+    "map": "Default",
+    "fetchedAt": "2026-09-28T17:14:39+00:00"
+   },
+   {
+    "match": 508221,
+    "battle": "2b3c0943-0b36-43e7-97b8-f4362aeb367d",
+    "ranked": false,
+    "requestedAt": "2026-09-28T17:02:20.604Z",
+    "autoscrim": false,
+    "submissionAId": null,
+    "submissionBId": null,
+    "teamAId": 27,
+    "teamAName": "PPP",
+    "teamBId": 20,
+    "teamBName": "calc",
+    "winner": "b",
+    "map": "Autarky",
+    "fetchedAt": "2026-09-28T17:14:45+00:00"
+   },
+   {
+    "match": 507726,
+    "battle": "1a995bdc-6a25-4446-bc99-eddc10bed20f",
+    "ranked": false,
+    "requestedAt": "2026-09-28T16:56:23.491Z",
+    "autoscrim": false,
+    "submissionAId": null,
+    "submissionBId": null,
+    "teamAId": 20,
+    "teamAName": "calc",
+    "teamBId": 70,
+    "teamBName": "cheji bt",
+    "winner": "a",
+    "map": "Autarky",
+    "fetchedAt": "2026-09-28T17:14:59+00:00"
+   }
+  ]
+ }
+}

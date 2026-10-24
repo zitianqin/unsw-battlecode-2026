@@ -1,0 +1,495 @@
+[
+ {
+  "id": 309838,
+  "submission_id": 7625,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 4,
+  "ranked": false,
+  "requested_at": "2026-09-26T16:41:30.928Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 309839,
+  "submission_id": 7625,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 7,
+  "ranked": false,
+  "requested_at": "2026-09-26T16:41:30.928Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 445,
+    "winner": "B"
+   }
+  }
+ },
+ {
+  "id": 309840,
+  "submission_id": 7625,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 9,
+  "ranked": false,
+  "requested_at": "2026-09-26T16:41:30.928Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 309841,
+  "submission_id": 7625,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 11,
+  "ranked": false,
+  "requested_at": "2026-09-26T16:41:30.928Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 195,
+    "winner": "B"
+   }
+  }
+ },
+ {
+  "id": 309842,
+  "submission_id": 7625,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 13,
+  "ranked": false,
+  "requested_at": "2026-09-26T16:41:30.928Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 237,
+    "winner": "B"
+   }
+  }
+ },
+ {
+  "id": 309843,
+  "submission_id": 7625,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 15,
+  "ranked": false,
+  "requested_at": "2026-09-26T16:41:30.928Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "B"
+   }
+  }
+ },
+ {
+  "id": 309844,
+  "submission_id": 7625,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 17,
+  "ranked": false,
+  "requested_at": "2026-09-26T16:41:30.928Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 73,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 309845,
+  "submission_id": 7625,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 19,
+  "ranked": false,
+  "requested_at": "2026-09-26T16:41:30.928Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 309846,
+  "submission_id": 7625,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 20,
+  "ranked": false,
+  "requested_at": "2026-09-26T16:41:30.928Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 309847,
+  "submission_id": 7625,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 21,
+  "ranked": false,
+  "requested_at": "2026-09-26T16:41:30.928Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 312246,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 4,
+  "ranked": false,
+  "requested_at": "2026-09-26T17:43:48.146Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 312247,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 7,
+  "ranked": false,
+  "requested_at": "2026-09-26T17:43:48.146Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 207,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 312248,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 9,
+  "ranked": false,
+  "requested_at": "2026-09-26T17:43:48.146Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 312249,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 11,
+  "ranked": false,
+  "requested_at": "2026-09-26T17:43:48.146Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 174,
+    "winner": "B"
+   }
+  }
+ },
+ {
+  "id": 312250,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 13,
+  "ranked": false,
+  "requested_at": "2026-09-26T17:43:48.146Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 110,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 312251,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 15,
+  "ranked": false,
+  "requested_at": "2026-09-26T17:43:48.146Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "B"
+   }
+  }
+ },
+ {
+  "id": 312252,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 17,
+  "ranked": false,
+  "requested_at": "2026-09-26T17:43:48.146Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 73,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 312253,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 19,
+  "ranked": false,
+  "requested_at": "2026-09-26T17:43:48.146Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 312254,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 20,
+  "ranked": false,
+  "requested_at": "2026-09-26T17:43:48.146Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 335744,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 4,
+  "ranked": false,
+  "requested_at": "2026-09-27T01:38:26.126Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 335745,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 7,
+  "ranked": false,
+  "requested_at": "2026-09-27T01:38:26.126Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 424,
+    "winner": "B"
+   }
+  }
+ },
+ {
+  "id": 335746,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 9,
+  "ranked": false,
+  "requested_at": "2026-09-27T01:38:26.126Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "B"
+   }
+  }
+ },
+ {
+  "id": 335747,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 11,
+  "ranked": false,
+  "requested_at": "2026-09-27T01:38:26.126Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 215,
+    "winner": "B"
+   }
+  }
+ },
+ {
+  "id": 335748,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 13,
+  "ranked": false,
+  "requested_at": "2026-09-27T01:38:26.126Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 313,
+    "winner": "B"
+   }
+  }
+ },
+ {
+  "id": 335749,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 15,
+  "ranked": false,
+  "requested_at": "2026-09-27T01:38:26.126Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "B"
+   }
+  }
+ },
+ {
+  "id": 335750,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 17,
+  "ranked": false,
+  "requested_at": "2026-09-27T01:38:26.126Z",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 73,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 335751,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 19,
+  "ranked": false,
+  "requested_at": "2026-09-27T01:38:26.126Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 335752,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 20,
+  "ranked": false,
+  "requested_at": "2026-09-27T01:38:26.126Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 335753,
+  "submission_id": 7676,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 21,
+  "ranked": false,
+  "requested_at": "2026-09-27T01:38:26.126Z",
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ }
+]

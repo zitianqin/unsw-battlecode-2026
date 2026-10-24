@@ -1,0 +1,125 @@
+{
+ "id": 95034,
+ "submission_id": 3182,
+ "opponent": 140,
+ "opponent_submission_id": 2807,
+ "side": "B",
+ "map_id": 15,
+ "map_hash": null,
+ "ranked": true,
+ "requested_at": "2026-09-23T15:14:37.039Z",
+ "summary": {
+  "map": {
+   "name": "Trauma",
+   "width": 48,
+   "height": 24,
+   "symmetry": "xy"
+  },
+  "result": {
+   "endReason": "roundLimit",
+   "endRound": 499,
+   "winner": "B"
+  },
+  "teams": {
+   "A": {
+    "won": false,
+    "end": {
+     "alive": 9,
+     "longest": 3,
+     "total": 21
+    },
+    "startDragons": 2,
+    "peakAlive": 9,
+    "aliveAt100": 5,
+    "aliveAt300": 8,
+    "splits": {
+     "count": 11,
+     "firstRound": 0,
+     "childLenMedian": 2,
+     "parentLenMedian": 2,
+     "childLenCounts": {
+      "2": 11
+     },
+     "parentLenCounts": {
+      "2": 11
+     }
+    },
+    "pearlsEaten": 29,
+    "deaths": {
+     "total": 4,
+     "hitWall": 3,
+     "hitSelf": 0,
+     "hitOtherBody": 1,
+     "hitHeadToHead": 0,
+     "noValidAction": 0
+    },
+    "headOnsStarted": 0,
+    "turns": 3530,
+    "moves": 3519,
+    "sprintMoves": 6,
+    "sprintPct": 0.17,
+    "sprintLenCounts": {
+     "2": 6
+    },
+    "sonarPings": 0,
+    "sonarPerTurn": 0.0,
+    "timeouts": 0
+   },
+   "B": {
+    "won": true,
+    "end": {
+     "alive": 14,
+     "longest": 6,
+     "total": 42
+    },
+    "startDragons": 2,
+    "peakAlive": 15,
+    "aliveAt100": 5,
+    "aliveAt300": 11,
+    "splits": {
+     "count": 13,
+     "firstRound": 0,
+     "childLenMedian": 2,
+     "parentLenMedian": 2,
+     "childLenCounts": {
+      "2": 13
+     },
+     "parentLenCounts": {
+      "2": 11,
+      "3": 2
+     }
+    },
+    "pearlsEaten": 38,
+    "deaths": {
+     "total": 1,
+     "hitWall": 1,
+     "hitSelf": 0,
+     "hitOtherBody": 0,
+     "hitHeadToHead": 0,
+     "noValidAction": 0
+    },
+    "headOnsStarted": 0,
+    "turns": 4986,
+    "moves": 4973,
+    "sprintMoves": 0,
+    "sprintPct": 0.0,
+    "sprintLenCounts": {},
+    "sonarPings": 0,
+    "sonarPerTurn": 0.0,
+    "timeouts": 0
+   }
+  },
+  "checks": {
+   "ok": true,
+   "tailMatches": 8497,
+   "splitMatches": 24,
+   "deathPearlMatches": 5,
+   "finalStandingMatches": true,
+   "problems": []
+  },
+  "bots": {
+   "A": "",
+   "B": "3182"
+  }
+ }
+}

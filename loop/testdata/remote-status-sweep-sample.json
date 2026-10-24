@@ -1,0 +1,112 @@
+{
+ "updated": 1790383287.8351822,
+ "games": 180,
+ "per_minute": 98.4,
+ "here": 42,
+ "hosts": {
+  "mm": {
+   "played": 39,
+   "last_game": "10:40:43",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "mm1": {
+   "played": 42,
+   "last_game": "10:40:42",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "ll": {
+   "played": 24,
+   "last_game": "10:41:01",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "zz": {
+   "played": 0,
+   "last_game": null,
+   "rests": 1,
+   "last_rest": "10:39:49 rested 60s: zz: exit 255: ssh: connect to host 100.64.0.2 port 22: Operation timed out\r\n",
+   "resting": false,
+   "engine_cache": null
+  },
+  "sz": {
+   "played": 8,
+   "last_game": "10:41:27",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-syd": {
+   "played": 5,
+   "last_game": "10:40:41",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-mel": {
+   "played": 4,
+   "last_game": "10:40:37",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-nz": {
+   "played": 4,
+   "last_game": "10:40:38",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-id": {
+   "played": 3,
+   "last_game": "10:40:37",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-my": {
+   "played": 4,
+   "last_game": "10:40:51",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-hk": {
+   "played": 0,
+   "last_game": null,
+   "rests": 1,
+   "last_rest": "10:40:10 rested 60s: az-hk: exit 255: ssh: connect to host 100.64.0.3 port 22: Operation timed out\r\n",
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-jp": {
+   "played": 3,
+   "last_game": "10:40:52",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-jpw": {
+   "played": 2,
+   "last_game": "10:40:46",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "E0010": {
+  "seconds": 4,
+  "exit": 1,
+  "is_error": null,
+  "summary": "You've hit your session limit \u00b7 resets 11:10pm (Australia/Sydney)"
+ },
+ "E0073": {
+  "seconds": 78,
+  "exit": 0,
+  "is_error": false,
+  "summary": "I committed nothing for E0073 and ran no tests, quick check or measurement games. `cand/E0073` is clean at 65bb229.\n\n**Why I stopped:** I139 reserves spare dragon slots for E0065's `shedLength`, but that code isn't in the champion. E0065 was rated promising and not kept. The reserve without the shed would repeat E0046, which kept slots only for doomed dragons splitting out. I planned to cherry-pick E0065 and add the reserve on top. The parent (bc-main-fresh) said not to bundle the two and to commit nothing. They queued I158, a retest of E0065's shed alone, and requeued this idea as I159 to run after it. The start message, the design question and the final summary all reached the parent.\n\n**Draft kept for I159:** saved at `.git/E0073-shed-plus-reserve.patch` in this clone. It has no tests yet. It contains:\n- The E0065 cherry-pick.\n- A new switch, `P.shedReserveSlots = 2`.\n- A shared helper, `endgameRound()`: the earliest of beaconRound, foldRound and mergeRound.\n- One new check in `shouldSplit`: before the endgame round, refuse an ordinary split once `unitCount >= unitLimit - shedReserveSlots`. It sits after the doomed split-out check, so a doomed dragon at 62 still splits out.\n\n**For the next coder:** the champion's `splitHonorsTeamUnitCap` test in `test_decisions.cpp` expects a split at 63 dragons. With the reserve it has to change to \"61 splits, 62 doesn't\". It should also check that 63 still splits after the endgame starts.\n\nBlocked by: E0065's shedLength isn't in the champion (queued as I158; I139 requeued as I159 after it)"
+ },
+ "E0088": {
+  "seconds": 41,
+  "exit": 0,
+  "is_error": false,
+  "summary": "No commit: I179 duplicates I162, which E0082 already tested; the follow-up I187 is queued.\n\nThe orchestrator (bc-main-fresh) told me to stop before I made any changes. The idea is the same one-line switch E0082 tried (`P.foldIgnoresMinUnits = true`). That test was inconclusive at +1.2 Elo: slightly better against the champion (0.516), slightly worse against swarm (0.497) and rammer (0.492). I187 tests a narrower version: fold below 8 dragons only when the enemy team is small too.\n\nI read `bot/fold.hpp`, `bot/feed.hpp` and `tests/bot/test_fold.cpp` but edited nothing. The clone is clean at 8d4d03e and I ran no tests, quick check or games. I confirmed the stop to the orchestrator.\n\nBlocked by: none (the idea was already tested, so I stopped)"
+ }
+}

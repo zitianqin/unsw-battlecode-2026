@@ -1,0 +1,524 @@
+{
+ "attempt_at": 1790348223.687277,
+ "submission_id": 6111,
+ "fetched_at": 1790348256.553337,
+ "error": null,
+ "games": [
+  {
+   "id": 223298,
+   "submission_id": 6111,
+   "opponent": 772,
+   "opponent_submission_id": 5871,
+   "side": "A",
+   "map_id": 14,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:22:41.060Z",
+   "replay": "{home}/online-replays/6111/223298.replay",
+   "summary": {
+    "map": {
+     "name": "Stronghold",
+     "width": 48,
+     "height": 24,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "roundLimit",
+     "endRound": 499,
+     "winner": "B"
+    },
+    "teams": {
+     "A": {
+      "won": false,
+      "end": {
+       "alive": 7,
+       "longest": 30,
+       "total": 94
+      }
+     },
+     "B": {
+      "won": true,
+      "end": {
+       "alive": 3,
+       "longest": 62,
+       "total": 84
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 223299,
+   "submission_id": 6111,
+   "opponent": 772,
+   "opponent_submission_id": 5871,
+   "side": "A",
+   "map_id": 15,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:22:41.060Z",
+   "replay": "{home}/online-replays/6111/223299.replay",
+   "summary": {
+    "map": {
+     "name": "Trauma",
+     "width": 48,
+     "height": 24,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 357,
+     "winner": "A"
+    },
+    "teams": {
+     "A": {
+      "won": true,
+      "end": {
+       "alive": 36,
+       "longest": 5,
+       "total": 101
+      }
+     },
+     "B": {
+      "won": false,
+      "end": {
+       "alive": 0,
+       "longest": 0,
+       "total": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 223723,
+   "submission_id": 6111,
+   "opponent": 790,
+   "opponent_submission_id": 6039,
+   "side": "A",
+   "map_id": 3,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:33:22.110Z",
+   "replay": "{home}/online-replays/6111/223723.replay",
+   "summary": {
+    "map": {
+     "name": "Big Empty",
+     "width": 64,
+     "height": 64,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "roundLimit",
+     "endRound": 499,
+     "winner": "A"
+    },
+    "teams": {
+     "A": {
+      "won": true,
+      "end": {
+       "alive": 29,
+       "longest": 74,
+       "total": 778
+      }
+     },
+     "B": {
+      "won": false,
+      "end": {
+       "alive": 22,
+       "longest": 58,
+       "total": 651
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 223724,
+   "submission_id": 6111,
+   "opponent": 790,
+   "opponent_submission_id": 6039,
+   "side": "A",
+   "map_id": 4,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:33:22.110Z",
+   "replay": "{home}/online-replays/6111/223724.replay",
+   "summary": {
+    "map": {
+     "name": "Default",
+     "width": 32,
+     "height": 32,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 371,
+     "winner": "A"
+    },
+    "teams": {
+     "A": {
+      "won": true,
+      "end": {
+       "alive": 63,
+       "longest": 11,
+       "total": 173
+      }
+     },
+     "B": {
+      "won": false,
+      "end": {
+       "alive": 0,
+       "longest": 0,
+       "total": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 223725,
+   "submission_id": 6111,
+   "opponent": 790,
+   "opponent_submission_id": 6039,
+   "side": "A",
+   "map_id": 5,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:33:22.110Z",
+   "replay": "{home}/online-replays/6111/223725.replay",
+   "summary": {
+    "map": {
+     "name": "Default Small",
+     "width": 16,
+     "height": 16,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 154,
+     "winner": "A"
+    },
+    "teams": {
+     "A": {
+      "won": true,
+      "end": {
+       "alive": 26,
+       "longest": 5,
+       "total": 78
+      }
+     },
+     "B": {
+      "won": false,
+      "end": {
+       "alive": 0,
+       "longest": 0,
+       "total": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 223726,
+   "submission_id": 6111,
+   "opponent": 790,
+   "opponent_submission_id": 6039,
+   "side": "A",
+   "map_id": 7,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:33:22.110Z",
+   "replay": "{home}/online-replays/6111/223726.replay",
+   "summary": {
+    "map": {
+     "name": "Queen Of Spades",
+     "width": 25,
+     "height": 35,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "roundLimit",
+     "endRound": 499,
+     "winner": "A"
+    },
+    "teams": {
+     "A": {
+      "won": true,
+      "end": {
+       "alive": 5,
+       "longest": 12,
+       "total": 35
+      }
+     },
+     "B": {
+      "won": false,
+      "end": {
+       "alive": 7,
+       "longest": 8,
+       "total": 36
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 223727,
+   "submission_id": 6111,
+   "opponent": 790,
+   "opponent_submission_id": 6039,
+   "side": "A",
+   "map_id": 9,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:33:22.110Z",
+   "replay": "{home}/online-replays/6111/223727.replay",
+   "summary": {
+    "map": {
+     "name": "Schooltime",
+     "width": 60,
+     "height": 40,
+     "symmetry": "y"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 216,
+     "winner": "A"
+    },
+    "teams": {
+     "A": {
+      "won": true,
+      "end": {
+       "alive": 64,
+       "longest": 19,
+       "total": 330
+      }
+     },
+     "B": {
+      "won": false,
+      "end": {
+       "alive": 0,
+       "longest": 0,
+       "total": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 223728,
+   "submission_id": 6111,
+   "opponent": 790,
+   "opponent_submission_id": 6039,
+   "side": "A",
+   "map_id": 11,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:33:22.110Z",
+   "replay": "{home}/online-replays/6111/223728.replay",
+   "summary": {
+    "map": {
+     "name": "Trophy",
+     "width": 25,
+     "height": 25,
+     "symmetry": "y"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 139,
+     "winner": "A"
+    },
+    "teams": {
+     "A": {
+      "won": true,
+      "end": {
+       "alive": 53,
+       "longest": 6,
+       "total": 134
+      }
+     },
+     "B": {
+      "won": false,
+      "end": {
+       "alive": 0,
+       "longest": 0,
+       "total": 0
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 223729,
+   "submission_id": 6111,
+   "opponent": 790,
+   "opponent_submission_id": 6039,
+   "side": "A",
+   "map_id": 13,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:33:22.110Z",
+   "replay": "{home}/online-replays/6111/223729.replay",
+   "summary": {
+    "map": {
+     "name": "Devil",
+     "width": 32,
+     "height": 16,
+     "symmetry": "y"
+    },
+    "result": {
+     "endReason": "roundLimit",
+     "endRound": 499,
+     "winner": "A"
+    },
+    "teams": {
+     "A": {
+      "won": true,
+      "end": {
+       "alive": 8,
+       "longest": 27,
+       "total": 88
+      }
+     },
+     "B": {
+      "won": false,
+      "end": {
+       "alive": 8,
+       "longest": 11,
+       "total": 40
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 223730,
+   "submission_id": 6111,
+   "opponent": 790,
+   "opponent_submission_id": 6039,
+   "side": "A",
+   "map_id": 14,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:33:22.110Z",
+   "replay": "{home}/online-replays/6111/223730.replay",
+   "summary": {
+    "map": {
+     "name": "Stronghold",
+     "width": 48,
+     "height": 24,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "roundLimit",
+     "endRound": 499,
+     "winner": "B"
+    },
+    "teams": {
+     "A": {
+      "won": false,
+      "end": {
+       "alive": 8,
+       "longest": 43,
+       "total": 75
+      }
+     },
+     "B": {
+      "won": true,
+      "end": {
+       "alive": 3,
+       "longest": 44,
+       "total": 93
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 223731,
+   "submission_id": 6111,
+   "opponent": 790,
+   "opponent_submission_id": 6039,
+   "side": "A",
+   "map_id": 15,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:33:22.110Z",
+   "replay": "{home}/online-replays/6111/223731.replay",
+   "summary": {
+    "map": {
+     "name": "Trauma",
+     "width": 48,
+     "height": 24,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "roundLimit",
+     "endRound": 499,
+     "winner": "A"
+    },
+    "teams": {
+     "A": {
+      "won": true,
+      "end": {
+       "alive": 9,
+       "longest": 24,
+       "total": 70
+      }
+     },
+     "B": {
+      "won": false,
+      "end": {
+       "alive": 4,
+       "longest": 14,
+       "total": 35
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": 223732,
+   "submission_id": 6111,
+   "opponent": 790,
+   "opponent_submission_id": 6039,
+   "side": "A",
+   "map_id": 17,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-25T13:33:22.110Z",
+   "replay": "{home}/online-replays/6111/223732.replay",
+   "summary": {
+    "map": {
+     "name": "Prisoners Dilemma",
+     "width": 32,
+     "height": 16,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 101,
+     "winner": "A"
+    },
+    "teams": {
+     "A": {
+      "won": true,
+      "end": {
+       "alive": 13,
+       "longest": 4,
+       "total": 34
+      }
+     },
+     "B": {
+      "won": false,
+      "end": {
+       "alive": 0,
+       "longest": 0,
+       "total": 0
+      }
+     }
+    }
+   }
+  }
+ ]
+}

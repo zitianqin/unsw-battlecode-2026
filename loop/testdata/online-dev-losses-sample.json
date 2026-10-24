@@ -1,0 +1,321 @@
+{
+ "submission_id": 8023,
+ "benchmark": {
+  "team": {
+   "id": 545,
+   "name": "dev test 1 :P",
+   "elo": 1936,
+   "why": "highest-rated dev team, none named frontier"
+  }
+ },
+ "dev": {
+  "teams": [
+   {
+    "id": 545,
+    "name": "dev test 1 :P"
+   },
+   {
+    "id": 752,
+    "name": "dev test 2"
+   },
+   {
+    "id": 722,
+    "name": "abasdasga"
+   },
+   {
+    "id": 753,
+    "name": "dev test 3"
+   },
+   {
+    "id": 609,
+    "name": "ML benchmark"
+   },
+   {
+    "id": 446,
+    "name": "Square"
+   },
+   {
+    "id": 755,
+    "name": "dev test 5"
+   },
+   {
+    "id": 754,
+    "name": "dev test 4"
+   },
+   {
+    "id": 704,
+    "name": "sl"
+   },
+   {
+    "id": 756,
+    "name": "dev test 6"
+   },
+   {
+    "id": 757,
+    "name": "dev test 7"
+   },
+   {
+    "id": 758,
+    "name": "dev test 8"
+   },
+   {
+    "id": 759,
+    "name": "dev test 9"
+   },
+   {
+    "id": 760,
+    "name": "dev test 10"
+   }
+  ]
+ },
+ "games": [
+  {
+   "id": 346723,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 4,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:10:53.736Z",
+   "replay": "{home}/online-replays/8023/346723.replay",
+   "dev": true,
+   "summary": {
+    "map": {
+     "name": "Default",
+     "width": 32,
+     "height": 32,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 359,
+     "winner": "B"
+    }
+   }
+  },
+  {
+   "id": 347198,
+   "submission_id": 8023,
+   "opponent": 247,
+   "opponent_submission_id": 7412,
+   "side": "A",
+   "map_id": 11,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:18:58.336Z",
+   "replay": "{home}/online-replays/8023/347198.replay",
+   "summary": {
+    "map": {
+     "name": "Trophy",
+     "width": 25,
+     "height": 25,
+     "symmetry": "y"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 186,
+     "winner": "B"
+    }
+   }
+  },
+  {
+   "id": 347203,
+   "submission_id": 8023,
+   "opponent": 247,
+   "opponent_submission_id": 7412,
+   "side": "A",
+   "map_id": 20,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:18:58.336Z",
+   "replay": "{home}/online-replays/8023/347203.replay",
+   "summary": {
+    "map": {
+     "name": "Portals",
+     "width": 32,
+     "height": 16,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "roundLimit",
+     "endRound": 499,
+     "winner": "A"
+    }
+   }
+  },
+  {
+   "id": 347487,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 13,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:25:24.515Z",
+   "replay": "{home}/online-replays/8023/347487.replay",
+   "dev": true,
+   "summary": {
+    "map": {
+     "name": "Devil",
+     "width": 32,
+     "height": 16,
+     "symmetry": "y"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 201,
+     "winner": "B"
+    }
+   }
+  },
+  {
+   "id": 347528,
+   "submission_id": 8023,
+   "opponent": 722,
+   "opponent_submission_id": 3299,
+   "side": "A",
+   "map_id": 11,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:25:58.459Z",
+   "replay": "{home}/online-replays/8023/347528.replay",
+   "dev": true,
+   "summary": {
+    "map": {
+     "name": "Trophy",
+     "width": 25,
+     "height": 25,
+     "symmetry": "y"
+    },
+    "result": {
+     "endReason": "roundLimit",
+     "endRound": 499,
+     "winner": "B"
+    }
+   }
+  },
+  {
+   "id": 347666,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 11,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:28:17.030Z",
+   "replay": "{home}/online-replays/8023/347666.replay",
+   "dev": true,
+   "summary": {
+    "map": {
+     "name": "Trophy",
+     "width": 25,
+     "height": 25,
+     "symmetry": "y"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 152,
+     "winner": "B"
+    }
+   }
+  },
+  {
+   "id": 347667,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 13,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:28:17.030Z",
+   "replay": "{home}/online-replays/8023/347667.replay",
+   "dev": true,
+   "summary": {
+    "map": {
+     "name": "Devil",
+     "width": 32,
+     "height": 16,
+     "symmetry": "y"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 281,
+     "winner": "B"
+    }
+   }
+  },
+  {
+   "id": 347673,
+   "submission_id": 8023,
+   "opponent": 752,
+   "opponent_submission_id": 3887,
+   "side": "A",
+   "map_id": 4,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:28:17.395Z",
+   "replay": "{home}/online-replays/8023/347673.replay",
+   "dev": true,
+   "summary": {
+    "map": {
+     "name": "Default",
+     "width": 32,
+     "height": 32,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 223,
+     "winner": "B"
+    }
+   }
+  },
+  {
+   "id": 347674,
+   "submission_id": 8023,
+   "opponent": 752,
+   "opponent_submission_id": 3887,
+   "side": "A",
+   "map_id": 7,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:28:17.395Z",
+   "replay": "{home}/online-replays/8023/347674.replay",
+   "dev": true,
+   "summary": {
+    "map": {
+     "name": "Queen Of Spades",
+     "width": 25,
+     "height": 35,
+     "symmetry": "xy"
+    },
+    "result": {
+     "endReason": "teamEliminated",
+     "endRound": 344,
+     "winner": "B"
+    }
+   }
+  },
+  {
+   "id": 347675,
+   "submission_id": 8023,
+   "opponent": 752,
+   "opponent_submission_id": 3887,
+   "side": "A",
+   "map_id": 9,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:28:17.395Z",
+   "replay": "{home}/online-replays/8023/347675.replay",
+   "dev": true,
+   "summary": {
+    "map": {
+     "name": "Schooltime",
+     "width": 60,
+     "height": 40,
+     "symmetry": "y"
+    },
+    "result": {
+     "endReason": "roundLimit",
+     "endRound": 499,
+     "winner": "B"
+    }
+   }
+  }
+ ]
+}

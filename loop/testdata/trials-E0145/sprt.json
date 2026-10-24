@@ -1,0 +1,19 @@
+{
+ "decision": "H0",
+ "rotation": [
+  "champion",
+  "swarm",
+  "rammer",
+  "breeder"
+ ],
+ "per_map": {
+  "/Users/me/.bc-loop/shared-maps/0e962ecb223d-unswbc-1.1.0/maps/gen_eval_222563228.map": 0.5,
+  "/Users/me/.bc-loop/shared-maps/0e962ecb223d-unswbc-1.1.0/maps/gen_eval_222563229.map": 0.25,
+  "/Users/me/.bc-loop/shared-maps/0e962ecb223d-unswbc-1.1.0/maps/gen_eval_222563230.map": 0.5,
+  "/Users/me/.bc-loop/shared-maps/0e962ecb223d-unswbc-1.1.0/maps/gen_eval_222563231.map": 0.5,
+  "/Users/me/.bc-loop/shared-maps/0e962ecb223d-unswbc-1.1.0/maps/gen_eval_222563232.map": 0.5,
+  "/Users/me/.bc-loop/shared-maps/0e962ecb223d-unswbc-1.1.0/maps/gen_eval_222563233.map": 0.5,
+  "/Users/me/.bc-loop/shared-maps/0e962ecb223d-unswbc-1.1.0/maps/gen_eval_222563234.map": 0.75,
+  "/Users/me/.bc-loop/shared-maps/0e962ecb223d-unswbc-1.1.0/maps/gen_eval_222563235.map": 0.5
+ }
+}

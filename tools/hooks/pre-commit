@@ -1,0 +1,60 @@
+#!/bin/sh
+# Blocks a Claude Code session's commit or merge commit on main (below). Blocks a commit while a doc or comment
+# references something that no longer exists: tools/check_refs.py's errors
+# (a path, a `module.name`, a bot param). Its warnings print but pass. It checks the whole working tree, so every
+# broken reference prints, but blocks only on those in files the commit stages (a merge: the files it changes against
+# HEAD) or pointing at what it changes (a rename breaking a doc elsewhere: "broken by this commit"; --hook). The rest
+# print as warnings to fix on main, so one broken reference on main never stalls every worktree's commits. Installed
+# once per clone, for every worktree of it, by sig or the orchestrator (git config is not something agents change):
+#
+#     git config core.hooksPath tools/hooks
+#
+# Each worktree runs the hook in its own checkout, so it does nothing where that checkout has no tools/check_refs.py
+# (old branches, loop/champion and its cand/* branches). It also skips the loop home (~/.bc-loop: the champion and
+# referee worktrees, coders' clones) and those branches wherever they are checked out, though the driver's own git
+# runs with hooks off (driver.GIT_SAFE), and gauntlet/* branches, whose bot/ is a screen opponent (the starter, the
+# greedy rammer) that the checker would judge against the champion's params and files. There is no bypass and never --no-verify: fix the reference, or the
+# checker when it is wrong, in the same commit. pre-merge-commit runs this too. It then blocks a commit that stages
+# CLAUDE.md or loop/LOOP.md over its byte cap (tools/doc_size.py, doc_size.LIMITS), or a .md file leaving a
+# "LOOP.md: <heading>" pointer that names no loop/LOOP.md heading, where that checkout has the tool.
+
+root=$(git rev-parse --show-toplevel 2>/dev/null) || exit 0
+[ -f "$root/tools/check_refs.py" ] || exit 0
+home=${BC_LOOP_HOME:-$HOME/.bc-loop}
+home=${home%/}
+case "$root/" in "$home"/*|"$HOME/.bc-loop"/*) exit 0 ;; esac
+case "$(git symbolic-ref -q --short HEAD)" in loop/champion|cand/*|gauntlet/*) exit 0 ;; esac
+
+# A Claude Code session (CLAUDECODE set) never commits on main itself (REFLECT 2026-09-30 09:12 F12: a brief-rules
+# line committed straight to main at 03:36); its changes go through tools/merge.sh, which makes its merge in a
+# detached worktree and then only fast-forwards main, so no commit of its runs this on main. sig's own commits,
+# outside Claude Code, are untouched. A commit hook sees only commits: a fast-forward, cherry-pick, revert or reset
+# on main is refused by tools/hooks/reference-transaction instead.
+if [ -n "${CLAUDECODE:-}" ] && [ "$(git symbolic-ref -q --short HEAD)" = main ]; then
+    echo "pre-commit: a Claude Code session doesn't commit on main. Commit on a branch in a worktree (git worktree" \
+         "add -b orch/<name> <path> main; the main checkout stays on main) and merge it with tools/merge.sh" \
+         "<branch> \"<message>\" <test modules>; there is no bypass." >&2
+    exit 1
+fi
+
+# A worktree has no .venv of its own: use the main checkout's, beside the shared .git.
+common=$(cd "$(git rev-parse --git-common-dir)" && pwd)
+python=python3
+for candidate in "$root/.venv/bin/python" "$(dirname "$common")/.venv/bin/python"; do
+    if [ -x "$candidate" ]; then python=$candidate; break; fi
+done
+
+if ! "$python" "$root/tools/check_refs.py" --root "$root" --hook; then
+    echo "pre-commit: the references above are broken. Fix each (or tools/check_refs.py, if it is wrong) and" \
+         "commit again; there is no bypass." >&2
+    exit 1
+fi
+
+# The size caps on CLAUDE.md and loop/LOOP.md (tools/doc_size.py's LIMITS) and the docs' LOOP.md pointers, for the
+# copies this commit stages.
+if [ -f "$root/tools/doc_size.py" ] && ! "$python" "$root/tools/doc_size.py" --root "$root" --staged >&2; then
+    echo "pre-commit: a capped doc is over its size cap, or a LOOP.md pointer names no heading. CLAUDE.md holds" \
+         "rules and one-line pointers; move how a mechanism works, its numbers and its history to loop/LOOP.md or" \
+         "the code's docstrings, fix each pointer as it says, and commit again; there is no bypass." >&2
+    exit 1
+fi

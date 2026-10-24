@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.unswbc-build/
+replays/
+data/
+*.replay
+!tools/testdata/*.replay
+.DS_Store
+.champion/
+replays*.tar.zst

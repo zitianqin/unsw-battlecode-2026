@@ -1,0 +1,111 @@
+[
+ {
+  "id": "E0084",
+  "idea": {
+   "id": "I176",
+   "title": "Our sonar tag covers our team side, so the other team's copy of our bot can't read our reports",
+   "kind": "noloss"
+  },
+  "verdict": "kept",
+  "reason": "not worse (non-inferiority H1)",
+  "candidate": "920314d9a36612eaafbc5c5009e9f9ea7ac61806",
+  "evaluation": {
+   "elo0": -15,
+   "elo1": 0
+  },
+  "sprt": {
+   "decision": "H1",
+   "elo": 4.317744498806999,
+   "elo_lo": -3.0419389906290677,
+   "elo_hi": 11.68130527557392,
+   "pairs": 684,
+   "score": 0.5062134139566435
+  }
+ },
+ {
+  "id": "E0090",
+  "idea": {
+   "id": "I192",
+   "title": "Accept only our own current build's sonar, tested for no loss: cherry-pick E0087's source-hash key, SipHash tag and stale drop",
+   "kind": "noloss"
+  },
+  "verdict": "kept",
+  "reason": "not worse (non-inferiority H1)",
+  "candidate": "9becbb540ce1e39c8d94bc4867f4ffb5dd7d6842",
+  "evaluation": {
+   "elo0": -15,
+   "elo1": 0
+  },
+  "sprt": {
+   "decision": "H1",
+   "elo": -0.27750392922902534,
+   "elo_lo": -3.5860321267924107,
+   "elo_hi": 3.0309739383674055,
+   "pairs": 1878,
+   "score": 0.4996006398282432
+  }
+ },
+ {
+  "id": "E0212",
+  "idea": {
+   "id": "I135",
+   "title": "Judge an even ram by who eats the drop: ram an equal head only when our other heads reach more of the dropped pearls first",
+   "kind": "formula"
+  },
+  "verdict": "kept",
+  "reason": "kept: no worse than the champion (non-inferiority)",
+  "candidate": "cdcfba3c9fd699ed3f92430ea4f5f26914a17dfd",
+  "evaluation": {
+   "elo0": -15,
+   "elo1": 0,
+   "maps": {
+    "big": 0.5
+   }
+  },
+  "sprt": {
+   "decision": "H1",
+   "elo": 15.756959665664752,
+   "elo_lo": 1.66017043763674,
+   "elo_hi": 29.905812810732137,
+   "pairs": 342,
+   "score": 0.5226605536777347
+  }
+ },
+ {
+  "id": "E0249",
+  "idea": {
+   "id": "I699",
+   "title": "No breeding inside a room the dragon scores closed: stop the farm, split-out and shed loop in rooms whose only exits are portals it can't use",
+   "kind": "targeted"
+  },
+  "verdict": "kept",
+  "reason": "kept on no loss on probability and its target (pocket_deaths 15.16 -> 7.93 a game, n 144 units (44 better, 11 worse), p 4.3e-06; read 288 of 288 replays)",
+  "candidate": "cfaceea670ca61d09ec0e0742c5235b9b4352028",
+  "evaluation": {
+   "elo0": -15,
+   "elo1": 0,
+   "maps": {
+    "portalrooms": 0.5,
+    "worldgen": 0.25
+   },
+   "target": {
+    "measure": "pocket_deaths",
+    "direction": "down"
+   },
+   "limit_probability": 0.9
+  },
+  "sprt": {
+   "decision": "inconclusive",
+   "elo": -2.135269225665127,
+   "elo_lo": -5.471500920001572,
+   "elo_hi": 1.2005687345351477,
+   "limit_kept": {
+    "probability": 0.959,
+    "threshold": 0.9,
+    "of": "no loss"
+   },
+   "pairs": 2400,
+   "score": 0.49692713925774257
+  }
+ }
+]

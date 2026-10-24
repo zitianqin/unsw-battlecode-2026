@@ -1,0 +1,9 @@
+{"item": "B1", "id": "I884", "action": "merge", "into": "I943", "note": "Complement: census content + its delivery. I943's per-dragon estimate with a conservative pool, carried on rays taken only from views that repeat what was last sent (I884's part). Switches P.censusShareEstimate, P.censusReplacesStaleViews; censusSpareOnly stays as the fallback. One no-loss test, alone before I363, I187, I571, I669 and I794."}
+{"item": "B24", "id": "I592", "action": "close", "reason": "live", "evidence": "The champion's badRammer equal-head branch uses dropHarvestEdge: bot/safety.hpp:342-347, from E0239."}
+{"item": "B26", "id": "I871", "action": "close", "reason": "kept", "evidence": "Its own Options say 'if I466 is kept first, this idea is moot'. E0311 kept I466 (rateReach is on)."}
+{"item": "B27", "id": "I440", "action": "close", "reason": "reversed", "evidence": "Over 441 result-blind online games every cell it would refuse reads positive (3-step rams +1.74 a ram over 1,806). Its one negative cell became I910."}
+{"item": "B29", "id": "I902", "action": "close", "reason": "reversed", "evidence": "A third try of E0138's guard (+1.8 over 2400 pairs, then +0.8), resting on a coder count nobody has rechecked."}
+{"item": "B40", "id": "I374", "action": "close", "reason": "reversed", "evidence": "The E0058 retest became E0218, -3.4 over 1698 pairs; the E0054 frontier retest became E0283, -0.9 over 1326 pairs."}
+{"item": "B32", "id": "I905", "action": "after", "after": ["I915"], "note": "I914 was dropped; its crossing policy is under test as I915 (E0338)."}
+{"item": "B2", "id": "I915", "action": "note", "note": "Build I952 on this if it is kept."}
+{"item": "B7", "id": "I615", "action": "priority", "priority": 2, "note": "Waits on I604's delivery."}

@@ -1,0 +1,149 @@
+{
+ "source": "GET https://game.battlecode.au/teams/264/__data.json, 2026-09-29 16:04 AEST, 4 minutes after the site's 06:00 UTC ranked draw; only the page's recent rows, unchanged",
+ "recent": [
+  {
+   "id": 562311,
+   "ranked": false,
+   "opponentId": 306,
+   "opponent": "Cutlery",
+   "opponentElo": 2120,
+   "eloChange": 0,
+   "results": [
+    "loss",
+    "loss",
+    "loss",
+    "win",
+    "win",
+    "win",
+    "loss",
+    "loss",
+    "loss",
+    "loss"
+   ],
+   "wins": 3,
+   "losses": 7,
+   "outcome": "loss",
+   "replayId": 562311,
+   "at": "2026-09-29T06:02:12.880Z",
+   "wait": null
+  },
+  {
+   "id": 562346,
+   "ranked": true,
+   "opponentId": 20,
+   "opponent": "calc",
+   "opponentElo": 2027,
+   "eloChange": null,
+   "results": [
+    "pending",
+    "pending",
+    "pending",
+    "pending",
+    "pending"
+   ],
+   "wins": 0,
+   "losses": 0,
+   "outcome": "live",
+   "replayId": null,
+   "at": "2026-09-29T06:00:00.000Z",
+   "wait": {
+    "ahead": 95,
+    "ms": 157713
+   }
+  },
+  {
+   "id": 562221,
+   "ranked": false,
+   "opponentId": 19,
+   "opponent": "test4",
+   "opponentElo": 1753,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win"
+   ],
+   "wins": 10,
+   "losses": 0,
+   "outcome": "win",
+   "replayId": 562221,
+   "at": "2026-09-29T05:58:25.387Z",
+   "wait": null
+  },
+  {
+   "id": 562059,
+   "ranked": true,
+   "opponentId": 22,
+   "opponent": "okbro",
+   "opponentElo": 1724,
+   "eloChange": -5,
+   "results": [
+    "win",
+    "win",
+    "win",
+    "loss",
+    "win"
+   ],
+   "wins": 4,
+   "losses": 1,
+   "outcome": "win",
+   "replayId": 562059,
+   "at": "2026-09-29T05:55:11.421Z",
+   "wait": null
+  },
+  {
+   "id": 561424,
+   "ranked": true,
+   "opponentId": 63,
+   "opponent": "Kamikaze",
+   "opponentElo": 1916,
+   "eloChange": -44,
+   "results": [
+    "loss",
+    "loss",
+    "loss",
+    "win",
+    "loss"
+   ],
+   "wins": 1,
+   "losses": 4,
+   "outcome": "loss",
+   "replayId": 561424,
+   "at": "2026-09-29T05:41:06.151Z",
+   "wait": null
+  },
+  {
+   "id": 561414,
+   "ranked": false,
+   "opponentId": 1006,
+   "opponent": "Radha Krishna",
+   "opponentElo": 1382,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win"
+   ],
+   "wins": 10,
+   "losses": 0,
+   "outcome": "win",
+   "replayId": 561414,
+   "at": "2026-09-29T05:41:05.668Z",
+   "wait": null
+  }
+ ]
+}

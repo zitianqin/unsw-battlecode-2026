@@ -1,0 +1,4 @@
+{"id": "I052", "category": "combat", "priority": 2, "title": "Hunt from shared sightings: send short dragons at reported long enemy heads", "status": "todo", "source": "orchestrator", "after": ["I090"]}
+{"id": "I141", "category": "sonar", "priority": 1, "title": "Sonar echoes as radar: read what our own rays stopped on to see enemy heads beyond our 7x7 view", "status": "tried", "source": "orchestrator"}
+{"id": "I151", "category": "sonar", "priority": 1, "title": "Make sonar reach the dragons that need it: measure delivery, then aim or relay so reports arrive", "status": "followup", "source": "orchestrator"}
+{"id": "I177", "category": "retest", "priority": 2, "title": "Retest E0078 alone on the current champion: Make sonar reach the dragons that need it: measure delivery, then aim or relay so reports arrive", "status": "todo", "source": "postmortem:E0078"}

@@ -1,0 +1,36 @@
+#!/bin/sh
+# Refuses a push to main whose commits change code (CODE: loop/, referee/ or tools/ Python, tools/ shell scripts, the
+# hooks, mapgen/) unless its tests passed on the exact commit pushed: a pass marker named by that commit's hash in
+# <git common dir>/test-passed/ (REFLECT 2026-09-29 14:29 F10, MISSES 10: b130f1ad went to main without
+# test_seat_balance, which it broke). Only tools/merge.sh writes markers, for the merge it tested and before main
+# moves; a direct change goes on a branch and through it too, since a commit tested only after it is on local main is
+# already what the referee refresh reads (the 29 Sep 00:38 incident). A push touching only other files (docs, bot/,
+# maps/) passes, as does any push not to main (loop/champion, v* tags, branches). There is no bypass and never
+# --no-verify. Installed with the other hooks (core.hooksPath tools/hooks).
+#
+# git gives the hook "<local ref> <local sha> <remote ref> <remote sha>" per ref on stdin; the range checked is remote
+# sha..local sha (from the empty tree for a new ref), and a range it can't read is checked as touching code.
+
+CODE='^((loop|referee|tools)/[^/]+\.py|tools/[^/]+\.sh|tools/hooks/.*|mapgen/.*)$'
+zero=0000000000000000000000000000000000000000
+markers="$(cd "$(git rev-parse --git-common-dir)" && pwd)/test-passed"
+empty=$(git hash-object -t tree /dev/null)
+status=0
+while read -r local_ref local_sha remote_ref remote_sha; do
+    [ "$remote_ref" = refs/heads/main ] || continue
+    [ "$local_sha" = "$zero" ] && continue  # a deletion: nothing is tested
+    base=$remote_sha
+    [ "$base" = "$zero" ] && base=$empty
+    if changed=$(git diff --name-only "$base" "$local_sha" 2>/dev/null); then
+        code=$(printf '%s\n' "$changed" | grep -E "$CODE" | head -3)
+        [ -n "$code" ] || continue
+    else
+        code="(the range $base..$local_sha, unreadable here)"
+    fi
+    [ -f "$markers/$local_sha" ] && continue
+    echo "pre-push: $local_ref ($local_sha) goes to main and changes $(echo $code) but has no test pass marker in" \
+         "$markers/. Code reaches main only through tools/merge.sh <branch> \"<message>\" <test modules>, which" \
+         "tests the merge before main moves; a direct change goes on a branch first. There is no bypass." >&2
+    status=1
+done
+exit $status

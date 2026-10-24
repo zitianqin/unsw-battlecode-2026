@@ -1,0 +1,77 @@
+{
+  "id": "E0163",
+  "idea": {
+    "category": "safety",
+    "priority": 1,
+    "title": "Our longest dragon runs into its own body although it knows it: find why and fix it (4 hitSelf deaths of 12+ longest in 6 games)",
+    "hypothesis": "Rule counts' new round-500 tallies (branch rulecounts-r500, 2026-09-26) found our team's longest dragon, 12+ long, dying by running into itself (hitSelf) 4 times in the 6 kept rule-count games of champion 2c79f81 (v0030), about a quarter of its deaths before r397 not counted as head-on; on every one its debug line showed body == len, so the bot knew its length; whether it knew each segment's tile is unconfirmed (compare its tracked body with the replay's body tiles on those turns), and so is whether a safe move existed. Replays and maps kept in ~/.bc-loop/replay-notes/hitself-2026-09-26/: 0001-gen_eval_188302895-aB (our side B; deaths at r96 length 34, r145 length 58, r335 length 39, against the champion) and 0000-gen_eval_188302894-aA (our side A; r171 length 12, against the breeder). First watch each death turn (tools/watch.py dragon/frames) and name the cause (e.g. a sprint step, a portal, a fold/merge move, a move chosen as the least bad, a tail that didn't move because it ate): reproduce the worst as a failing scenario test from the replay state, then fix that decision. If the cause is 'every move was fatal', say so with the board and stop: that belongs to I004's search. Count how many of our deaths of dragons 8+ are hitSelf in a logging copy over 12 fresh maps before and after the fix.",
+    "evaluation": {
+      "elo0": 0,
+      "elo1": 15,
+      "max_pairs": 2400,
+      "fresh": true
+    },
+    "id": "I278",
+    "status": "trying:lane1",
+    "source": "rulecounts:M26",
+    "history": [
+      "2026-09-26 17:46 orchestrator: I283 (E0110 post-mortem: splitOutLength didn't split out 30+ dragons with every move fatal below the cap, 6 of 40 losses) merged into this",
+      "2026-09-26 22:08 orchestrator: cause marked unconfirmed (REFLECT 19:06): a length match isn't a position check",
+      "review 1790439654199275000: raised 2 -> 1: in this review's 24 rule-count games of 258b592 our longest (8+) ran into itself 11 times before r397 (0.46 a game, its commonest death then: head-ons on shorter heads 0.33, trapped 0.25), and our 16+ dragons log body < len on 35-56% of turns by phase; our longest fell from 49.2 at r300 to 38.8 at r396 (means over the games reaching them).",
+      "E0144: blocked (provider usage limit)",
+      "E0150: blocked (provider usage limit)",
+      "E0160: blocked (provider usage limit)",
+      "E0160 was blocked by a Claude usage limit mid-coding (13:32, 2026-09-27); its uncommitted work is saved as branch wip/E0160 (one commit, not reviewed or tested; origin/wip/E0160 in your clone) (on base 0e962ec): read it and reuse what holds instead of starting over."
+    ]
+  },
+  "lane": 1,
+  "base": "1eae05fab2522aa46ee2af263f9f0f566e033564",
+  "candidate": "",
+  "changed_files": [],
+  "session": {
+    "provider": "native-agent",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "stack": [],
+    "protected": "fab48b7c3c5096d41bd20a78c64f27d58859ca5b",
+    "referee_commit": "ec01b355a4866f4b80e9d4383c45eca0ed069665",
+    "protected_maps": "a1ee9d58237149a510ec9e347a3fd8c49b23c60e"
+  },
+  "cpu": {},
+  "bot_tests": {},
+  "sprt": {},
+  "evaluation": {
+    "elo0": 0,
+    "elo1": 15,
+    "alpha": 0.05,
+    "beta": 0.05,
+    "max_pairs": 2400,
+    "fresh": true,
+    "pool": true,
+    "pool_pairs": 50,
+    "rotation": [
+      "swarm",
+      "rammer",
+      "breeder"
+    ],
+    "limit_probability": 0.9,
+    "screen_reuse": true,
+    "screen_two_stage": true,
+    "toolchain": {
+      "version": "1.1.0",
+      "python": "/Users/me/.bc-loop/toolchains/1.1.0/bin/python",
+      "validated_at": 1790327457.43179,
+      "epoch": "unswbc-1.1.0",
+      "champion": "65bb2295e3700d632b66825b9302c49bcb671e18",
+      "compatibility": "/Users/me/.bc-loop/toolchains/1.1.0/compatibility.jsonl"
+    }
+  },
+  "pool": {},
+  "identity": {},
+  "official": {},
+  "stacked_on": [],
+  "verdict": "pending",
+  "reason": "",
+  "started": 1790481345.439434,
+  "finished": 0.0
+}

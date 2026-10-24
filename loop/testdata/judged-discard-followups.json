@@ -1,0 +1,150 @@
+{
+ "about": "I697, I897 and I846 as they stood before the orchestrator marked them tried by hand on 2026-09-29 20:25 (that note removed, status followup), and I415 (dropped) as it stands, each with its promising result's results.jsonl id/verdict/reason and its runs/E####/judged.json, read from the live loop home on 2026-09-29 (MISSES 98); and under \"retests\" I914, the retest E0320's post-mortem queued after its judge's discard, as it stood before the orchestrator dropped it by hand on 2026-09-29 10:57 (that note removed, status todo), read the same way",
+ "cases": [
+  {
+   "idea": {
+    "id": "I697",
+    "title": "Feed the king below the unit cap when the drop now beats the dragon's alive value plus the unit it costs (I577's left-out part of I312)",
+    "status": "followup",
+    "history": [
+     "review 1790589539005261000: raised 3 -> 2 (this review): online our team reaches 60+ dragons in 86 of 422 unselected non-dev games on maps of 1024 or fewer tiles (20%) and 42 of 103 on 1025-2399 (41%), so E0231's cap feed, which fires only at the ceiling, never feeds the king in most small and mid games, where the king at r396 is 3.0 (small) and 5.9 (Trauma) in round-limit games. Sibling of I770 (the same unit cost as a refill-time price at both cap sites) and I574.",
+     "I783 merged into this: priority 2 -> 1 from it",
+     "orchestrator 2026-09-28 21:12: Cutlery study 28 Sep (I783 merged here): its jump build fed its king from ~r320 below the cap, longest at r400 15.1 v our 5.7, ahead on 10/10 maps (sign p 0.001). If I784 (die by illegal split) is champion when you start, use its death step for feeds that would decline 'nodeath'; otherwise use kelp/own-body steps and report the declined share.",
+     "E0264: its coder's unfinished work (5 files, +92/-19 lines in bot/ and tests/bot/, not reviewed or tested) is saved as branch wip/E0264 on dd89c3d; the next coder of this idea finds it in its clone as origin/wip/E0264",
+     "E0264: blocked (provider usage limit)",
+     "E0269: blocked (provider usage limit)",
+     "E0271: blocked (provider usage limit)",
+     "review 1790599257904027000: rank 1 in priority 1 (endgame-arithmetic lens). Online, round-limit losses turn on the king line at r396: 10115's 10 unselected losses 6.3 against their 15.5 (their king longer in 9 of 10, sign p 0.011), 9918's 28 losses 5.2 against 13.2 (21 of 28, p 0.003), with meals after r396 level or behind (18.7 v 28.9; 20.3 v 20.7). Our only pre-fold growth of one dragon, E0231's cap feed and E0203's king seed, key on the unit cap or on 1152+ tiles, and online we reach the cap in 20% of small and 41% of mid games; locally this review's rule counts put our king line at r396 at 12.4 on 1025-2399 tiles (their 10.8), so the local test sees little of this gap. The fold after r396 transfers about 0.21 of a folder's length (0.425 of ceil(L/2)), too little to make up a 9-length king deficit (10115's loss means: 22 + 0.21 x 49 = 32 against their 34.5). This idea grows the king before the fold where the cap never comes.",
+     "E0273: promising (SPRT H0; positive estimate, needs fresh confirmation)",
+     "E0273: follow-ups I824",
+     "orchestrator 2026-09-29 01:19: E0273 (this idea, champion v0057) ended promising +0.5 over 1932 pairs; its judge (01:10) read no declared subgroup gain and advised against retesting the same code. So the next try is not an unchanged retest: build audit 1790595968179795000 A2's widened rule (a feeder may die wherever the king reaches its drop before any enemy head it knows of, not only within P.mergeRadius; a dragon with no kelp or own-body step dies by an illegal split, I784). A2's evidence: on 1152+ tile maps our king line eats 4.5 teammate drops in r300-396 v the leaders' 15.9 (n 42 v 38, Mann-Whitney p 6e-8), spawned pearls level; the unit-cap gate never opens on Trauma (6-45 dragons at r397 in all 17 games). Not marked next: A1 (Trauma start room) goes first.",
+     "orchestrator 2026-09-29 01:23: the widened rule from audit 1790595968179795000 A2 is queued as I826 (it could not merge here: this idea is followup, not waiting). I826 is the next try of this direction; this idea stays followup only as E0273's record."
+    ]
+   },
+   "result": {
+    "id": "E0273",
+    "verdict": "promising",
+    "reason": "SPRT H0; positive estimate, needs fresh confirmation",
+    "idea": "I697"
+   },
+   "judged": {
+    "asked": "discard",
+    "verdict": "discard",
+    "reason": "discard: SPRT H0 at 0.5008 over 1932 trials. No declared subgroup shows a clear gain (best is near_trauma, p 0.033 x 5 = 0.16). The one clear gain is against our own champion (0.526, found after the test), and every other bot scores slightly below level (0.496 over 1610 trials). So the feed rule doesn't carry over to bots it hasn't met, and a retest isn't worth a full test.",
+    "circumstance": null,
+    "by": "judge",
+    "at": 1790608244.695565
+   }
+  },
+  {
+   "idea": {
+    "id": "I897",
+    "title": "Dead-end farm stations cycle as soon as the last farmer has gone: P.refusedPocketRounds, farmEntryOk's any-body test and P.farmHonorsReserve, the three gates in series on a farm entry, each released when its cause has gone",
+    "status": "followup",
+    "history": [
+     "E0318: promising (SPRT H0; positive estimate, needs fresh confirmation)",
+     "E0318: follow-ups I917"
+    ]
+   },
+   "result": {
+    "id": "E0318",
+    "verdict": "promising",
+    "reason": "SPRT H0; positive estimate, needs fresh confirmation",
+    "idea": "I897"
+   },
+   "judged": {
+    "asked": "discard",
+    "verdict": "discard",
+    "reason": "discard: the idea's own declared circumstance, deadend maps, came out exactly level (0.500 over 564 trials, 48 better against 48 worse) and near maps were 0.504 (p 0.28). No declared subgroup is anywhere near clear once 12 are tested. The overall +0.5 Elo is noise, not a local gain being diluted, so a confirmation run would not pay for itself.",
+    "circumstance": null,
+    "by": "judge",
+    "at": 1790644147.367955
+   }
+  },
+  {
+   "idea": {
+    "id": "I846",
+    "title": "Shadow their king: a dragon of ours with no pearl target that has seen the enemy's longest head with enemy feed deaths beside it stays near it and takes the feeds' drops",
+    "status": "followup",
+    "history": [
+     "review 1790618107262016000: never-played category opponent: waits at 2 behind I742 and I430 (their fold's drops), which it extends to shadowing the king; I858 (this review) is the new opponent exploit, ranked 6 at priority 1.",
+     "review 1790653786700783000: never-played category opponent: stays at 2 (rank 2); I956 (this review) is its sibling at their stations.",
+     "review 1790661435866254000: never-played category opponent: stays 2 rank 2; online round-500 losses of 11049 had their king at r396 23.9 long against ours 6.7 (30 losses), so the king it shadows exists online.",
+     "E0340 kept I470, which this idea cites: raised to priority 1; check whether what it was waiting on is now there",
+     "review 1790665167676935000: never-played category opponent: stays rank 2; 11181's round-limit losses had their longest 37.4 against ours 22.5 (16 losses, online.md round500), so the king it shadows is there.",
+     "E0351: promising (SPRT H0; positive estimate, needs fresh confirmation)",
+     "E0351: follow-ups I1006"
+    ]
+   },
+   "result": {
+    "id": "E0351",
+    "verdict": "promising",
+    "reason": "SPRT H0; positive estimate, needs fresh confirmation",
+    "idea": "I846"
+   },
+   "judged": {
+    "asked": "discard",
+    "verdict": "discard",
+    "reason": "discard: no clear gain on its declared target (vs earlyking 0.503, n 682, p_gain 0.16) and a measured loss vs breeder (0.481, n 199, p_worse 0.003) that holds on both worldgen and eval maps, plus a lean worse on >=2400-tile maps (0.488, n 277, p 0.046)",
+    "circumstance": null,
+    "by": "judge",
+    "at": 1790675970.26787
+   }
+  },
+  {
+   "idea": {
+    "id": "I415",
+    "title": "Retest E0052 on the current champion, third try: cherry-pick E0121's df9a779 (rams read an enemy chain whose end is out of sight as one segment longer)",
+    "status": "dropped",
+    "history": [
+     "orchestrator 2026-09-27 21:37: queue audit Q38: priority -> 1 (the claimable retest of priority-1 followup I091: followups are never claimed (driver.ready_ideas takes only todo ideas)).",
+     "review 1790526119479482000: lowered to 2: a third try at E0052's open-chain estimate; the ram gate it feeds is now E0204's model.",
+     "orchestrator 2026-09-28 03:03: priority back to 1: sig 2026-09-27, queued priority-1 ideas stay priority 1 and reviews don't lower them (review 1790526119479482000 lowered it); meta.apply_review now refuses such a lowering.",
+     "orchestrator 2026-09-28 06:10: rejections review S3: E0052 read 93% chance of a gain (+4.1) and both rebuilds died on machine errors, never a verdict. Before building, check that the extra length reaches E0204's ram model (ramWorth/ramSwing, P.ramModel), not only Safety::attackGood.",
+     "E0295: promising (SPRT inconclusive; positive estimate, needs fresh confirmation)",
+     "E0295: follow-ups I862, I863",
+     "orchestrator 2026-09-29 15:46: P1 clustering pass (agent a49d421b report, sig's combine policy 2026-09-29), D30: dropped. Evidence reversed: E0295 (I415's retest) read +0.6 (promising, no gain shown)."
+    ]
+   },
+   "result": {
+    "id": "E0295",
+    "verdict": "promising",
+    "reason": "SPRT inconclusive; positive estimate, needs fresh confirmation",
+    "idea": "I415"
+   },
+   "judged": {
+    "asked": "discard",
+    "verdict": "discard",
+    "reason": "discard: the declared subgroup where the change acts (>=2400 tiles) reads 0.496 over 771 trials (p_gain 0.76), the overall is flat (+0.6 Elo over 2400 pairs), and the third try at E0052's +4.1 does not reproduce; it also adds a hand-picked floor (openChainMinLength 5) and a flat +1 the coder itself says should be a fitted chance",
+    "circumstance": null,
+    "by": "judge",
+    "at": 1790626234.182285
+   }
+  }
+ ],
+ "retests": [
+  {
+   "idea": {
+    "id": "I914",
+    "title": "Retest E0320 alone on the current champion: Retest E0310 to confirm on near_trauma: Unknown portals are ordinary explore frontier at any round, priced like unseen ground, with the landing risk this dr",
+    "status": "todo",
+    "source": "postmortem:E0320",
+    "history": []
+   },
+   "result": {
+    "id": "E0320",
+    "verdict": "promising",
+    "reason": "opponent screen regressed; not promoted",
+    "idea": "I903"
+   },
+   "judged": {
+    "asked": "discard",
+    "verdict": "discard",
+    "reason": "discard: this was already the lineage's one confirmation, weighted to portal maps as asked, and the declared gain did not show (portalrooms 0.508 over 1200, p 0.079 x 4 = 0.32; near_trauma level at 0.500 over 16); meanwhile the screen flagged starterking worse (z -2.77) with three more opponents near z -2, so the recorded verdict stands",
+    "circumstance": null,
+    "by": "judge",
+    "at": 1790643075.9934988
+   }
+  }
+ ]
+}

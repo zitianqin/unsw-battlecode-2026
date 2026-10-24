@@ -1,0 +1,112 @@
+{
+ "updated": 1790393049.311074,
+ "games": 8,
+ "per_minute": 58.4,
+ "here": 2,
+ "hosts": {
+  "mm": {
+   "played": 2,
+   "last_game": "13:24:03",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "mm1": {
+   "played": 1,
+   "last_game": "13:24:03",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "ll": {
+   "played": 2,
+   "last_game": "13:24:05",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "zz": {
+   "played": 1,
+   "last_game": "13:24:07",
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "sz": {
+   "played": 0,
+   "last_game": null,
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-syd": {
+   "played": 0,
+   "last_game": null,
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-mel": {
+   "played": 0,
+   "last_game": null,
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-nz": {
+   "played": 0,
+   "last_game": null,
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-id": {
+   "played": 0,
+   "last_game": null,
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-my": {
+   "played": 0,
+   "last_game": null,
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-hk": {
+   "played": 0,
+   "last_game": null,
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-jp": {
+   "played": 0,
+   "last_game": null,
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  },
+  "az-jpw": {
+   "played": 0,
+   "last_game": null,
+   "rests": 0,
+   "last_rest": null,
+   "resting": false,
+   "engine_cache": null
+  }
+ }
+}

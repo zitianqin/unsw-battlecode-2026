@@ -1,0 +1,384 @@
+{
+ "breeder": [
+  {
+   "replay": "0000-gen_eval_108664091-aA.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     53,
+     34
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     20,
+     18
+    ],
+    "gate": "noking"
+   }
+  },
+  {
+   "replay": "0001-gen_eval_108664092-aB.replay",
+   "won": false,
+   "drew": false,
+   "longest": [
+    [
+     122,
+     0,
+     6
+    ]
+   ],
+   "two_kings": null
+  },
+  {
+   "replay": "0002-gen_near_108664107-aA.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     127,
+     10,
+     0
+    ]
+   ],
+   "two_kings": null
+  },
+  {
+   "replay": "0003-gen_near_108664108-aB.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     37,
+     31
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     37,
+     31
+    ],
+    "gate": "longer"
+   }
+  },
+  {
+   "replay": "0004-gen_worldgen_108664115-aA.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     41,
+     39
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     33,
+     6
+    ],
+    "gate": "noking"
+   }
+  },
+  {
+   "replay": "0007-gen_deadend_108664140-aB.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     171,
+     3,
+     0
+    ]
+   ],
+   "two_kings": null
+  }
+ ],
+ "champion": [
+  {
+   "replay": "0000-gen_eval_108664091-aA.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     50,
+     29
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     20,
+     28
+    ],
+    "gate": "noking"
+   }
+  },
+  {
+   "replay": "0001-gen_eval_108664092-aB.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     100,
+     4,
+     0
+    ]
+   ],
+   "two_kings": null
+  },
+  {
+   "replay": "0002-gen_near_108664107-aA.replay",
+   "won": false,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     33,
+     48
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     28,
+     44
+    ],
+    "gate": "noking"
+   }
+  },
+  {
+   "replay": "0003-gen_near_108664108-aB.replay",
+   "won": false,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     54,
+     56
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     33,
+     37
+    ],
+    "gate": "far"
+   }
+  },
+  {
+   "replay": "0004-gen_worldgen_108664115-aA.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     70,
+     36
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     45,
+     4
+    ],
+    "gate": "noking"
+   }
+  },
+  {
+   "replay": "0005-gen_worldgen_108664120-aB.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     58,
+     43
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     34,
+     39
+    ],
+    "gate": "longer"
+   }
+  },
+  {
+   "replay": "0006-gen_portalrooms_108664127-aA.replay",
+   "won": false,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     56,
+     89
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     49,
+     28
+    ],
+    "gate": "far"
+   }
+  },
+  {
+   "replay": "0007-gen_deadend_108664140-aB.replay",
+   "won": false,
+   "drew": false,
+   "longest": [
+    [
+     243,
+     0,
+     3
+    ]
+   ],
+   "two_kings": null
+  }
+ ],
+ "swarm": [
+  {
+   "replay": "0000-gen_eval_108664091-aA.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     44,
+     8
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     29,
+     7
+    ],
+    "gate": "noking"
+   }
+  },
+  {
+   "replay": "0001-gen_eval_108664092-aB.replay",
+   "won": false,
+   "drew": false,
+   "longest": [
+    [
+     106,
+     0,
+     4
+    ]
+   ],
+   "two_kings": null
+  },
+  {
+   "replay": "0002-gen_near_108664107-aA.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     74,
+     12
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     47,
+     9
+    ],
+    "gate": "noking"
+   }
+  },
+  {
+   "replay": "0003-gen_near_108664108-aB.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     81,
+     13
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     30,
+     10
+    ],
+    "gate": "longer"
+   }
+  },
+  {
+   "replay": "0004-gen_worldgen_108664115-aA.replay",
+   "won": false,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     5,
+     11
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     5,
+     10
+    ],
+    "gate": "budget"
+   }
+  },
+  {
+   "replay": "0005-gen_worldgen_108664120-aB.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     84,
+     21
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     51,
+     15
+    ],
+    "gate": "far"
+   }
+  },
+  {
+   "replay": "0006-gen_portalrooms_108664127-aA.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     499,
+     67,
+     32
+    ]
+   ],
+   "two_kings": {
+    "second": [
+     57,
+     22
+    ],
+    "gate": "budget"
+   }
+  },
+  {
+   "replay": "0007-gen_deadend_108664140-aB.replay",
+   "won": true,
+   "drew": false,
+   "longest": [
+    [
+     161,
+     3,
+     0
+    ]
+   ],
+   "two_kings": null
+  }
+ ]
+}

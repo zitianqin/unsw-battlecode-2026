@@ -1,0 +1,233 @@
+{
+ "note": "Read-only GETs on 2026-09-28 at 19:46-19:58 AEST by the loop's API client, after the site dropped submissionAId, submissionBId, replayKey and requestedBy from battle details at about 19:30 AEST (MISSES 77): `battles` is GET /battles?limit=8 trimmed to 3 rows, `detail_475476` GET /battles/475476 (a 9-map sweep of WCTW, team 37), `record_475477` GET /battles/475477 (that battle's second game's own record), `detail_475263` GET /battles/475263 (a 10-map battle against dev test 2, team 752, requested by the loop as submission 9918), games trimmed to 3 each. Game 475477's replay names '9918' as botA and '' as botB.",
+ "battles": [
+  {
+   "id": 475476,
+   "ranked": false,
+   "opponentId": 37,
+   "opponent": "WCTW",
+   "opponentElo": 1820,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "win",
+    "win",
+    "win",
+    "loss",
+    "loss",
+    "win",
+    "loss",
+    "win"
+   ],
+   "wins": 6,
+   "losses": 3,
+   "outcome": "win",
+   "replayId": 475476,
+   "at": "2026-09-28T09:40:52.844Z"
+  },
+  {
+   "id": 475263,
+   "ranked": false,
+   "opponentId": 752,
+   "opponent": "dev test 2",
+   "opponentElo": 1709,
+   "eloChange": 0,
+   "results": [
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win",
+    "win"
+   ],
+   "wins": 10,
+   "losses": 0,
+   "outcome": "win",
+   "replayId": 475263,
+   "at": "2026-09-28T09:36:47.345Z"
+  },
+  {
+   "id": 475228,
+   "ranked": true,
+   "opponentId": 178,
+   "opponent": "Kaizen",
+   "opponentElo": 1563,
+   "eloChange": -2,
+   "results": [
+    "win",
+    "win",
+    "win",
+    "win",
+    "loss"
+   ],
+   "wins": 4,
+   "losses": 1,
+   "outcome": "win",
+   "replayId": 475228,
+   "at": "2026-09-28T09:34:55.027Z"
+  }
+ ],
+ "detail_475476": {
+  "match": {
+   "id": 475476,
+   "teamAId": 157,
+   "teamBId": 37,
+   "mapId": 7,
+   "ranked": false,
+   "skinA": "Jiaolong",
+   "skinB": "Loch Ness",
+   "status": "completed",
+   "winner": "a",
+   "scoresA": 34,
+   "scoresB": 0,
+   "views": 0,
+   "seriesId": "cc6b90b4-2287-447d-96ec-4905c97a6e1e",
+   "eloChangeA": null,
+   "eloChangeB": null,
+   "requestedAt": "2026-09-28T09:40:12.593Z",
+   "startedAt": "2026-09-28T09:40:13.437Z",
+   "completedAt": "2026-09-28T09:40:13.863Z",
+   "log": null,
+   "seed": "a7aa5142f6fc9c52"
+  },
+  "mapName": "Queen Of Spades",
+  "teamAName": "zitian",
+  "teamBName": "WCTW",
+  "teamAElo": 1921,
+  "teamBElo": 1820,
+  "games": [
+   {
+    "id": 475476,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Queen Of Spades"
+   },
+   {
+    "id": 475477,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Schooltime"
+   },
+   {
+    "id": 475478,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Trophy"
+   }
+  ],
+  "wait": null
+ },
+ "record_475477": {
+  "match": {
+   "id": 475477,
+   "teamAId": 157,
+   "teamBId": 37,
+   "mapId": 9,
+   "ranked": false,
+   "skinA": "Jiaolong",
+   "skinB": "Loch Ness",
+   "status": "completed",
+   "winner": "a",
+   "scoresA": 132,
+   "scoresB": 0,
+   "views": 0,
+   "seriesId": "cc6b90b4-2287-447d-96ec-4905c97a6e1e",
+   "eloChangeA": null,
+   "eloChangeB": null,
+   "requestedAt": "2026-09-28T09:40:12.593Z",
+   "startedAt": "2026-09-28T09:40:13.085Z",
+   "completedAt": "2026-09-28T09:40:17.729Z",
+   "log": null,
+   "seed": "bd54b98f0c59a75a"
+  },
+  "mapName": "Schooltime",
+  "teamAName": "zitian",
+  "teamBName": "WCTW",
+  "teamAElo": 1921,
+  "teamBElo": 1820,
+  "games": [
+   {
+    "id": 475476,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Queen Of Spades"
+   },
+   {
+    "id": 475477,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Schooltime"
+   },
+   {
+    "id": 475478,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Trophy"
+   }
+  ],
+  "wait": null
+ },
+ "detail_475263": {
+  "match": {
+   "id": 475263,
+   "teamAId": 157,
+   "teamBId": 752,
+   "mapId": 4,
+   "ranked": false,
+   "skinA": "Jiaolong",
+   "skinB": "Loch Ness",
+   "status": "completed",
+   "winner": "a",
+   "scoresA": 126,
+   "scoresB": 21,
+   "views": 0,
+   "seriesId": "2255d13d-8f08-4866-8500-9097fa1eb852",
+   "eloChangeA": null,
+   "eloChangeB": null,
+   "requestedAt": "2026-09-28T09:35:19.026Z",
+   "startedAt": "2026-09-28T09:35:19.689Z",
+   "completedAt": "2026-09-28T09:35:42.862Z",
+   "log": null,
+   "seed": "6d49ffd86a77c7ed"
+  },
+  "mapName": "Default",
+  "teamAName": "zitian",
+  "teamBName": "dev test 2",
+  "teamAElo": 1921,
+  "teamBElo": 1711,
+  "games": [
+   {
+    "id": 475263,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Default"
+   },
+   {
+    "id": 475264,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Queen Of Spades"
+   },
+   {
+    "id": 475265,
+    "status": "completed",
+    "winner": "a",
+    "hasReplay": true,
+    "mapName": "Schooltime"
+   }
+  ],
+  "wait": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "checked_at": 1790347040.165941,
+ "available": "1.1.0",
+ "changed_docs": [],
+ "check_error": null,
+ "check_seconds": 6.22,
+ "upgrade_attempt_at": 1790327435.501886,
+ "active": {
+  "version": "1.1.0",
+  "python": "{home}/toolchains/1.1.0/bin/python",
+  "validated_at": 1790327457.43179,
+  "epoch": "unswbc-1.1.0",
+  "champion": "65bb2295e3700d632b66825b9302c49bcb671e18",
+  "compatibility": "{home}/toolchains/1.1.0/compatibility.jsonl"
+ },
+ "upgrade_error": null
+}

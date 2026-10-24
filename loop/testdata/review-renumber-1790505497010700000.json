@@ -1,0 +1,172 @@
+{
+ "before": [
+  {
+   "id": "I187",
+   "category": "endgame",
+   "priority": 2,
+   "title": "Fold below 8 dragons only when the enemy is small too: gate foldIgnoresMinUnits on a sonar enemy census",
+   "hypothesis": "E0082 (P.foldIgnoresMinUnits = true on cf7fd8c) split cleanly by opponent over 2400 SPRT trials: vs champion 28 decisive pairs better, 2 worse (score 0.516), vs swarm 34 better / 44 worse (0.497), vs rammer 20 / 44 (0.492); net +1.2 Elo, inconclusive. Mechanism, from replaying champion and candidate",
+   "status": "todo",
+   "source": "postmortem:E0082",
+   "history": [
+    "review 1790443747267042000: build the enemy sighting record so I090's length field can share it (or reuse I090's if it has landed or left a candidate); I157 and I218 wait on this census"
+   ]
+  },
+  {
+   "id": "I363",
+   "category": "combat",
+   "priority": 2,
+   "title": "Finish a tiny team: once the enemy we have seen is down to 1-3 dragons late and we have twice as many, our non-king dragons ram any enemy head they reach, for the elimination",
+   "hypothesis": "Exploits a measured opponent habit, conditioned on seeing it. Opponents who fold hard end with 1-3 dragons: in 16 of our 78 online round-500 losses (submissions 7003-7594, 397 games; 95% 2.5-6.4% of all games) the opponent ended with at most 3 alive while we had 6 or more, 9 of them on 1152+ tile ma",
+   "status": "todo",
+   "source": "meta",
+   "history": [
+    "review 1790503150503181000: raised 3 -> 2: 8258's unselected games against 446 and 280 on Autarky and Dilemma had them at 3-4 dragons from r100 to r300 against our 11-64, and we lost 5 of 7 at the round limit. Sibling I469 hunts such a team's king while I459's quiet gate holds; this idea fires later, once few enemies are left."
+   ]
+  }
+ ],
+ "review": [
+  {
+   "id": "I187",
+   "category": "endgame",
+   "priority": 2,
+   "title": "Fold below 8 dragons only when the enemy is small too: gate foldIgnoresMinUnits on a sonar enemy census",
+   "hypothesis": "E0082 (P.foldIgnoresMinUnits = true on cf7fd8c) split cleanly by opponent over 2400 SPRT trials: vs champion 28 decisive pairs better, 2 worse (score 0.516), vs swarm 34 better / 44 worse (0.497), vs rammer 20 / 44 (0.492); net +1.2 Elo, inconclusive. Mechanism, from replaying champion and candidate",
+   "status": "todo",
+   "source": "postmortem:E0082",
+   "after": [
+    "I484"
+   ],
+   "history": [
+    "review 1790443747267042000: build the enemy sighting record so I090's length field can share it (or reuse I090's if it has landed or left a candidate); I157 and I218 wait on this census",
+    "review 1790505497010700000: after I484 (new, this review): the census this idea bundles with its floor gate is now its own prerequisite idea, measured alone first (MISSES 21); cherry-pick I484's candidate and build only the gate here."
+   ]
+  },
+  {
+   "id": "I363",
+   "category": "combat",
+   "priority": 2,
+   "title": "Finish a tiny team: once the enemy we have seen is down to 1-3 dragons late and we have twice as many, our non-king dragons ram any enemy head they reach, for the elimination",
+   "hypothesis": "Exploits a measured opponent habit, conditioned on seeing it. Opponents who fold hard end with 1-3 dragons: in 16 of our 78 online round-500 losses (submissions 7003-7594, 397 games; 95% 2.5-6.4% of all games) the opponent ended with at most 3 alive while we had 6 or more, 9 of them on 1152+ tile ma",
+   "status": "todo",
+   "source": "meta",
+   "after": [
+    "I484"
+   ],
+   "history": [
+    "review 1790503150503181000: raised 3 -> 2: 8258's unselected games against 446 and 280 on Autarky and Dilemma had them at 3-4 dragons from r100 to r300 against our 11-64, and we lost 5 of 7 at the round limit. Sibling I469 hunts such a team's king while I459's quiet gate holds; this idea fires later, once few enemies are left.",
+    "review 1790505497010700000: after I484 (new): the census of enemy dragons this idea reads. New case: rank 2 held one dragon from r375 to r499 on Prisoners Dilemma (ranked 366025, 15 alive at r325, 1 at r375), a team one head-on eliminates; the lone-king opponent there (280) fielded 2-4 all game."
+   ]
+  },
+  {
+   "id": "I481",
+   "category": "diagnostics",
+   "priority": 2,
+   "title": "Log the threat shed's judgement on the debug line: the enemy head it found able to ram us (threat id) and, when a threatened dragon didn't shed, the gate that stopped it (noshed word)",
+   "hypothesis": "General quantity: of our 6+-long dragons killed head-on by a shorter enemy head, the share whose threat-shed check (split.hpp shedLength, E0157) saw the killer on their last turn, and which gate kept it from shedding. Measured this review over the 9 kept rule-count replays of a7ec5a9 (rule-games/179",
+   "status": "todo",
+   "source": "meta"
+  },
+  {
+   "id": "I482",
+   "category": "recheck",
+   "priority": 3,
+   "title": "Re-check E0141 (I249): the champion with P.outnumberedAttackMinGain 1 (from 3: while outnumbered in view, ram any longer head again) and nothing else",
+   "hypothesis": "A behaviour accepted 3+ promotions ago, re-checked with its gate opened. E0141 (kept, +17.0, H1 over 408 pairs, 6 promotions ago) added the gate in Safety::attackGood: while visible friendly heads minus enemy heads < 0, a ram needs theirLen - ourLen >= P.outnumberedAttackMinGain (3). Its evidence wa",
+   "status": "todo",
+   "source": "meta"
+  },
+  {
+   "id": "I483",
+   "category": "combat",
+   "priority": 3,
+   "title": "Sprint for a contested drop: a dragon 3+ long takes the 2-3-step sprint that ends on a drop pearl an enemy head would otherwise reach first, when the pearls on its path pay every extra step",
+   "hypothesis": "General quantity: our share of the pearls that head-ons in view drop (eaten within 20 rounds, ours against theirs), online and local. Online our share on our own rams is 54% (612 rams, 40 dev games of 8213) against rank 1's 64% (1,602 rams, 37 ranked games) and rank 2's 70-79% (251) (review 17904948",
+   "status": "todo",
+   "source": "meta"
+  },
+  {
+   "id": "I484",
+   "category": "information",
+   "priority": 1,
+   "title": "Team census of the opponent: each dragon's counts of the enemy heads it sees (distinct ids, short heads per turn, longest seen) ride the belief gossip, so every dragon can read the opponent's size and style",
+   "hypothesis": "A prerequisite several waiting ideas need, measured alone first (MISSES 21: prerequisites first, stacks after). What the opponent is (a swarm, a lone king, a team folded down to a few dragons) decides the right fold, floor and hunt, and only the team's union of sightings tells them apart. Audit 1790",
+   "status": "todo",
+   "source": "meta"
+  }
+ ],
+ "meanwhile": [
+  {
+   "id": "I481",
+   "category": "safety",
+   "priority": 2,
+   "title": "Tune grazing: how much a long dragon pays for targets near recent enemy-head sightings, from what length, and how fast s",
+   "hypothesis": "E0178 (I330) kept grazing on probability (+4.0, 96%, 2400 pairs) with every number a first guess: grazeWeight 6 steps per unit of chance, grazeMinLength 12 (the idea's guess, never measured against 8 ",
+   "status": "todo",
+   "source": "followon:E0178"
+  },
+  {
+   "id": "I482",
+   "category": "safety",
+   "priority": 3,
+   "title": "Graze only where sightings are sparse: a long dragon skips the enemy-sighting cost when enemy heads were reported in mor",
+   "hypothesis": "General quantity: E0178's gain by how widespread the enemy's heads are. Its SPRT split by opponent: against the champion and the breeder (both fold late into few heads) 0.514 over 1200 trials, against",
+   "status": "todo",
+   "source": "followon:E0178"
+  },
+  {
+   "id": "I483",
+   "category": "sonar",
+   "priority": 4,
+   "title": "Same change as I062: short dragons steer around blocks where an enemy head is likely",
+   "hypothesis": "same change as I062, with new evidence: E0178 (I330) was the first rule to read Belief::enemyChance (per-block enemy-head sightings from our view and gossip, fading with P.enemyHalfLife) and was kept ",
+   "status": "todo",
+   "source": "followon:E0178"
+  },
+  {
+   "id": "I484",
+   "category": "strategy",
+   "priority": 1,
+   "title": "RL on one decision: once I452's learned ram model beats the rule, improve its weights by policy search on game results (",
+   "hypothesis": "sig 2026-09-27: 'we should use models or formulae or graphs or probailities or ratios or rl inference instead'; calc (#9) is said to use RL on small things (Discord 2026-09-27 04:22, weights.bin 07:49",
+   "status": "todo",
+   "source": "orchestrator: sig RL ask (calc, Discord RL talk)"
+  },
+  {
+   "id": "I485",
+   "category": "strategy",
+   "priority": 1,
+   "title": "Learned mode choice (macro RL): each dragon picks among the bot's existing behaviours (breed, farm, hunt, fold toward th",
+   "hypothesis": "Discord suggestions (messages.jsonl, UTC): Rory, 2026-09-23 12:02: 'RL is probably better for macro instead of micro. like you have eg 4 possible handmade policies (defense, offense, hoard, explore) a",
+   "status": "todo",
+   "source": "orchestrator: sig RL ask (calc, Discord RL talk)"
+  },
+  {
+   "id": "I486",
+   "category": "endgame",
+   "priority": 2,
+   "title": "Same change as I432: our leading king dies to short sprint-rammers late in the fold",
+   "hypothesis": "same change as I432. New evidence from E0179 (post-mortem, 3 watched losses): the general quantity is fold-window deaths of our longest dragon to a shorter enemy head's sprint ram. In 2 of the 3 games",
+   "status": "todo",
+   "source": "postmortem:E0179"
+  },
+  {
+   "id": "I487",
+   "category": "safety",
+   "priority": 2,
+   "title": "Same change as I278: a new case of our king running into its own body in the fold",
+   "hypothesis": "same change as I278. New case from E0179's SPRT loss gen_big_402167590 (near Trauma, 1152 tiles, against the breeder, candidate side A): our king (id 510, 22 long, the team's longest) died of hitSelf ",
+   "status": "todo",
+   "source": "postmortem:E0179"
+  },
+  {
+   "id": "I488",
+   "category": "targeting",
+   "priority": 4,
+   "title": "Measure first: why 2-3-long dragons at the unit cap leave visible pearls uneaten",
+   "hypothesis": "General quantity: pearls eaten per head-round by 2-3-long dragons while we hold 60+ dragons (review: ours 0.026, rank 1 0.041, rank 3 0.052 on 2400+ tiles). E0179 (I344) tested one assumed cause, that",
+   "status": "todo",
+   "source": "postmortem:E0179"
+  }
+ ]
+}

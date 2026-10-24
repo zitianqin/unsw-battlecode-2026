@@ -1,0 +1,81 @@
+{
+ "params": [
+  "attackMinGain",
+  "riskTradeMinGain",
+  "minUnitsToTrade",
+  "maxRamSteps",
+  "evenTradeMinEdge"
+ ],
+ "start": {
+  "attackMinGain": 0.0,
+  "riskTradeMinGain": 0.0,
+  "minUnitsToTrade": 3.0,
+  "maxRamSteps": 3.0,
+  "evenTradeMinEdge": 0.0
+ },
+ "nudges": {
+  "attackMinGain": 1.0,
+  "riskTradeMinGain": 1.0,
+  "minUnitsToTrade": 1.0,
+  "maxRamSteps": 1.0,
+  "evenTradeMinEdge": 1.0
+ },
+ "constraints": [],
+ "fixed": {},
+ "projections": [],
+ "iterations": [
+  {
+   "theta": {
+    "attackMinGain": 0.25,
+    "riskTradeMinGain": 0.25,
+    "minUnitsToTrade": 2.9166666666666665,
+    "maxRamSteps": 3.0833333333333335,
+    "evenTradeMinEdge": -0.25
+   },
+   "scores": [
+    0.0,
+    0.3333333333333333,
+    0.0,
+    -0.16666666666666666
+   ]
+  },
+  {
+   "theta": {
+    "attackMinGain": 0.02598716693734493,
+    "riskTradeMinGain": 0.17532905564578166,
+    "minUnitsToTrade": 3.1406794997293215,
+    "maxRamSteps": 3.1580042776875517,
+    "evenTradeMinEdge": -0.02598716693734493
+   },
+   "scores": [
+    -0.3333333333333333,
+    0.16666666666666666,
+    -0.16666666666666666,
+    -0.16666666666666666
+   ]
+  }
+ ],
+ "final": {
+  "attackMinGain": -1,
+  "riskTradeMinGain": 0,
+  "minUnitsToTrade": 1,
+  "maxRamSteps": 3,
+  "evenTradeMinEdge": 2
+ },
+ "changed": {
+  "attackMinGain": [
+   0.0,
+   -1
+  ],
+  "minUnitsToTrade": [
+   3.0,
+   1
+  ],
+  "evenTradeMinEdge": [
+   0.0,
+   2
+  ]
+ },
+ "games": 2100,
+ "seconds": 3793
+}

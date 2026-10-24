@@ -1,0 +1,24 @@
+{
+ "id": "E0102",
+ "verdict": "kept",
+ "finished": 1790392227.614867,
+ "official": {
+  "score": 0.5277777777777778,
+  "games": 90,
+  "per_map": {
+   "big_empty": 0.3,
+   "default": 0.3,
+   "default_small": 0.5,
+   "devil": 0.8,
+   "queen_of_spades": 0.7,
+   "schooltime": 1.0,
+   "stronghold": 0.3,
+   "trauma": 0.55,
+   "trophy": 0.3
+  },
+  "lost_both": [],
+  "won_both": [
+   "schooltime"
+  ]
+ }
+}

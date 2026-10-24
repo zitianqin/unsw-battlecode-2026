@@ -1,0 +1,41 @@
+[
+ {
+  "id": 434802,
+  "submission_id": 9347,
+  "opponent": 545,
+  "opponent_submission_id": 4525,
+  "side": "A",
+  "map_id": 7,
+  "map_hash": null,
+  "ranked": false,
+  "requested_at": "2026-09-28T00:08:01.047Z",
+  "dev": true,
+  "summary": {
+   "result": {
+    "endReason": "roundLimit",
+    "endRound": 499,
+    "winner": "A"
+   }
+  }
+ },
+ {
+  "id": 436945,
+  "submission_id": 9347,
+  "opponent": 545,
+  "opponent_submission_id": 9371,
+  "side": "A",
+  "map_id": 17,
+  "map_hash": null,
+  "ranked": false,
+  "requested_at": "2026-09-28T00:56:23.060Z",
+  "dev": true,
+  "kept": "loss",
+  "summary": {
+   "result": {
+    "endReason": "teamEliminated",
+    "endRound": 99,
+    "winner": "B"
+   }
+  }
+ }
+]

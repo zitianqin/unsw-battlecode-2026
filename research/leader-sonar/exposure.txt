@@ -1,0 +1,80 @@
+== 91
+121802 Big Empty pings 71856 hitEnemy 36294 rounds w/ enemy-rx 350 {'inside vision': 486, 'about sender': 1801, 'outside vision': 35602, 'outside & age<=2': 9816, 'about other dragon': 34287, 'recv died': 206} age median 5.0 distinct ids/round 2.9 mean alive 49.7
+121803 Default pings 19992 hitEnemy 4352 rounds w/ enemy-rx 362 {'non-report': 89, 'outside vision': 3702, 'about sender': 1136, 'outside & age<=2': 1636, 'inside vision': 519, 'about other dragon': 3085, 'recv died': 42} age median 3 distinct ids/round 2.5 mean alive 15.0
+121806 Queen Of Spades pings 37532 hitEnemy 1074 rounds w/ enemy-rx 207 {'inside vision': 140, 'about sender': 71, 'outside vision': 919, 'outside & age<=2': 423, 'about other dragon': 988, 'recv died': 15} age median 2 distinct ids/round 1.5 mean alive 31.1
+121807 Schooltime pings 63356 hitEnemy 7964 rounds w/ enemy-rx 361 {'non-report': 110, 'outside vision': 6790, 'about sender': 2220, 'outside & age<=2': 2303, 'inside vision': 982, 'about other dragon': 5552, 'recv died': 82} age median 5.0 distinct ids/round 6.3 mean alive 39.4
+121808 stronghold pings 55296 hitEnemy 144 rounds w/ enemy-rx 91 {'outside vision': 123, 'about other dragon': 105, 'outside & age<=2': 75, 'about sender': 37, 'inside vision': 19, 'recv died': 2} age median 1.0 distinct ids/round 1.0 mean alive 35.3
+121809 Trauma pings 58968 hitEnemy 195 rounds w/ enemy-rx 132 {'outside vision': 146, 'about other dragon': 133, 'outside & age<=2': 36, 'about sender': 59, 'inside vision': 46, 'non-report': 3} age median 3.5 distinct ids/round 1.1 mean alive 32.7
+122772 Big Empty pings 75276 hitEnemy 22912 rounds w/ enemy-rx 350 {'outside vision': 22578, 'about sender': 621, 'outside & age<=2': 11762, 'about other dragon': 22146, 'inside vision': 189, 'recv died': 145} age median 2 distinct ids/round 1.5 mean alive 51.4
+122773 stronghold pings 56249 hitEnemy 4 rounds w/ enemy-rx 4 {'inside vision': 2, 'about sender': 3, 'non-report': 1, 'outside vision': 1, 'outside & age<=2': 1} age median 0 distinct ids/round 1 mean alive 36.2
+122774 Default Small pings 5192 hitEnemy 85 rounds w/ enemy-rx 37 {'outside vision': 62, 'about sender': 23, 'outside & age<=2': 48, 'about other dragon': 61, 'recv died': 1, 'inside vision': 22} age median 1.0 distinct ids/round 1.2 mean alive 17.1
+122775 Default pings 42982 hitEnemy 1551 rounds w/ enemy-rx 209 {'non-report': 34, 'inside vision': 93, 'about sender': 57, 'outside vision': 1390, 'outside & age<=2': 676, 'about other dragon': 1426, 'recv died': 34} age median 3 distinct ids/round 1.6 mean alive 37.1
+122776 Devil pings 860 hitEnemy 129 rounds w/ enemy-rx 75 {'outside vision': 69, 'about sender': 51, 'outside & age<=2': 42, 'inside vision': 54, 'about other dragon': 72, 'recv died': 6} age median 1 distinct ids/round 1.0 mean alive 5.4
+123692 Trauma pings 40602 hitEnemy 199 rounds w/ enemy-rx 125 {'outside vision': 116, 'about sender': 94, 'outside & age<=2': 57, 'inside vision': 77, 'about other dragon': 99, 'recv died': 6} age median 0 distinct ids/round 1.3 mean alive 22.2
+123693 stronghold pings 52468 hitEnemy 23 rounds w/ enemy-rx 20 {'outside vision': 15, 'about sender': 22, 'outside & age<=2': 15, 'inside vision': 7, 'recv died': 1} age median 0.0 distinct ids/round 1 mean alive 34.3
+123694 Big Empty pings 68180 hitEnemy 30831 rounds w/ enemy-rx 350 {'inside vision': 530, 'about sender': 1210, 'outside vision': 29906, 'outside & age<=2': 11268, 'about other dragon': 29226, 'recv died': 395} age median 3.0 distinct ids/round 2.3 mean alive 47.5
+126926 Default pings 42121 hitEnemy 1051 rounds w/ enemy-rx 188 {'non-report': 40, 'outside vision': 947, 'about sender': 49, 'outside & age<=2': 695, 'recv died': 26, 'about other dragon': 936, 'inside vision': 38} age median 2 distinct ids/round 1.5 mean alive 40.2
+126929 Queen Of Spades pings 19214 hitEnemy 985 rounds w/ enemy-rx 228 {'non-report': 3, 'outside vision': 843, 'about other dragon': 817, 'outside & age<=2': 410, 'inside vision': 115, 'about sender': 141, 'recv died': 24} age median 2.0 distinct ids/round 1.7 mean alive 13.2
+126930 Schooltime pings 65116 hitEnemy 5465 rounds w/ enemy-rx 363 {'non-report': 91, 'outside vision': 4827, 'about sender': 964, 'outside & age<=2': 1598, 'recv died': 107, 'inside vision': 440, 'about other dragon': 4303} age median 5 distinct ids/round 4.0 mean alive 38.7
+126931 stronghold pings 51120 hitEnemy 762 rounds w/ enemy-rx 304 {'inside vision': 133, 'about sender': 200, 'outside vision': 621, 'about other dragon': 554, 'outside & age<=2': 391, 'recv died': 6, 'non-report': 2} age median 1.0 distinct ids/round 1.1 mean alive 33.2
+126932 Trauma pings 46892 hitEnemy 125 rounds w/ enemy-rx 87 {'outside vision': 111, 'about other dragon': 102, 'outside & age<=2': 44, 'inside vision': 8, 'about sender': 17, 'non-report': 3, 'recv died': 3} age median 4 distinct ids/round 1.1 mean alive 26.7
+126933 Trophy pings 7 hitEnemy 3 rounds w/ enemy-rx 3 {'non-report': 3} age median None distinct ids/round 0 mean alive 2.5
+127936 Trauma pings 34442 hitEnemy 142 rounds w/ enemy-rx 107 {'outside vision': 76, 'about other dragon': 84, 'outside & age<=2': 57, 'inside vision': 58, 'recv died': 8, 'about sender': 50} age median 0.0 distinct ids/round 1.1 mean alive 19.1
+127937 stronghold pings 48420 hitEnemy 195 rounds w/ enemy-rx 127 {'outside vision': 174, 'about other dragon': 132, 'inside vision': 19, 'about sender': 61, 'outside & age<=2': 127, 'recv died': 2} age median 1 distinct ids/round 1.1 mean alive 32.3
+127938 Schooltime pings 65439 hitEnemy 4418 rounds w/ enemy-rx 351 {'non-report': 139, 'outside vision': 3806, 'about sender': 836, 'outside & age<=2': 1168, 'inside vision': 373, 'about other dragon': 3343, 'recv died': 100} age median 5 distinct ids/round 4.1 mean alive 38.8
+127940 Devil pings 60 hitEnemy 22 rounds w/ enemy-rx 13 {'outside vision': 13, 'about sender': 22, 'outside & age<=2': 13, 'inside vision': 9} age median 0.0 distinct ids/round 1 mean alive 3.7
+130868 Default pings 57054 hitEnemy 815 rounds w/ enemy-rx 269 {'non-report': 44, 'outside vision': 697, 'about sender': 75, 'outside & age<=2': 335, 'inside vision': 44, 'about other dragon': 666, 'recv died': 30} age median 3 distinct ids/round 1.3 mean alive 32.9
+130871 Queen Of Spades pings 4296 hitEnemy 131 rounds w/ enemy-rx 61 {'non-report': 2, 'recv died': 8, 'outside vision': 104, 'about other dragon': 118, 'outside & age<=2': 25, 'inside vision': 17, 'about sender': 3} age median 8 distinct ids/round 1.3 mean alive 11.2
+133944 Big Empty pings 73440 hitEnemy 29318 rounds w/ enemy-rx 350 {'outside vision': 28879, 'about sender': 999, 'outside & age<=2': 9972, 'about other dragon': 28198, 'inside vision': 318, 'recv died': 121} age median 3 distinct ids/round 2.3 mean alive 50.5
+134189 Default pings 54343 hitEnemy 3756 rounds w/ enemy-rx 373 {'non-report': 60, 'inside vision': 403, 'about sender': 164, 'outside vision': 3236, 'about other dragon': 3475, 'outside & age<=2': 1702, 'recv died': 57} age median 2 distinct ids/round 1.5 mean alive 32.6
+134191 Devil pings 4576 hitEnemy 25 rounds w/ enemy-rx 19 {'inside vision': 1, 'about sender': 1, 'outside vision': 24, 'about other dragon': 24, 'outside & age<=2': 5} age median 4 distinct ids/round 1.1 mean alive 34.1
+134192 Queen Of Spades pings 25958 hitEnemy 1011 rounds w/ enemy-rx 209 {'inside vision': 112, 'about sender': 69, 'outside vision': 885, 'outside & age<=2': 260, 'about other dragon': 928, 'recv died': 14} age median 4 distinct ids/round 1.5 mean alive 21.0
+134194 stronghold pings 52512 hitEnemy 319 rounds w/ enemy-rx 201 {'outside vision': 259, 'about other dragon': 182, 'outside & age<=2': 177, 'about sender': 132, 'inside vision': 55, 'non-report': 4, 'recv died': 1} age median 0.0 distinct ids/round 1.0 mean alive 33.9
+134195 Trauma pings 40848 hitEnemy 166 rounds w/ enemy-rx 116 {'inside vision': 67, 'about other dragon': 54, 'about sender': 102, 'outside vision': 89, 'outside & age<=2': 58, 'recv died': 9, 'non-report': 1} age median 0.0 distinct ids/round 1.2 mean alive 23.6
+134196 Trophy pings 3540 hitEnemy 824 rounds w/ enemy-rx 175 {'non-report': 6, 'outside vision': 575, 'about sender': 352, 'outside & age<=2': 369, 'inside vision': 233, 'about other dragon': 456, 'recv died': 10} age median 0.0 distinct ids/round 1.7 mean alive 6.9
+137769 Default Small pings 11200 hitEnemy 227 rounds w/ enemy-rx 87 {'inside vision': 45, 'about sender': 21, 'outside vision': 171, 'about other dragon': 195, 'outside & age<=2': 91, 'recv died': 11} age median 2.0 distinct ids/round 1.4 mean alive 19.5
+137770 Trophy pings 94 hitEnemy 52 rounds w/ enemy-rx 23 {'non-report': 4, 'inside vision': 17, 'about sender': 48, 'outside vision': 31, 'outside & age<=2': 31} age median 0.0 distinct ids/round 1 mean alive 3.0
+137771 Schooltime pings 65220 hitEnemy 5879 rounds w/ enemy-rx 360 {'non-report': 95, 'outside vision': 5225, 'about sender': 1097, 'outside & age<=2': 1592, 'about other dragon': 4593, 'inside vision': 465, 'recv died': 94} age median 6.0 distinct ids/round 4.5 mean alive 40.8
+137773 Queen Of Spades pings 19929 hitEnemy 686 rounds w/ enemy-rx 159 {'outside vision': 565, 'about other dragon': 629, 'outside & age<=2': 234, 'inside vision': 104, 'about sender': 40, 'recv died': 15, 'non-report': 2} age median 3 distinct ids/round 1.6 mean alive 20.6
+137774 Default pings 18955 hitEnemy 373 rounds w/ enemy-rx 88 {'non-report': 20, 'inside vision': 47, 'about other dragon': 336, 'outside vision': 306, 'outside & age<=2': 192, 'about sender': 17} age median 2 distinct ids/round 1.5 mean alive 35.4
+137775 stronghold pings 46985 hitEnemy 19 rounds w/ enemy-rx 19 {'inside vision': 8, 'about sender': 14, 'non-report': 3, 'outside vision': 7, 'outside & age<=2': 7, 'recv died': 1, 'about other dragon': 1} age median 0 distinct ids/round 1 mean alive 31.0
+137776 Devil pings 168 hitEnemy 33 rounds w/ enemy-rx 26 {'outside vision': 19, 'about sender': 31, 'outside & age<=2': 19, 'inside vision': 12, 'recv died': 2} age median 0 distinct ids/round 1 mean alive 3.1
+137777 Trauma pings 43756 hitEnemy 179 rounds w/ enemy-rx 128 {'outside vision': 115, 'about sender': 59, 'outside & age<=2': 63, 'inside vision': 48, 'about other dragon': 104, 'recv died': 16} age median 0 distinct ids/round 1.2 mean alive 25.1
+games 41 with pings 41 mean hitEnemy/game (all games) 3969 mean over games with pings 3969
+== 46
+124808 Big Empty pings 7652 hitEnemy 2512 rounds w/ enemy-rx 146 {'outside vision': 1647, 'outside & age<=2': 1647, 'inside vision': 56, 'recv died': 54, 'about receiver team': 755} age median 0 distinct ids/round 0 mean alive 53.9
+124809 Default pings 8 hitEnemy 2 rounds w/ enemy-rx 2 {'inside vision': 2} age median 0.0 distinct ids/round 0 mean alive 12.3
+125316 Default pings 4068 hitEnemy 93 rounds w/ enemy-rx 61 {'outside vision': 87, 'outside & age<=2': 87, 'recv died': 3, 'inside vision': 3} age median 0.0 distinct ids/round 0 mean alive 32.5
+126871 Trophy pings 4852 hitEnemy 223 rounds w/ enemy-rx 95 {'about receiver team': 11, 'outside vision': 180, 'outside & age<=2': 180, 'inside vision': 19, 'recv died': 13} age median 0 distinct ids/round 0 mean alive 23.1
+126872 stronghold pings 5624 hitEnemy 55 rounds w/ enemy-rx 45 {'outside vision': 50, 'outside & age<=2': 50, 'inside vision': 5} age median 0 distinct ids/round 0 mean alive 32.9
+126934 Big Empty pings 10828 hitEnemy 1999 rounds w/ enemy-rx 150 {'outside vision': 1314, 'outside & age<=2': 1314, 'inside vision': 44, 'about receiver team': 629, 'recv died': 12} age median 0.0 distinct ids/round 0 mean alive 57.4
+126939 Schooltime pings 8512 hitEnemy 410 rounds w/ enemy-rx 134 {'outside vision': 278, 'outside & age<=2': 278, 'inside vision': 33, 'about receiver team': 93, 'recv died': 6} age median 0 distinct ids/round 0 mean alive 47.5
+126940 stronghold pings 6612 hitEnemy 5 rounds w/ enemy-rx 5 {'outside vision': 5, 'outside & age<=2': 5} age median 0 distinct ids/round 0 mean alive 35.8
+126941 Trauma pings 3684 hitEnemy 22 rounds w/ enemy-rx 20 {'outside vision': 18, 'outside & age<=2': 18, 'inside vision': 4} age median 0.0 distinct ids/round 0 mean alive 18.6
+127941 stronghold pings 5804 hitEnemy 1 rounds w/ enemy-rx 1 {'recv died': 1} age median None distinct ids/round 0 mean alive 38.1
+127942 Big Empty pings 11904 hitEnemy 2227 rounds w/ enemy-rx 150 {'about receiver team': 648, 'outside vision': 1538, 'outside & age<=2': 1538, 'inside vision': 22, 'recv died': 19} age median 0.0 distinct ids/round 0 mean alive 58.2
+130766 Default pings 932 hitEnemy 30 rounds w/ enemy-rx 19 {'outside vision': 29, 'outside & age<=2': 29, 'inside vision': 1} age median 0.0 distinct ids/round 0 mean alive 21.7
+130767 Big Empty pings 10636 hitEnemy 2141 rounds w/ enemy-rx 150 {'outside vision': 1295, 'outside & age<=2': 1295, 'about receiver team': 799, 'inside vision': 27, 'recv died': 20} age median 0.0 distinct ids/round 0 mean alive 55.2
+136136 Big Empty pings 10272 hitEnemy 2668 rounds w/ enemy-rx 150 {'outside vision': 1777, 'outside & age<=2': 1777, 'inside vision': 69, 'recv died': 36, 'about receiver team': 786} age median 0.0 distinct ids/round 0 mean alive 55.3
+136138 Schooltime pings 6056 hitEnemy 367 rounds w/ enemy-rx 122 {'outside vision': 301, 'outside & age<=2': 301, 'inside vision': 43, 'about receiver team': 22, 'recv died': 1} age median 0.0 distinct ids/round 0 mean alive 40.4
+games 15 with pings 15 mean hitEnemy/game (all games) 850 mean over games with pings 850
+== 470
+121878 Big Empty pings 29576 hitEnemy 9503 rounds w/ enemy-rx 167 {} age median None distinct ids/round 0 mean alive 51.5
+121879 Default pings 10388 hitEnemy 140 rounds w/ enemy-rx 67 {} age median None distinct ids/round 0 mean alive 37.6
+125244 Big Empty pings 29576 hitEnemy 9503 rounds w/ enemy-rx 167 {} age median None distinct ids/round 0 mean alive 51.5
+125245 Default pings 10388 hitEnemy 140 rounds w/ enemy-rx 67 {} age median None distinct ids/round 0 mean alive 37.6
+126693 Trauma pings 17312 hitEnemy 32 rounds w/ enemy-rx 21 {} age median None distinct ids/round 0 mean alive 20.5
+126694 Queen Of Spades pings 10948 hitEnemy 483 rounds w/ enemy-rx 133 {} age median None distinct ids/round 0 mean alive 14.4
+127936 Trauma pings 10808 hitEnemy 12 rounds w/ enemy-rx 11 {} age median None distinct ids/round 0 mean alive 15.6
+127937 stronghold pings 16820 hitEnemy 209 rounds w/ enemy-rx 130 {} age median None distinct ids/round 0 mean alive 33.7
+127938 Schooltime pings 21036 hitEnemy 1163 rounds w/ enemy-rx 151 {} age median None distinct ids/round 0 mean alive 46.5
+128871 Big Empty pings 28624 hitEnemy 10621 rounds w/ enemy-rx 132 {} age median None distinct ids/round 0 mean alive 54.0
+128875 stronghold pings 11716 hitEnemy 112 rounds w/ enemy-rx 82 {} age median None distinct ids/round 0 mean alive 31.6
+134081 Big Empty pings 34984 hitEnemy 14569 rounds w/ enemy-rx 167 {} age median None distinct ids/round 0 mean alive 55.1
+134082 Default pings 7284 hitEnemy 1206 rounds w/ enemy-rx 158 {} age median None distinct ids/round 0 mean alive 21.9
+136145 Big Empty pings 29136 hitEnemy 14984 rounds w/ enemy-rx 132 {} age median None distinct ids/round 0 mean alive 56.8
+136146 Trauma pings 13880 hitEnemy 46 rounds w/ enemy-rx 37 {} age median None distinct ids/round 0 mean alive 34.6
+137666 Schooltime pings 13632 hitEnemy 566 rounds w/ enemy-rx 128 {} age median None distinct ids/round 0 mean alive 41.4
+137667 Trophy pings 4300 hitEnemy 491 rounds w/ enemy-rx 93 {} age median None distinct ids/round 0 mean alive 14.1
+137668 Devil pings 2480 hitEnemy 12 rounds w/ enemy-rx 5 {} age median None distinct ids/round 0 mean alive 35.8
+games 18 with pings 18 mean hitEnemy/game (all games) 3544 mean over games with pings 3544

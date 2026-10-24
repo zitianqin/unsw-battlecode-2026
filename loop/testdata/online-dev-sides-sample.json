@@ -1,0 +1,791 @@
+{
+ "_note": "Real rows, 2026-09-27: dev results of our 8023 and 8151 against team 545's submission 4525 on Trophy (11) and Devil (13), every one side A; E0167's official-map rows there (candidate 412171b, our 8151, against 1eae05f); ladder-maps.json's entries for the two maps.",
+ "results": [
+  {
+   "id": 346726,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 11,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:10:53.736Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 347157,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 11,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:17:03.576Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 347912,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 11,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:31:44.169Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 348446,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 11,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:41:32.135Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 346727,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 13,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:10:53.736Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 347158,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 13,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:17:03.576Z",
+   "winner": "A",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 348447,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 13,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:41:32.135Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 348553,
+   "submission_id": 8023,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 13,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T04:43:50.453Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 353657,
+   "submission_id": 8151,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 11,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T05:53:54.048Z",
+   "winner": "A",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 353886,
+   "submission_id": 8151,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 11,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T05:56:55.833Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 354016,
+   "submission_id": 8151,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 11,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T05:58:36.858Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 356794,
+   "submission_id": 8151,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 11,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T06:04:22.497Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 353658,
+   "submission_id": 8151,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 13,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T05:53:54.048Z",
+   "winner": "A",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 353887,
+   "submission_id": 8151,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 13,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T05:56:55.833Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 354017,
+   "submission_id": 8151,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 13,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T05:58:36.858Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  },
+  {
+   "id": 356795,
+   "submission_id": 8151,
+   "opponent": 545,
+   "opponent_submission_id": 4525,
+   "side": "A",
+   "map_id": 13,
+   "map_hash": null,
+   "ranked": false,
+   "requested_at": "2026-09-27T06:04:22.497Z",
+   "winner": "B",
+   "from": "battle",
+   "dev": true
+  }
+ ],
+ "official": [
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/devil~0.map",
+   "a_side": "A",
+   "winner": "a",
+   "end": "rounds",
+   "rounds": 500,
+   "a": {
+    "alive": 13,
+    "longest": 49,
+    "total": 92,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 1,
+    "longest": 16,
+    "total": 16,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 2.2861909590428695,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/devil~0.map",
+   "a_side": "B",
+   "winner": "b",
+   "end": "rounds",
+   "rounds": 500,
+   "a": {
+    "alive": 1,
+    "longest": 16,
+    "total": 16,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 13,
+    "longest": 49,
+    "total": 92,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 2.1214390419772826,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/devil~1.map",
+   "a_side": "A",
+   "winner": "a",
+   "end": "elimination",
+   "rounds": 314,
+   "a": {
+    "alive": 64,
+    "longest": 6,
+    "total": 160,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 1.7431237080018036,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/devil~1.map",
+   "a_side": "B",
+   "winner": "b",
+   "end": "elimination",
+   "rounds": 314,
+   "a": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 64,
+    "longest": 6,
+    "total": 160,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 1.6627989999833517,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/devil~2.map",
+   "a_side": "A",
+   "winner": "b",
+   "end": "elimination",
+   "rounds": 238,
+   "a": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 61,
+    "longest": 5,
+    "total": 157,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 1.0606477499823086,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/devil~2.map",
+   "a_side": "B",
+   "winner": "a",
+   "end": "elimination",
+   "rounds": 238,
+   "a": {
+    "alive": 61,
+    "longest": 5,
+    "total": 157,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 1.9865235000033863,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/devil~3.map",
+   "a_side": "A",
+   "winner": "b",
+   "end": "elimination",
+   "rounds": 182,
+   "a": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 54,
+    "longest": 4,
+    "total": 137,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 1.6057062079780735,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/devil~3.map",
+   "a_side": "B",
+   "winner": "a",
+   "end": "elimination",
+   "rounds": 182,
+   "a": {
+    "alive": 54,
+    "longest": 4,
+    "total": 137,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 0.7734459589701146,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/devil~4.map",
+   "a_side": "A",
+   "winner": "a",
+   "end": "elimination",
+   "rounds": 276,
+   "a": {
+    "alive": 57,
+    "longest": 5,
+    "total": 152,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 1.4523093329626136,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/devil~4.map",
+   "a_side": "B",
+   "winner": "b",
+   "end": "elimination",
+   "rounds": 276,
+   "a": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 57,
+    "longest": 5,
+    "total": 152,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 3.145441042026505,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/trophy~0.map",
+   "a_side": "A",
+   "winner": "b",
+   "end": "elimination",
+   "rounds": 218,
+   "a": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 63,
+    "longest": 6,
+    "total": 182,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 0.953472041990608,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/trophy~0.map",
+   "a_side": "B",
+   "winner": "a",
+   "end": "elimination",
+   "rounds": 218,
+   "a": {
+    "alive": 63,
+    "longest": 6,
+    "total": 182,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 0.8079753749771044,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/trophy~1.map",
+   "a_side": "A",
+   "winner": "b",
+   "end": "elimination",
+   "rounds": 288,
+   "a": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 64,
+    "longest": 8,
+    "total": 189,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 1.427242000005208,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/trophy~1.map",
+   "a_side": "B",
+   "winner": "a",
+   "end": "elimination",
+   "rounds": 288,
+   "a": {
+    "alive": 64,
+    "longest": 8,
+    "total": 189,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 1.221879374992568,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/trophy~2.map",
+   "a_side": "A",
+   "winner": "a",
+   "end": "elimination",
+   "rounds": 207,
+   "a": {
+    "alive": 62,
+    "longest": 4,
+    "total": 145,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 0.8659110000007786,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/trophy~2.map",
+   "a_side": "B",
+   "winner": "b",
+   "end": "elimination",
+   "rounds": 207,
+   "a": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 62,
+    "longest": 4,
+    "total": 145,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 0.6306249590124935,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/trophy~3.map",
+   "a_side": "A",
+   "winner": "a",
+   "end": "elimination",
+   "rounds": 166,
+   "a": {
+    "alive": 64,
+    "longest": 7,
+    "total": 159,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 0.8536452919943258,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/trophy~3.map",
+   "a_side": "B",
+   "winner": "b",
+   "end": "elimination",
+   "rounds": 166,
+   "a": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 64,
+    "longest": 7,
+    "total": 159,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 0.654825208010152,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/trophy~4.map",
+   "a_side": "A",
+   "winner": "a",
+   "end": "elimination",
+   "rounds": 110,
+   "a": {
+    "alive": 53,
+    "longest": 3,
+    "total": 117,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 0.6132471659802832,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  },
+  {
+   "map": "~/.bc-loop/runs/E0167/official-maps/trophy~4.map",
+   "a_side": "B",
+   "winner": "b",
+   "end": "elimination",
+   "rounds": 206,
+   "a": {
+    "alive": 0,
+    "longest": 0,
+    "total": 0,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "b": {
+    "alive": 63,
+    "longest": 10,
+    "total": 202,
+    "timeouts": 0,
+    "crashes": 0,
+    "no_action_deaths": 0
+   },
+   "seconds": 0.8762121670297347,
+   "error": null,
+   "predicted": false,
+   "recording": null
+  }
+ ],
+ "ladder_maps": [
+  {
+   "id": 11,
+   "name": "Trophy",
+   "size": "25\u00d725",
+   "sha256": "5f1f6b23d6edb944954a9a31b95f229fd9966bec0875a9f04bca680aa3de33f5",
+   "content": "e920c0cf7fad02d52b3d683ff9e069b510acfe0f103cb33ca9f04ea032454335"
+  },
+  {
+   "id": 13,
+   "name": "Devil",
+   "size": "32\u00d716",
+   "sha256": "a09e8f2d3bdd1e40fad31a0ecdf00166cd1090c232c56dcc2557729de737f6aa",
+   "content": "0a263641415ff77f85cc32a19efbac6c771572d46663d15b079f5c1fbd982bad"
+  }
+ ],
+ "evaluation": {
+  "base": "1eae05fab2522aa46ee2af263f9f0f566e033564",
+  "candidate": "412171bfee552921120a8242f70b8991c678e134"
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "E0152": {
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "num_turns": 16,
+  "result": "I've committed the champion with E0118's behaviour switched off (commit `17fb632`); the referee's test is still to come. The bot tests and quick check both passed.\n\n**What changed**\n- `bot/params.hpp`: `crowdTargets` is now `false`. It is the only switch E0118 added; its other params are numbers that only matter when the switch is on. With it off, pearl costs and explore scores get no crowd term, which E0118's commit says gives the pre-E0118 costs. `friendBodySeen` is still recorded, but no move reads it.\n- `tests/bot/test_targets.cpp`: the crowd tests now check the switch. With it off, a long dragon at the cap takes the nearer pearl and the explore target goes straight ahead. I also flipped the switch back on locally and the whole suite passed, so the tests still cover the old behaviour.\n\n**Checks run**\n- Bot tests with the switch off: 16 scenario binaries plus the protocol suite, 0 failed.\n- Quick check: 11-13-0 against the champion, 0 failures, CPU p99 5.2M, max 6.4M.\n- Review: I re-read the diff myself instead of using a subagent, since it is one flag plus the test updates. I found no gaps.\n- I didn't run a firing count, because E0118's own logging showed the rule was active on about 10.7% of our turns.\n\n**Messages:** the start announcement and the `coding_done` summary both reached `bc-main-fresh`.\n\n**For the next experiment:** if this switch-off version is kept, a follow-up should delete `Targets::crowdActive` and `crowdAt`, the `crowdOn` checks, `World::friendBodySeen` and the crowd params. `roomMinLength` is used only by `crowdActive`, so it can go too.\n\nBlocked by: none",
+  "subagent_stats": {
+   "spawned": 0,
+   "requested": {
+    "background": 0,
+    "foreground": 0,
+    "unset": 0
+   },
+   "started_in_background": 0,
+   "max_depth": 0,
+   "spawned_by_subagents": 0,
+   "completed": 0,
+   "failed": 0,
+   "killed": {
+    "parent": 0,
+    "user": 0,
+    "system": 0
+   },
+   "refused": {
+    "depth_limit": 0,
+    "concurrency_limit": 0,
+    "budget": 0
+   },
+   "by_type": {}
+  }
+ },
+ "E0149": {
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "num_turns": 53,
+  "result": "I committed nothing for E0149 (I219): both versions I built lost to the champion. The clone is back at 0e962ec with a clean tree.\n\n**How I measured.** All games were on 12 fresh eval maps (seed 1490101), both sides. Which side you start on decides many games on these maps, so I also played a no-op control: the champion rebuilt with only a comment changed. It went 12-12 against the champion, level on 10 of the 12 maps. I then compared each candidate game with the control game from the same side of the same map.\n\n- **Changed moves (champion copy that logs the new rule's pick without playing it; 20 games, 10 other fresh maps, vs champion and breeder):** 550 changed moves, 27.5 a game. That is 0.47% of short dragons' scored moves, and 49% of the changes come in rounds 0-149.\n- **The idea as written** (2000 a tile below `P.splitAtLength` unless the move eats):\n  - 9-15 against the champion.\n  - Fewer pearls than the control on the same side in 15 of the 20 games that differed (sign test p 0.02).\n  - Longest/total at round 400: 16.6/274 against 27.1/372 (n 17).\n  - Against the breeder it went 16-8, the same as the champion on those games.\n  - The quick check also read 9-15 (CPU p99 5.2M, no crashes).\n- **Variant** (the 2000 rate only while another open move can see its whole fill, so choices between blind moves keep today's order):\n  - 7-17 against the champion.\n  - Against the control: results worse on 6 sides and better on 1 (p 0.06); pearls 15 worse, 5 better (p 0.02).\n  - Against the breeder it went 15-9.\n- **The quantities the idea asked for:**\n  - Deaths of length-2/3 dragons per 1000 short-dragon turns did not fall: 35.2 against 35.8 head to head, 34.8 against 35.0 against the breeder.\n  - Pearls eaten in rounds 0-149: 351 against 367.\n\nThe orchestrator agreed to one variant and said to stop with no code if it was also behind at p \u2264 0.1; it was (0.06 on results, 0.02 on pearls). The cheap blind-exit cost was protecting food: short dragons find most pearls by walking into ground they can't yet see, and it didn't save them either, since they die at the same rate per turn.\n\nThe reviewer found no bugs in the literal version. It noted that targeting doesn't know about the guard, so a short dragon can keep a pearl inside a blind corridor as its target and hang around the mouth. The candidate did idle a little more (1.29% of moves against 1.02%).\n\nBlocked by: none",
+  "subagent_stats": {
+   "spawned": 1,
+   "requested": {
+    "background": 1,
+    "foreground": 0,
+    "unset": 0
+   },
+   "started_in_background": 1,
+   "max_depth": 1,
+   "spawned_by_subagents": 0,
+   "completed": 1,
+   "failed": 0,
+   "killed": {
+    "parent": 0,
+    "user": 0,
+    "system": 0
+   },
+   "refused": {
+    "depth_limit": 0,
+    "concurrency_limit": 0,
+    "budget": 0
+   },
+   "by_type": {
+    "general-purpose": 1
+   }
+  }
+ }
+}

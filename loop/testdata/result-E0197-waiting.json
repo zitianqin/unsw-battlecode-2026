@@ -1,0 +1,74 @@
+{
+ "id": "E0197",
+ "idea": {
+  "id": "I441",
+  "title": "Enter the fold with a king on maps of 1152+ tiles: our king holds its ordinary splits and split-out farm trips whenever a split child is worth less to the king than the length it takes, from the rounds left and the unit cap, not from a fixed r300",
+  "status": "trying:lane6",
+  "priority": 1
+ },
+ "lane": 6,
+ "base": "b7b553f0c20b2b853f39237ba0ae5d8d5869c188",
+ "candidate": "",
+ "changed_files": [],
+ "session": {
+  "parent": "bc-main-fresh",
+  "wip": [],
+  "stack": [],
+  "protected": "ed1d77b6cb33fd7bb8d32ec01842bfc44a97d917",
+  "referee_commit": "c73963342202c1019a3eb4b58c9f49d37f729f67",
+  "protected_maps": "a1ee9d58237149a510ec9e347a3fd8c49b23c60e",
+  "name": "bc-E0197-f8805a5c",
+  "session_id": "f8805a5c-c139-48d2-94ac-2c0f610609bc",
+  "status": "finished",
+  "driver_pid": 49827,
+  "pid": 50559,
+  "seconds": 1685,
+  "exit": 0,
+  "cost_usd_list_price": 7.805140000000001,
+  "is_error": false,
+  "turns": 84,
+  "summary": "Waiting for the 24 re-run games to finish; I'll be notified when they do.",
+  "review": "subagent"
+ },
+ "cpu": {},
+ "bot_tests": {},
+ "sprt": {},
+ "evaluation": {
+  "elo0": 0,
+  "elo1": 15,
+  "alpha": 0.05,
+  "beta": 0.05,
+  "max_pairs": 2400,
+  "fresh": true,
+  "pool": true,
+  "pool_pairs": 50,
+  "rotation": [
+   "swarm",
+   "rammer",
+   "breeder"
+  ],
+  "limit_probability": 0.9,
+  "screen_reuse": false,
+  "screen_two_stage": true,
+  "maps": {
+   "big": 0.5
+  },
+  "toolchain": {
+   "version": "1.2.0",
+   "python": "/Users/me/.bc-loop/toolchains/1.2.0/bin/python",
+   "validated_at": 1790516277.2479732,
+   "epoch": "unswbc-1.2.0",
+   "champion": "b7b553f0c20b2b853f39237ba0ae5d8d5869c188",
+   "compatibility": "/Users/me/.bc-loop/toolchains/1.2.0/compatibility.jsonl"
+  }
+ },
+ "pool": {},
+ "identity": {},
+ "official": {},
+ "stacked_on": [],
+ "cutoffs": {},
+ "verdict": "no code",
+ "reason": "nothing committed; the coder's reason: Waiting for the 24 re-run games to finish; I'll be notified when they do.",
+ "started": 1790518802.535171,
+ "finished": 1790520493.4253561
+}

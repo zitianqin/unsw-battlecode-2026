@@ -1,0 +1,32 @@
+{"at": 1790644553.6, "time": "11:15", "evaluation": {"experiment": "E0313", "stage": "SPRT"}, "waiting": [], "capacity": 70, "busy": 70.0, "idle": 0.0}
+{"at": 1790644613.7, "time": "11:16", "evaluation": {"experiment": "E0313", "stage": "SPRT"}, "waiting": [], "capacity": 70, "busy": 70.0, "idle": 0.0}
+{"at": 1790644673.9, "time": "11:17", "evaluation": {"experiment": "E0313", "stage": "SPRT"}, "waiting": [], "capacity": 70, "busy": 70.0, "idle": 0.0}
+{"at": 1790644734.0, "time": "11:18", "evaluation": {"experiment": "E0313", "stage": "SPRT"}, "waiting": [], "capacity": 70, "busy": 70.0, "idle": 0.0}
+{"at": 1790644794.1, "time": "11:19", "evaluation": {"experiment": "E0313", "stage": "SPRT"}, "waiting": [], "capacity": 70, "busy": 70.0, "idle": 0.0}
+{"at": 1790644854.2, "time": "11:20", "evaluation": {"experiment": "E0313", "stage": "SPRT"}, "waiting": [], "capacity": 70, "busy": 69.0, "idle": 0.014}
+{"at": 1790644914.3, "time": "11:21", "evaluation": {"experiment": "E0313", "stage": "SPRT"}, "waiting": [], "capacity": 71, "busy": 71.0, "idle": 0.0}
+{"at": 1790644974.5, "time": "11:22", "evaluation": null, "waiting": ["E0313"], "capacity": 70, "busy": 6.0, "idle": 0.914}
+{"at": 1790645034.6, "time": "11:23", "evaluation": null, "waiting": [], "capacity": 68, "busy": 16.0, "idle": 0.765}
+{"at": 1790645094.7, "time": "11:24", "evaluation": null, "waiting": [], "capacity": 68, "busy": 32.0, "idle": 0.529}
+{"at": 1790645154.9, "time": "11:25", "evaluation": null, "waiting": [], "capacity": 70, "busy": 3.0, "idle": 0.957}
+{"at": 1790645215.1, "time": "11:26", "evaluation": null, "waiting": [], "capacity": 68, "busy": 8.0, "idle": 0.882}
+{"at": 1790645275.2, "time": "11:27", "evaluation": null, "waiting": [], "capacity": 70, "busy": 61.0, "idle": 0.129}
+{"at": 1790645335.3, "time": "11:28", "evaluation": null, "waiting": [], "capacity": 72, "busy": 0.0, "idle": 1.0}
+{"at": 1790645392.2, "time": "11:29", "evaluation": null, "waiting": [], "capacity": 72, "busy": 52.0, "idle": 0.278}
+{"at": 1790645452.4, "time": "11:30", "evaluation": null, "waiting": [], "capacity": 72, "busy": 13.0, "idle": 0.819}
+{"at": 1790645512.6, "time": "11:31", "evaluation": null, "waiting": [], "capacity": 72, "busy": 6.0, "idle": 0.917}
+{"at": 1790645572.7, "time": "11:32", "evaluation": null, "waiting": [], "capacity": 72, "busy": 20.0, "idle": 0.722}
+{"at": 1790645632.8, "time": "11:33", "evaluation": null, "waiting": [], "capacity": 72, "busy": 18.0, "idle": 0.75}
+{"at": 1790645692.9, "time": "11:34", "evaluation": null, "waiting": [], "capacity": 72, "busy": 0.0, "idle": 1.0}
+{"at": 1790645753.1, "time": "11:35", "evaluation": null, "waiting": [], "capacity": 72, "busy": 26.0, "idle": 0.639}
+{"at": 1790645813.2, "time": "11:36", "evaluation": null, "waiting": [], "capacity": 72, "busy": 0.0, "idle": 1.0}
+{"at": 1790645873.4, "time": "11:37", "evaluation": null, "waiting": [], "capacity": 72, "busy": 7.0, "idle": 0.903}
+{"at": 1790645934.0, "time": "11:38", "evaluation": null, "waiting": [], "capacity": 74, "busy": 55.0, "idle": 0.257}
+{"at": 1790645994.1, "time": "11:39", "evaluation": null, "waiting": [], "capacity": 72, "busy": 0.0, "idle": 1.0}
+{"at": 1790646054.3, "time": "11:40", "evaluation": null, "waiting": [], "capacity": 72, "busy": 2.0, "idle": 0.972}
+{"at": 1790646114.7, "time": "11:41", "evaluation": null, "waiting": [], "capacity": 72, "busy": 0.0, "idle": 1.0}
+{"at": 1790646174.8, "time": "11:42", "evaluation": {"experiment": "E0327", "stage": "bot tests", "local": true}, "waiting": [], "capacity": 72, "busy": 1.0, "idle": 0.986}
+{"at": 1790646235.0, "time": "11:43", "evaluation": {"experiment": "E0327", "stage": "CPU gate and maps", "local": "mac"}, "waiting": [], "capacity": 72, "busy": 11.0, "idle": 0.847}
+{"at": 1790646295.2, "time": "11:44", "evaluation": {"experiment": "E0327", "stage": "SPRT"}, "waiting": [], "capacity": 72, "busy": 72.0, "idle": 0.0}
+{"at": 1790646355.4, "time": "11:45", "evaluation": {"experiment": "E0327", "stage": "SPRT"}, "waiting": [], "capacity": 72, "busy": 71.0, "idle": 0.014}
+{"at": 1790646415.5, "time": "11:46", "evaluation": {"experiment": "E0327", "stage": "SPRT"}, "waiting": [], "capacity": 74, "busy": 41.0, "idle": 0.446}

@@ -1,0 +1,42 @@
+#!/bin/sh
+# Refuses a Claude Code session's (CLAUDECODE set) move of refs/heads/main by anything but tools/merge.sh: a
+# fast-forward, cherry-pick, revert, reset, update-ref or commit, which pre-commit alone can't see (it sees only
+# commits). merge.sh gets through the way pre-push tells it apart: it writes the pass marker
+# <git common dir>/test-passed/<the merge> before it fast-forwards main, so main may fast-forward to a commit holding
+# a marker (never roll back onto one). Main may also catch up to origin/main (a fast-forward to a commit origin/main
+# holds, as a pull makes: it went through merge.sh wherever it was pushed from). sig's own git, outside Claude Code,
+# is untouched, as is every ref but main, and a deletion of main (pack-refs and gc delete its loose file); the loop
+# home and checkouts without tools/check_refs.py are skipped as pre-commit skips them. It stops accidental moves of
+# main under Claude Code, not deliberate ones (bypasses exist: CLAUDECODE unset, hooks off); pre-push is what stops
+# untested code reaching origin. Installed with the other hooks (core.hooksPath tools/hooks); the driver's own git
+# runs with hooks off.
+#
+# git runs it at each ref transaction's "prepared", "committed" and "aborted" states with "<old> <new> <ref>" lines
+# on stdin; only a refusal at "prepared" stops the transaction, so the other states pass at once.
+
+[ "$1" = prepared ] && [ -n "${CLAUDECODE:-}" ] || exit 0
+zero=0000000000000000000000000000000000000000
+status=0
+while read -r old new ref; do
+    [ "$ref" = refs/heads/main ] && [ "$old" != "$new" ] || continue
+    # A deletion puts nothing on main, and main set to where it already is moves nothing: pack-refs and gc write main
+    # into packed-refs (zero -> its commit) and delete its loose file (its commit -> zero).
+    [ "$new" = "$zero" ] || [ "$new" = "$(git rev-parse -q --verify refs/heads/main)" ] && continue
+    common=$(cd "$(git rev-parse --git-common-dir)" && pwd)
+    root=$(git rev-parse --show-toplevel 2>/dev/null) || root=$(dirname "$common")  # git run inside .git too
+    [ -f "$root/tools/check_refs.py" ] || exit 0
+    home=${BC_LOOP_HOME:-$HOME/.bc-loop}
+    home=${home%/}
+    case "$root/" in "$home"/*|"$HOME/.bc-loop"/*) exit 0 ;; esac
+    if [ "$old" != "$zero" ] && git merge-base --is-ancestor "$old" "$new" 2>/dev/null \
+        && { [ -f "$common/test-passed/$new" ] \
+             || git merge-base --is-ancestor "$new" refs/remotes/origin/main 2>/dev/null; }; then
+        continue
+    fi
+    echo "reference-transaction: a Claude Code session doesn't move main ($old -> $new) itself: no fast-forward," \
+         "cherry-pick, reset or commit there. Commit on a branch in a worktree and merge it with tools/merge.sh" \
+         "<branch> \"<message>\" <test modules>, which tests the merge before main moves. If merge.sh's push" \
+         "was rejected because origin moved, run tools/merge.sh origin/main \"<message>\" to take it in first." >&2
+    status=1
+done
+exit $status

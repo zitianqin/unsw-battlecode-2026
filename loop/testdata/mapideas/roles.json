@@ -1,0 +1,29 @@
+{
+ "roles": {
+  "Admin": 1,
+  "Battlecode Team": 2,
+  "Shark": 3,
+  "Swordfish": 4,
+  "Tunafish": 5,
+  "Shrimp": 6,
+  "Plankton": 7,
+  "(no role)": 8
+ },
+ "members": {
+  "lmkæ": "Admin",
+  "Rory Coughlan": "Shark",
+  "UNSW number 1 uni in aus": "Shark",
+  "[AGI ONE]benedict0724": "Swordfish",
+  "[bacon] Deutsch Reich": "Swordfish"
+ },
+ "colors": {
+  "Admin": "rgb(231, 76, 60)",
+  "Battlecode Team": "rgb(31, 139, 76)",
+  "Shark": "rgb(165, 180, 252)",
+  "Swordfish": "rgb(167, 139, 250)",
+  "Tunafish": "rgb(76, 141, 255)",
+  "Shrimp": "rgb(251, 154, 122)",
+  "Plankton": "rgb(139, 147, 160)",
+  "(no role)": "oklab(0.608375 0.00218922 -0.0118429)"
+ }
+}

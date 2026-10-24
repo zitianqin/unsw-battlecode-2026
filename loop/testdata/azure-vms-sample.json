@@ -1,0 +1,34 @@
+[
+  {
+    "name": "bc-burst-hk",
+    "powerState": "VM running"
+  },
+  {
+    "name": "bc-burst-jp",
+    "powerState": "VM deallocated"
+  },
+  {
+    "name": "bc-burst-jpw",
+    "powerState": "VM running"
+  },
+  {
+    "name": "bc-burst",
+    "powerState": "VM running"
+  },
+  {
+    "name": "bc-burst-mel",
+    "powerState": "VM running"
+  },
+  {
+    "name": "bc-burst-my",
+    "powerState": "VM running"
+  },
+  {
+    "name": "bc-burst-nz",
+    "powerState": "VM running"
+  },
+  {
+    "name": "bc-burst-id",
+    "powerState": "VM deallocated"
+  }
+]
