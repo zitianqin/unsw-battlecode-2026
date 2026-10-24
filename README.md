@@ -70,6 +70,24 @@ flowchart LR
 
 C++ (bot), Python with `uv` (loop, referee, tools), C and WebAssembly (native judge), Claude Code agents (coding, reviews, judging), cloud spot VMs and spare machines (games).
 
+## About the code
+
+The bot's code was written by coding agents working through my ideas, and every change had to beat the previous champion in a statistical test to be kept. It's left exactly as it was when it played: I haven't refactored it since, so it shows how 97 kept changes accumulated. Comments are long and full of cross-references because they were written for the agents to read. Most of the `bool` switches in `bot/params.hpp` are experiment toggles, kept so any change could be switched off and re-tested later.
+
+How a dragon decides its turn (`bot/main.cpp`):
+
+1. **Observe.** Update what it sees (`state.hpp`), merge teammates' sonar reports into a shared map of the board (`belief.hpp`), and fill in unseen ground using the map's symmetry (`symmetry.hpp`).
+2. **Pick a target.** Usually the pearl or spawn tile it can reach before any teammate, otherwise unexplored ground or an unknown portal (`targets.hpp`).
+3. **Take a forced move if there is one.** Ram an enemy head it can reach (`ram.hpp`), sprint out of danger (`escape.hpp`), split off its tail when a shorter enemy could ram it (`split.hpp`), or, late in the game, feed a longer teammate (`feed.hpp`, `fold.hpp`).
+4. **Otherwise score the moves.** Rate each move for survival room and progress to the target (`safety.hpp`, `scoring.hpp`), with a short search for moves an enemy could punish (`search.hpp`), then move or split.
+5. **Talk.** Send fresh information over sonar (`gossip.hpp`), and read the enemy's sonar too (`listen.hpp`, `spoof.hpp`).
+
+Worth reading:
+
+- `bot/safety.hpp`: the survival check, which counts the space a move leaves, allowing for tails that will have moved by the time the dragon gets there.
+- `bot/symmetry.hpp`: works out the map's symmetry from what has been seen and fills in the unseen half.
+- `bot/listen.hpp` with `tools/sonar/`: decodes other teams' sonar formats, which were reverse-engineered from their replays, so the bot can hear and spoof the enemy.
+
 ## Repository layout
 
 | Folder | Contents |
