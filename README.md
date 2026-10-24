@@ -1,6 +1,6 @@
-# UNSW Battlecode 2026: an autonomous AI pipeline for a competitive game bot
+# UNSW Battlecode 2026: a game bot and the experimentation pipeline I built to improve it
 
-My solo UNSW Battlecode 2026 bot (team **zitian**), built up to the Sprint, and the automated pipeline that improved it. After the Sprint I merged with three other strong solo teams, PPP ([Eric](https://github.com/Meetbels)), Stockfish ([Ethan](https://github.com/xCirno1)) and larpmaxxing ([Austen](https://github.com/AustenWayne)), to form **larp stock zi balls**, which went into the Grand Final as the top seed, finished 3rd and won the Jump Trading Grand Award for the fastest algorithm. That team's later bot isn't in this repository.
+My solo UNSW Battlecode 2026 bot (team **zitian**), built up to the Sprint, and the experimentation pipeline I built to improve it. After the Sprint I merged with three other strong solo teams, PPP ([Eric](https://github.com/Meetbels)), Stockfish ([Ethan](https://github.com/xCirno1)) and larpmaxxing ([Austen](https://github.com/AustenWayne)), to form **larp stock zi balls**, which went into the Grand Final as the top seed, finished 3rd and won the Jump Trading Grand Award for the fastest algorithm. That team's later bot isn't in this repository.
 
 ## In numbers
 
@@ -29,7 +29,7 @@ Teams climb a ranked ladder, and the season has three tournaments: an open Sprin
 
 ## How the pipeline works
 
-My philosophy was that my ideas should be built and tested 24/7, not only when I had time to code them. The loop runs around the clock with me steering it. Some ideas needed me to step in and push the implementing agent in the right direction, but I designed the orchestration so that this happened less and less.
+My philosophy was that my ideas should be built and tested 24/7, not only when I had time to code them. I built a loop that turns my ideas into tested code around the clock: AI agents write the implementation, and every change has to pass a statistical test against the current best bot before it's kept. Some ideas needed me to step in and push the implementing agent in the right direction, but I designed the orchestration so that this happened less and less.
 
 ```mermaid
 flowchart LR
