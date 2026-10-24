@@ -50,13 +50,13 @@ flowchart LR
 - **Promoting and re-queuing.** A winner becomes the new champion and is uploaded automatically. A loser gets a post-mortem from the agent that built it, which queues a corrected idea. Promising but unproven results are retested on the newest champion.
 - **Keeping busy.** When nothing is queued, idle machines run parameter tuning, variant sweeps and searches for maps the bot loses on.
 
-## Problems worth solving
+## Technical details
 
-- **Not fooling yourself with statistics.** Across hundreds of experiments, some look like wins by luck. Every candidate faces a sequential probability ratio test (normalized Elo bounds 0 and +15, 5% error rates, up to 2,400 game pairs) on unseen maps with sides swapped in every pair. Bounds are frozen before a test starts, and a judge reviews every result instead of trusting a threshold.
-- **Speed as a feature.** Every champion must stay inside CPU limits (99th percentile and maximum per turn), so speed is checked on every change. A faster bot also plays games faster, so experiments finish sooner and more ideas get tested. The merged team's bot kept this discipline and won the fastest-algorithm award.
-- **A faster judge.** I rebuilt the game judge natively (`referee/native_judge/`): byte-identical replays to the official engine, with a third less CPU per game.
-- **Keeping AI agents in their lane.** Coding agents can only change the bot and its tests. The trusted side of the loop never runs or trusts files from an agent's workspace, and a test checks every agent launch.
-- **Running a cheap fleet.** Games run on spot VMs and spare machines, with retries for dropped games, health checks on every file the loop writes, and alerts when machines go idle.
+- **Testing.** Each candidate plays the champion in an SPRT (normalized Elo bounds 0 and +15, 5% error rates, up to 2,400 game pairs) on new generated maps, with sides swapped in every pair. With hundreds of experiments, some changes look better by luck, so the bounds are fixed before a test starts and a separate judge reviews each result.
+- **CPU limits.** A champion has to stay under limits on 99th-percentile and maximum CPU per turn, so every change is checked for speed. Faster bots also mean faster games, so more ideas get tested. The merged team's bot won the fastest-algorithm award.
+- **Native judge.** `referee/native_judge/` is my native build of the game judge. Its replays are byte-identical to the official engine's, and it uses a third less CPU per game.
+- **Agent sandboxing.** Coding agents can only change `bot/` and `tests/bot/`. The loop doesn't run or trust files from an agent's workspace, and a test checks every agent launch.
+- **Machines.** Games run on spot VMs and spare machines. Dropped games are retried, every file the loop writes has a health check, and idle machines raise an alert.
 
 ## Dashboard
 
