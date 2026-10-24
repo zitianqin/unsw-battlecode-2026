@@ -1,6 +1,6 @@
 # UNSW Battlecode 2026
 
-This is my solo UNSW Battlecode 2026 bot (team **zitian**), built up to the Sprint, plus the full automation stack I used to improve, test, evaluate and publish it continuously. After the Sprint I merged with three other strong solo teams, PPP ([Eric](https://github.com/Meetbels)), Stockfish ([Ethan](https://github.com/xCirno1)) and larpmaxxing ([Austen](https://github.com/AustenWayne)), to form **larp stock zi balls**, which was seeded 1st for the Grand Final, finished 3rd overall and won the Jump Trading Grand Award for the fastest algorithm. That team's later bot isn't in this repository.
+This is my solo UNSW Battlecode 2026 bot (team **zitian**), built up to the Sprint, plus the full automation stack I used to improve, test, evaluate and publish it continuously. After the Sprint I merged with three other strong solo teams, PPP ([Eric](https://github.com/Meetbels)), Stockfish ([Ethan](https://github.com/xCirno1)) and larpmaxxing ([Austen](https://github.com/AustenWayne)), to form **larp stock zi balls**, which went into the Grand Final as the top seed, finished 3rd and won the Jump Trading Grand Award for the fastest algorithm. That team's later bot isn't in this repository.
 
 ## In numbers
 
@@ -15,7 +15,11 @@ In the 8 days from 23 September to the Sprint on 1 October, the loop in this rep
 
 ## Background and results
 
-[UNSW Battlecode 2026](https://game.battlecode.au/) ran for four weeks with 973 teams from 41 countries.
+[Battlecode](https://battlecode.org/) is MIT's long-running AI programming competition: you don't play the game, you write a program that plays it. [UNSW Battlecode 2026](https://game.battlecode.au/), run by UNSW's CPMSoc, was its own four-week version of the idea, with 973 teams from 41 countries and over $20,000 in prizes.
+
+The game is a multi-agent take on Snake played on an ocean floor. Each team controls up to 64 dragons, and every dragon runs its own copy of the team's program with no shared memory, so the only way to coordinate is a noisy long-range sonar. Dragons grow by eating pearls, can split in two, can sprint extra moves by spending length, and die by running into kelp or other dragons. A game lasts up to 500 rounds; when it runs out, the team with the longest living dragon wins, then the team with the most total length. Each dragon gets about 25 ms of CPU per turn, so the bot has to be fast as well as clever. Maps are unseen until the tournament, so the bot can't be tuned to any particular map.
+
+Teams climb a public ladder through ranked battles, and the season has three tournaments: an open Sprint, a Qualifier, and an in-person Grand Final for the top 10.
 
 - **Sprint (1 October, 591 teams).** I entered solo, peaked at #6 on the ladder beforehand, and was seeded 13th. I got through five rounds without dropping more than one game, then beat 4th seed SSS 4–3 before losing 2–5 in the quarter-finals to chad gdp, the eventual Grand Final champions.
 
