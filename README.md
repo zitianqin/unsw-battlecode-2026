@@ -82,6 +82,12 @@ How a dragon decides its turn (`bot/main.cpp`):
 4. **Otherwise score the moves.** Rate each move for survival room and progress to the target (`safety.hpp`, `scoring.hpp`), with a short search for moves an enemy could punish (`search.hpp`), then move or split.
 5. **Talk.** Send fresh information over sonar (`gossip.hpp`), and read the enemy's sonar too (`listen.hpp`, `spoof.hpp`).
 
+## What I'd do differently
+
+- **Refactor on a schedule.** A refactor stops the coding lanes, so I avoided them, and the code grew by accretion. A refactor every two or three days at a quiet point would have cost a few hours of testing and kept the code readable.
+- **Own the architecture from the start.** I let the agents shape the design so the bot kept improving while I slept. Setting the module boundaries myself early on, and letting agents work within them, would have given the same speed with a cleaner structure.
+- **Push simplicity in reviews.** Each change got a review for correctness only. Asking reviewers to also flag code that could be simpler would have slowed each change slightly, but kept the bot smaller.
+
 ## Repository layout
 
 | Folder | Contents |
