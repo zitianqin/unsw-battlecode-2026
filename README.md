@@ -8,7 +8,7 @@ In the 8 days from 23 September to the Sprint on 1 October, the pipeline:
 
 - ran **523 experiments** and promoted **97 champions**, each one beating the previous champion in a statistical test;
 - played **over 740,000 games** on freshly generated maps;
-- spread those games across **15 remote machines** (9 cloud spot VMs (only 2 cores each from the Azure free trial), Mac minis and Windows PCs) plus my laptop;
+- spread those games across **15 remote machines** (9 cloud spot VMs (only 2 cores each from the Azure free trial), Mac minis and old Windows laptops I had lying around) plus my laptop;
 - worked through **1,275 ideas**.
 
 ![Experiments finished and champions promoted over the 8 days to the Sprint](docs/images/progress.svg)
