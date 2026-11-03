@@ -29,7 +29,9 @@ Teams climb a ranked ladder, and the season has three tournaments: an open Sprin
 
 ## How the pipeline works
 
-My philosophy was that my ideas should be built and tested 24/7, not only when I had time to code them. I built a loop that turns my ideas into tested code around the clock: AI agents write the implementation, and every change has to pass a statistical test against the current best bot before it's kept. Some ideas needed me to step in and push the implementing agent in the right direction, but I designed the orchestration so that this happened less and less.
+My philosophy was that my ideas should be built and tested 24/7, not only when I had time to code them. This was because at the time I was a solo team, so I had 4 times less manpower than some of the other teams. I also joined the competition a few days late.
+
+Therefore, I built a loop that turns my ideas into tested code around the clock: AI agents write the implementation, and every change has to pass a statistical test against the current best bot before it's kept. Some ideas needed me to step in and push the implementing agent in the right direction, but I designed the orchestration so that this happened less and less.
 
 ```mermaid
 flowchart LR
